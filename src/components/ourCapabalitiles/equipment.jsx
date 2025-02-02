@@ -1,7 +1,6 @@
 import air from "../../assets/air.jpg";
 import React, { useState, useEffect } from "react";
-import Header from "../header";
-import Footer from "../footer";
+
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
@@ -18,7 +17,7 @@ const Equpiments = () => {
   }, []);
   return (
     <>
-      <Header />
+      
       <section className="absolute inset-0 w-full h-full z-20">
         <div className="ml-24 w-[calc(100%-6rem)] h-full">
           <div className="h-full mx-0 flex flex-wrap">
@@ -237,7 +236,7 @@ const Equpiments = () => {
           </p>
         </div>
       </section>
-      <Footer />
+      
     </>
   );
 };

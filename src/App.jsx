@@ -12,10 +12,15 @@ import CNCMilling from "./components/services/cnc-milling";
 import CuttingPlotter from "./components/services/cutting-plotter";
 import ProductionOfModels from "./components/services/production-of-models";
 import ProductionOfMouldsAndTooling from "./components/services/production-of-moulds-and-tooling";
+import Header from "./components/header"; // Import Header component
+import Footer from "./components/footer";
+import About from "./components/aboutUs/about";
+import "./styles/animation.css";
 
 function App() {
   return (
     <Router>
+      <Header />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/capabalitites" element={<Capabalitites />} />
@@ -41,7 +46,9 @@ function App() {
           path="/services/production-of-moulds-and-tooling"
           element={<ProductionOfMouldsAndTooling />}
         />
+        <Route path="/about" element={<About />} />
       </Routes>
+      <Footer />
     </Router>
   );
 }

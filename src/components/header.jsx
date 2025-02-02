@@ -12,7 +12,7 @@ const Header = () => {
   const closeOverlay = () => setActiveOverlay(null);
 
   return (
-    <header className="bg-white ml-19 w-[calc(100%-6rem)] md:ml-24 md:w-[calc(100%-6rem)] float-right h-36 fixed right-0 top-0 z-50">
+    <header className="bg-white ml-19 w-[calc(100%-6rem)] md:ml-24 md:w-[calc(100%-6rem)] float-right h-20 fixed right-0 top-0 z-50">
       <nav className="container mx-auto flex justify-between items-center py-4 h-full uppercase">
         {/* Hamburger Icon for Mobile */}
         <button
@@ -57,10 +57,10 @@ const Header = () => {
               </li>
               <li>
                 <a
-                  href="/company"
+                  href="/about"
                   className="text-gray-700 text-lg hover:text-gray-900"
                 >
-                  Company
+                  About Us
                 </a>
               </li>
               <li>
@@ -106,22 +106,15 @@ const Header = () => {
               Services
             </a>
           </li>
-          {/* Company */}
-          <li className="group relative">
+          <li >
             <a
-              href="company"
-              className="text-gray-700 hover:text-gray-900"
-              onClick={(e) => {
-                e.preventDefault();
-                showOverlay("company");
-              }}
-            >
-              Company
+              href="/about" className="text-gray-700 hover:text-gray-900">
+             About Us
             </a>
           </li>
           {/* Contact */}
           <li>
-            <a href="contact" className="text-gray-700 hover:text-gray-900">
+            <a href="/contact" className="text-gray-700 hover:text-gray-900">
               Contact
             </a>
           </li>

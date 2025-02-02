@@ -1,12 +1,9 @@
 import React, { useRef, useState } from "react";
 
-import Header from "./header"; // Ensure the file path and name are correct
-import Footer from "./footer"; // Ensure the file path and name are correct
-import "./home.css"; // Ensure the file path and name are correct
-import HeroSection from "./herosection"; // Ensure the file path and name are correct
+import "./home.css"; 
+import HeroSection from "./herosection"; 
 import { Swiper, SwiperSlide } from "swiper/react";
 import air from "../assets/air.jpg";
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/free-mode";
 import "swiper/css/navigation";
@@ -21,7 +18,7 @@ const Home = () => {
 
   return (
     <div>
-      <Header />
+      
       <HeroSection />
       <section className="bg-black text-white">
         <div className="container ml-24 w-[calc(100%-6rem)] text-center">
@@ -253,7 +250,7 @@ const Home = () => {
           </SwiperSlide>
         </Swiper>
       </section>
-      <Footer />
+      
     </div>
   );
 };
