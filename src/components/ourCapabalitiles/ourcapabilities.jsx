@@ -1,14 +1,11 @@
 import React from "react";
 import vid from "../../assets/vid.mp4";
 import air from "../../assets/air.jpg";
-import Header from "../header";
-import Footer from "../footer";
-
 import "swiper/css";
 const Capabalitites = () => {
   return (
     <>
-      <Header />
+      
       <section className="absolute inset-0 w-full h-full z-20">
         <div className="ml-24 w-[calc(100%-6rem)] h-full">
           <div className="h-full mx-0 flex flex-wrap">
@@ -141,8 +138,6 @@ const Capabalitites = () => {
           </li>
         </ul>
       </section>
-
-      <Footer />
     </>
   );
 };

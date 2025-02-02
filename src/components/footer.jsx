@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import ScrollToTop from "./scrollToTop";
 const Footer = () => {
   return (
     <footer className="absolute bg-black text-white py-8 mx-auto  z-30 uppercase w-full">
@@ -83,6 +84,7 @@ const Footer = () => {
           </ul>
         </div>
       </div>
+      <ScrollToTop />
     </footer>
   );
 };

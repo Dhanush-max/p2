@@ -21,7 +21,7 @@ const HeroSection = () => {
         <div className="w-full h-screen absolute z-0">
           <video className="object-cover w-full h-full" autoPlay muted loop>
             <source src={vid} type="video/mp4" />
-            Your browser does not support the video tag.
+            Your browser does not support the video.
           </video>
         </div>
         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black z-20"></div>
