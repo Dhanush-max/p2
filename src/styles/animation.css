@@ -12,6 +12,7 @@
 .fade-in {
   opacity: 0;
   animation: fadeInSlideIn 3s ease-in-out;
+  opacity: 1;
 }
 
 .fade-in.visible {
@@ -26,7 +27,7 @@
 @keyframes fadeInSlideInRight {
   from {
     opacity: 0;
-    transform: translateX(10%);
+    transform: translateX(50%);
   }
   to {
     opacity: 1;
