@@ -1,39 +1,34 @@
-import React from "react";
 import air from "../../assets/air.jpg";
-
+import HeroImgSection from "../heroImgSection";
+import ImageSec from "../aboutUs/imageSec";
+import ImageCarousel from "../aboutUs/imageCarousel";
+import SeeAlsoList from "./seeAlsoList";
+const imageList = [air, air, air]; // Add more images as needed
+const description =
+  "Lorem ipsum dolor sit amet consectetur adipisicing elit.  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum eligendi quidem magni ratione corrupti deleniti quia assumenda consequuntur. Consectetur quidem sequi fugiat dolorem odio veritatis corrupti nulla! Blanditiis, magni quidem? ";
+const listItems = [
+  { name: "Design office", link: "" },
+  { name: "paint shop", link: "" },
+  { name: "canopy production", link: "" },
+  { name: "cnc milling", link: "" },
+  { name: "cutting plotter", link: "" },
+  { name: "production of models and tooling", link: "" },
+];
 const ProductionOfModels = () => {
   return (
-    <div>
-     
-       <section className="absolute inset-0 w-full h-full z-20">
-              <div className="ml-24 w-[calc(100%-6rem)] h-full">
-                <div className="h-full mx-0 flex flex-wrap">
-                  <div className="border-l border-r border-[#dfdfdf] h-full basis-0 grow max-w-full"></div>
-                  {[...Array(5)].map((_, index) => (
-                    <div
-                      key={index}
-                      className="border-r border-[#dfdfdf] h-full basis-0 grow max-w-full"
-                    ></div>
-                  ))}
-                </div>
-              </div>
-            </section>
-            <section className="bg-gradient-to-b from-transparent to-black h-screen section-before relative z-10">
-              <div className="w-full h-screen absolute z-0">
-                <video className="object-cover w-full h-full" autoPlay muted loop>
-                  <source src={air} type="video/mp4" />
-                  Your browser does not support the video tag.
-                </video>
-              </div>
-              <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black z-20"></div>
-              <div className="flex items-center pt-60 ml-24 w-[calc(100%-6rem)] z-30">
-                <div className="relative bg-white p-5 h-fit">
-                  <div className="text-black text-6xl">Let's Fly!</div>
-                </div>
-              </div>
-            </section>
-      
-    </div>
+    <>
+      <HeroImgSection
+        img={air}
+        title="Cutting plotter"
+        details="We offer cutting any form in glass, carbon, foam or prepreg according to a delivered design."
+      />
+      <ImageSec
+        imageUrl="../src/assets/A3.jpg"
+        description="We offer not only painting of new aircrafts, but also comprehensive renovation of used gliders and motor gliders."
+      />
+      <ImageCarousel imageList={imageList} description={description} />
+      <SeeAlsoList title="See also" items={listItems} />
+    </>
   );
 };
 
