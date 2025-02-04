@@ -5,7 +5,6 @@ import Count from "./count";
 import AboutVideo from "./aboutvideo";
 import ImageSec from "./imageSec.jsx";
 import Button from "../button.jsx";
-import ScrollToTop from "../scrollToTop.jsx";
 
 const About = () => {
   const sectionRef = useRef(null);

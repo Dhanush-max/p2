@@ -15,6 +15,7 @@ import ProductionOfMouldsAndTooling from "./components/services/production-of-mo
 import Header from "./components/header"; // Import Header component
 import Footer from "./components/footer";
 import About from "./components/aboutUs/about";
+import Contact from "./components/contact/contact";
 import "./styles/animation.css";
 
 function App() {
@@ -47,6 +48,7 @@ function App() {
           element={<ProductionOfMouldsAndTooling />}
         />
         <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
     </Router>
