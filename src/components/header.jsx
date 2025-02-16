@@ -207,6 +207,14 @@ const Header = () => {
                 </li>
                 <li>
                   <a
+                    href="/services/paint-shop"
+                    className="block text-gray-700 hover:text-gray-900 text-lg"
+                  >
+                    paint shop
+                  </a>
+                </li>
+                <li>
+                  <a
                     href="/services/canopy-production"
                     className="block text-gray-700 hover:text-gray-900 text-lg"
                   >

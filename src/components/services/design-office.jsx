@@ -1,41 +1,36 @@
-import React from "react";
-
 import air from "../../assets/air.jpg";
+import HeroImgSection from "../heroImgSection";
+import ImageSec from "../aboutUs/imageSec";
+import ImageCarousel from "../aboutUs/imageCarousel";
+import SeeAlsoList from "./seeAlsoList";
+
+const imageList = [air, air, air]; // Add more images as needed
+const description =
+  "Lorem ipsum dolor sit amet consectetur adipisicing elit.  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum eligendi quidem magni ratione corrupti deleniti quia assumenda consequuntur. Consectetur quidem sequi fugiat dolorem odio veritatis corrupti nulla! Blanditiis, magni quidem? ";
+const listItems = [
+  { name: "Paint shop", link: "" },
+  { name: "Canopy production", link: "" },
+  { name: "CNC milling", link: "" },
+  { name: "Cutting plotter", link: "" },
+  { name: "Production of models", link: "" },
+  { name: "production of models and tooling", link: "" },
+];
 
 const DesignOffice = () => {
   return (
     <div>
-      
-      <div>
-        <section className="absolute inset-0 w-full h-full z-20">
-               <div className="ml-24 w-[calc(100%-6rem)] h-full">
-                 <div className="h-full mx-0 flex flex-wrap">
-                   <div className="border-l border-r border-[#dfdfdf] h-full basis-0 grow max-w-full"></div>
-                   {[...Array(5)].map((_, index) => (
-                     <div
-                       key={index}
-                       className="border-r border-[#dfdfdf] h-full basis-0 grow max-w-full"
-                     ></div>
-                   ))}
-                 </div>
-               </div>
-             </section>
-             <section className="bg-gradient-to-b from-transparent to-black h-screen section-before relative z-10">
-               <div className="w-full h-screen absolute z-0">
-                 <video className="object-cover w-full h-full" autoPlay muted loop>
-                   <source src={air} type="video/mp4" />
-                   Your browser does not support the video tag.
-                 </video>
-               </div>
-               <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black z-20"></div>
-               <div className="flex items-center pt-60 ml-24 w-[calc(100%-6rem)] z-30">
-                 <div className="relative bg-white p-5 h-fit">
-                   <div className="text-black text-6xl">Let's Fly!</div>
-                 </div>
-               </div>
-             </section>
-      </div>
-     
+      <HeroImgSection
+        img={air}
+        title="Design office"
+        details="In our design office we employ engineers who graduated from the best Polish technical universities."
+      />
+      <ImageSec
+        imageUrl="../src/assets/A3.jpg"
+        title="600 aircrafts, 6 continents"
+        description="Over the years, our team has created about 600 aircraft of various types (among which there are gliders, motor gliders, light and ultralight aircrafts) that fly on 6 continents."
+      />
+      <ImageCarousel imageList={imageList} description={description} />
+      <SeeAlsoList title="See also" items={listItems} />
     </div>
   );
 };

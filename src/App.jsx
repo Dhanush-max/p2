@@ -17,6 +17,7 @@ import Footer from "./components/footer";
 import About from "./components/aboutUs/about";
 import Contact from "./components/contact/contact";
 import "./styles/animation.css";
+import PaintShop from "./components/services/paintShop";
 
 function App() {
   return (
@@ -33,6 +34,7 @@ function App() {
         />
         <Route path="/services" element={<Services />} />
         <Route path="/services/design-office" element={<DesignOffice />} />
+        <Route path="/services/paint-shop" element={<PaintShop />} />
         <Route
           path="/services/canopy-production"
           element={<CanopyProduction />}
