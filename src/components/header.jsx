@@ -41,7 +41,7 @@ const Header = () => {
             <ul className="flex flex-col items-center space-y-5">
               <li>
                 <Link
-                  to="/capabalitites"
+                  to="/capabalities"
                   className="text-gray-700 text-lg hover:text-gray-900"
                 >
                   Our Capabilities
@@ -84,7 +84,7 @@ const Header = () => {
           <li className="group relative">
             <Link
               to="/capabilities"
-              className="text-gray-700 hover:text-gray-900"
+              className="text-gray-700 hover:text-gray-900 font-extrabold"
               onClick={(e) => {
                 e.preventDefault();
                 showOverlay("ourCapabilities");
@@ -97,7 +97,7 @@ const Header = () => {
           <li className="group relative">
             <a
               href="services.html"
-              className="text-gray-700 hover:text-gray-900"
+              className="text-gray-700 hover:text-gray-900 font-extrabold"
               onClick={(e) => {
                 e.preventDefault();
                 showOverlay("services");
@@ -108,13 +108,13 @@ const Header = () => {
           </li>
           <li >
             <a
-              href="/about" className="text-gray-700 hover:text-gray-900">
+              href="/about" className="text-gray-700 hover:text-gray-900 font-extrabold">
              About Us
             </a>
           </li>
           {/* Contact */}
           <li>
-            <a href="/contact" className="text-gray-700 hover:text-gray-900">
+            <a href="/contact" className="text-gray-700 hover:text-gray-900 font-extrabold">
               Contact
             </a>
           </li>
@@ -140,12 +140,12 @@ const Header = () => {
             <div className="flex flex-col items-center justify-center h-full space-y-5">
               <ul className="flex flex-col items-center space-y-5">
                 <li>
-                  <Link
-                    to="/capabalitites"
+                  <a
+                    href="/capabalities"
                     className="text-gray-700 text-lg hover:text-gray-900"
                   >
                     Our Capabilities
-                  </Link>
+                  </a>
                 </li>
                 <li>
                   <a
@@ -157,7 +157,7 @@ const Header = () => {
                 </li>
                 <li>
                   <a
-                    href="/ourCapabilites/equipment"
+                    href="/ourCapabilities/equipment"
                     className="block text-gray-700 hover:text-gray-900 text-lg"
                   >
                     Equipment
@@ -165,7 +165,7 @@ const Header = () => {
                 </li>
                 <li>
                   <a
-                    href="/ourCapabilites/production-facilities"
+                    href="/ourCapabilities/production-facilities"
                     className="block text-gray-700 hover:text-gray-900 text-lg"
                   >
                     Production facilities
@@ -190,12 +190,12 @@ const Header = () => {
             <div className="flex flex-col items-center justify-center h-full space-y-5">
               <ul className="flex flex-col items-center space-y-5">
                 <li>
-                  <Link
-                    to="/services"
+                  <a
+                    href="/services"
                     className="text-gray-700 text-lg hover:text-gray-900"
                   >
                     Services
-                  </Link>
+                  </a>
                 </li>
                 <li>
                   <a

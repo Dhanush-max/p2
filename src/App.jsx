@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Home from "./components/home";
+import Home from "./components/home/home";
 import Capabalitites from "./components/ourCapabalitiles/ourcapabilities";
 import Technologies from "./components/ourCapabalitiles/technologies";
 import Equpiments from "./components/ourCapabalitiles/equipment";
@@ -12,7 +12,7 @@ import CNCMilling from "./components/services/cnc-milling";
 import CuttingPlotter from "./components/services/cutting-plotter";
 import ProductionOfModels from "./components/services/production-of-models";
 import ProductionOfMouldsAndTooling from "./components/services/production-of-moulds-and-tooling";
-import Header from "./components/header"; // Import Header component
+import Header from "./components/header";
 import Footer from "./components/footer";
 import About from "./components/aboutUs/about";
 import Contact from "./components/contact/contact";
@@ -25,9 +25,9 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/capabalitites" element={<Capabalitites />} />
-        <Route path="/ourCapabilites/technologies" element={<Technologies />} />
-        <Route path="/ourCapabilites/equipment" element={<Equpiments />} />
+        <Route path="/capabalities" element={<Capabalitites />} />
+        <Route path="/ourCapabilities/technologies" element={<Technologies />} />
+        <Route path="/ourCapabilities/equipment" element={<Equpiments />} />
         <Route
           path="/ourCapabilites/production-facilities"
           element={<ProductionFacilities />}

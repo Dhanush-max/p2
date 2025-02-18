@@ -11,7 +11,7 @@
 
 .fade-in {
   opacity: 0;
-  animation: fadeInSlideIn 3s ease-in-out;
+  animation: fadeInSlideIn 2s ease-in-out;
   opacity: 1;
 }
 
@@ -55,4 +55,34 @@
   opacity: 0;
   animation: fadeInSlideInUp 3s ease-in-out;
   opacity: 1;
+}
+
+@keyframes zoom {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+}
+
+.animate-zoom {
+  animation: zoom 3s infinite;
+}
+
+@keyframes dot-to-line {
+  0%, 100% {
+    stroke-dasharray: 0, 18.703;
+  }
+  50% {
+    stroke-dasharray: 18.703, 0;
+  }
+}
+
+.animate-dot-to-line {
+  animation: dot-to-line 2s infinite;
+}
+
+.filter-brightness {
+  filter: brightness(70%);
 }
