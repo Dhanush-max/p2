@@ -1,30 +1,28 @@
 import React from "react";
 
-const HeroIframe = () => {
+const HeroIframe = ({ videoSrc, text, gradient, description }) => {
   return (
-    <>
-      <section
-        className=" h-screen section-before relative z-0"
-        style={{
-          background: `linear-gradient(to bottom, transparent 90%, black 10%)`,
-        }}
-      >
-        <div className="w-full h-screen absolute z-0">
-          <iframe
-            className="object-cover w-full h-full"
-            src="https://www.youtube.com/embed/QYYGBWniXnA?si=hMfqq21qQ4EqJopv&autoplay=1&loop=1&playlist=QYYGBWniXnA&mute=1"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowFullScreen
-          ></iframe>
-        </div>
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black z-20"></div>
-        <div className="flex items-center pt-60 ml-24 w-[calc(100%-6rem)] z-30">
-          <div className="relative px-6 py-4 z-40 bg-white">
-            <div className="text-black text-6xl">Let's Fly!</div>
-          </div>
-        </div>
-      </section>
-    </>
+    <section className="h-screen w-screen section-before relative z-0">
+      <div className="absolute inset-0 w-full h-full">
+        <video
+          className="absolute top-0 left-0 w-full h-full object-cover"
+          src={videoSrc}
+          autoPlay
+          loop
+          muted
+          playsInline
+        ></video>
+      </div>
+      <div
+        className="absolute inset-0 z-20"
+        style={{ background: gradient }}
+      ></div>
+      {/* Text Content */}
+      <div className="absolute top-1/3 left-12 md:left-24 max-w-[50%] z-40">
+        <div className="text-black text-6xl bg-white p-3 w-fit">{text}</div>
+        <p className="mt-4 text-black  p-4 rounded-lg">{description}</p>
+      </div>
+    </section>
   );
 };
 

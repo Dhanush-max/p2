@@ -1,5 +1,5 @@
 import React from "react";
-import vid1 from "../assets/vid1.mp4";
+import vid1 from "../assets/Vid1.mp4";
 
 const HeroSection = () => {
   return (

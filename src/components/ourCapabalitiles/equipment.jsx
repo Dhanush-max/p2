@@ -8,6 +8,7 @@ import "swiper/css/navigation"; // Import Swiper's navigation styles
 import "./styles.css"; // Add your CSS styles here
 import { Pagination, Navigation } from "swiper/modules";
 import "./styles.css";
+import HeroImgSection from "../heroImgSection";
 const Equpiments = () => {
   const [isVisible, setIsVisible] = useState(false);
 
@@ -17,31 +18,7 @@ const Equpiments = () => {
   }, []);
   return (
     <>
-      
-      <section className="absolute inset-0 w-full h-full z-20">
-        <div className="ml-24 w-[calc(100%-6rem)] h-full">
-          <div className="h-full mx-0 flex flex-wrap">
-            <div className="border-l border-r border-white h-full basis-0 grow max-w-full"></div>
-            {[...Array(5)].map((_, index) => (
-              <div
-                key={index}
-                className="border-r border-white h-full basis-0 grow max-w-full"
-              ></div>
-            ))}
-          </div>
-        </div>
-      </section>
-      <section className="bg-gradient-to-b from-transparent to-black h-screen section-before relative z-10">
-        <div className="w-full h-screen absolute z-0">
-          <img className="object-cover w-full h-full" src={air} alt="Image 3" />
-        </div>
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black z-20"></div>
-        <div className="flex items-center pt-60 ml-24 w-[calc(100%-6rem)] z-30">
-          <div className="relative bg-white p-5 h-fit">
-            <div className="text-black text-6xl">Let's Fly!</div>
-          </div>
-        </div>
-      </section>
+      <HeroImgSection img={air} />
       <section className="tech ml-19 w-[calc(100%-6rem)] md:ml-24 md:w-[calc(100%-6rem)] py-8 relative flex flex-col z-30 mx-auto">
         <Swiper
           slidesPerView={"auto"}
@@ -236,7 +213,6 @@ const Equpiments = () => {
           </p>
         </div>
       </section>
-      
     </>
   );
 };

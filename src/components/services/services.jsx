@@ -2,15 +2,18 @@ import React from "react";
 import Section from "./imageSection";
 import HeroImgSection from "../heroImgSection";
 import img from "../../assets/A1.jpg";
-
+import HeroIframe from "../heroIframe";
+import serviceVid from "../../assets/services.mp4";
 const Services = () => {
   return (
     <div>
-      <HeroImgSection
-        img={img}
-        title="SERVICES"
-        details="When creating our products, we strive to meet both strict security requirements and beautiful presentations."
-        gradientColor="white"
+      <HeroIframe
+        videoSrc={serviceVid}
+        text={"Services"}
+        gradient={`linear-gradient(to bottom, transparent 60%, white 100%)`}
+        description={
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, quis voluptatum. Deserunt facere ex rerum corporis pariatur. Hic iusto qui eaque, earum dolore error molestiae, exercitationem, repellendus fugit omnis deserunt."
+        }
       />
 
       <Section
