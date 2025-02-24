@@ -1,9 +1,22 @@
-import air from "../../assets/air.jpg";
 import HeroImgSection from "../heroImgSection";
 import ImageSec from "../aboutUs/imageSec";
 import ImageCarousel from "../aboutUs/imageCarousel";
 import SeeAlsoList from "./seeAlsoList";
-const imageList = [air, air, air]; // Add more images as needed
+import p1 from "../../assets/p1.jpg";
+import p2 from "../../assets/p2.jpg";
+import p3 from "../../assets/p3.jpg";
+import p4 from "../../assets/p4.jpg";
+import p5 from "../../assets/p5.jpg";
+import p6 from "../../assets/p6.jpg";
+import p7 from "../../assets/p7.jpg";
+import p8 from "../../assets/p8.jpg";
+import p9 from "../../assets/p9.jpg";
+import p10 from "../../assets/p10.jpg";
+import p11 from "../../assets/p11.jpg";
+import p12 from "../../assets/p12.jpg";
+
+const imageList = [p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12];
+
 const description =
   "Lorem ipsum dolor sit amet consectetur adipisicing elit.  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum eligendi quidem magni ratione corrupti deleniti quia assumenda consequuntur. Consectetur quidem sequi fugiat dolorem odio veritatis corrupti nulla! Blanditiis, magni quidem? ";
 const listItems = [
@@ -18,12 +31,12 @@ const PaintShop = () => {
   return (
     <>
       <HeroImgSection
-        img={air}
+        img={p1}
         title="paint shop"
         details="We have a modern painting chamber, and also a grinding chamber."
       />
       <ImageSec
-        imageUrl="../src/assets/A3.jpg"
+        imageUrl="../src/assets/p2.jpg"
         description="We offer not only painting of new aircrafts, but also comprehensive renovation of used gliders and motor gliders.
         "
       />

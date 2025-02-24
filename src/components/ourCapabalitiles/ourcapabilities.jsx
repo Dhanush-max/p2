@@ -1,44 +1,26 @@
-import React from "react";
-import vid from "../../assets/vid.mp4";
-import air from "../../assets/air.jpg";
 import "swiper/css";
+import HeroIframe from "../heroIframe";
+import capabilites from "../../assets/capabalities.mp4";
+import cnc1 from "../../assets/cnc1.jpg";
+import design2 from "../../assets/design2.jpg";
+import cutting3 from "../../assets/cutting3.jpg";
 const Capabalitites = () => {
   return (
     <>
-      
-      <section className="absolute inset-0 w-full h-full z-20">
-        <div className="ml-24 w-[calc(100%-6rem)] h-full">
-          <div className="h-full mx-0 flex flex-wrap">
-            <div className="border-l border-r border-white h-full basis-0 grow max-w-full"></div>
-            {[...Array(5)].map((_, index) => (
-              <div
-                key={index}
-                className="border-r border-white h-full basis-0 grow max-w-full"
-              ></div>
-            ))}
-          </div>
-        </div>
-      </section>
-      <section className="bg-gradient-to-b from-transparent to-black h-screen section-before relative z-10">
-        <div className="w-full h-screen absolute z-0">
-          <video className="object-cover w-full h-full" autoPlay muted loop>
-            <source src={vid} type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-        </div>
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black z-20"></div>
-        <div className="flex items-center pt-60 ml-24 w-[calc(100%-6rem)] z-30">
-          <div className="relative bg-white p-5 h-fit">
-            <div className="text-black text-6xl">Let's Fly!</div>
-          </div>
-        </div>
-      </section>
+      <HeroIframe
+        videoSrc={capabilites}
+        text={"Our Capabalities"}
+        gradient={`linear-gradient(to bottom, transparent 60%, white 100%)`}
+        description={
+          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, quis voluptatum. Deserunt facere ex rerum corporis pariatur. Hic iusto qui eaque, earum dolore error molestiae, exercitationem, repellendus fugit omnis deserunt."
+        }
+      />
       <section className="ml-19 w-[calc(100%-6rem)] md:ml-24 md:w-[calc(100%-6rem)] py-8 relative flex flex-col md:flex-row z-30 mx-auto">
         <div className="flex flex-col md:flex-row items-center h-full overflow-hidden">
           {/* Image (on the left side) */}
           <div className="w-full md:w-2/3 h-64 md:h-full mt-5 md:mt-14">
             <img
-              src={air}
+              src={cnc1}
               alt="Image 3"
               className="w-full h-full object-cover"
             />
@@ -63,7 +45,7 @@ const Capabalitites = () => {
           {/* Image (on the left side) */}
           <div className="w-full md:w-2/3 h-64 md:h-full mt-5 md:mt-14">
             <img
-              src={air}
+              src={design2}
               alt="Image 3"
               className="w-full h-full object-cover"
             />
@@ -88,7 +70,7 @@ const Capabalitites = () => {
           {/* Image (on the left side) */}
           <div className="w-full md:w-2/3 h-64 md:h-full mt-5 md:mt-14">
             <img
-              src={air}
+              src={cutting3}
               alt="Image 3"
               className="w-full h-full object-cover"
             />
@@ -107,36 +89,6 @@ const Capabalitites = () => {
             </div>
           </div>
         </div>
-      </section>
-      <section className="ml-19 w-[calc(100%-6rem)] md:ml-24 md:w-[calc(100%-6rem)] py-8 relative md:flex-row z-30 mx-auto">
-        <h1 className="text-2xl uppercase font-bold py-10 intersect:motion-preset-slide-up motion-delay-0">
-          SERVICES
-        </h1>
-        <ul className="w-full md:w-[90%] bg-grey-100 uppercase space-y-4">
-          <li className="border-b-2 border-black p-3 flex justify-between intersect:motion-preset-slide-up motion-delay-100">
-            Design office <span className="font-bold text-2xl">{">"}</span>
-          </li>
-          <li className="border-b-2 border-black p-3 flex justify-between intersect:motion-preset-slide-up motion-delay-200">
-            Paint shop <span className="font-bold text-2xl">{">"}</span>
-          </li>
-          <li className="border-b-2 border-black p-3 flex justify-between intersect:motion-preset-slide-up motion-delay-300">
-            Canopy production <span className="font-bold text-2xl">{">"}</span>
-          </li>
-          <li className="border-b-2 border-black p-3 flex justify-between intersect:motion-preset-slide-up motion-delay-400">
-            CNC milling <span className="font-bold text-2xl">{">"}</span>
-          </li>
-          <li className="border-b-2 border-black p-3 flex justify-between intersect:motion-preset-slide-up motion-delay-500">
-            Cutting plotter <span className="font-bold text-2xl">{">"}</span>
-          </li>
-          <li className="border-b-2 border-black p-3 flex justify-between intersect:motion-preset-slide-up motion-delay-600">
-            Production of models{" "}
-            <span className="font-bold text-2xl">{">"}</span>
-          </li>
-          <li className="border-b-2 border-black p-3 flex justify-between intersect:motion-preset-slide-up motion-delay-700">
-            Production of moulds and tooling
-            <span className="font-bold text-2xl">{">"}</span>
-          </li>
-        </ul>
       </section>
     </>
   );

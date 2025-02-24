@@ -16,7 +16,6 @@ const Technologies = () => {
   }, []);
   return (
     <>
-    
       <section className="absolute inset-0 w-full h-full z-20">
         <div className="ml-24 w-[calc(100%-6rem)] h-full">
           <div className="h-full mx-0 flex flex-wrap">
@@ -235,7 +234,6 @@ const Technologies = () => {
           </p>
         </div>
       </section>
-      
     </>
   );
 };
