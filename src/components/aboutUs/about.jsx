@@ -5,6 +5,9 @@ import Count from "./count";
 import AboutVideo from "./aboutvideo";
 import ImageSec from "./imageSec.jsx";
 import Button from "../button.jsx";
+import A3 from "../../assets/A3.jpg";
+import A4 from "../../assets/A4.jpg";
+import A5 from "../../assets/A5.jpg";
 
 const About = () => {
   const sectionRef = useRef(null);
@@ -43,12 +46,12 @@ const About = () => {
           <div className="text-base text-black mt-6 lg:max-w-[calc(100%-60%)] max-w-[calc(100%-20%)]">was founded out of love for aviation in 2025, but based on almost 30 years of experience obtained during the production of nearly 600 aircrafts.</div>
         </div>
       </div>
-      <ImageSec imageUrl="src/assets/A3.jpg" title="600 aircrafts, 6 continents" description="Over the years, our team has created about 600 aircraft of various types (among which there are gliders, motor gliders, light and ultralight aircrafts) that fly on 6 continents." />
-      <ImageSec imageUrl="src/assets/A4.jpg" title="5000 sq m area" description="Over the years, our team has created about 600 aircraft of various types (among which there are gliders, motor gliders, light and ultralight aircrafts) that fly on 6 continents." />
+      <ImageSec imageUrl={A3} title="600 aircrafts, 6 continents" description="Over the years, our team has created about 600 aircraft of various types (among which there are gliders, motor gliders, light and ultralight aircrafts) that fly on 6 continents." />
+      <ImageSec imageUrl={A4} title="5000 sq m area" description="Over the years, our team has created about 600 aircraft of various types (among which there are gliders, motor gliders, light and ultralight aircrafts) that fly on 6 continents." />
       <Button text="PRODUTION FACILITIES" href="ourCapabilites/production-facilities" />
-      <ImageSec imageUrl="src/assets/A5.jpg" title="" description="We manufacture high quality composite parts, each piece is handmade (sometimes with mechanical help) with the utmost care. We manufacture both components and componentry as well as finished airframes.
+      <ImageSec imageUrl={A5} title="" description="We manufacture high quality composite parts, each piece is handmade (sometimes with mechanical help) with the utmost care. We manufacture both components and componentry as well as finished airframes.
       <br/><br/>Although the main trend of our activity is aviation, we also produce such composite parts as blades for fans of high power, used in mining, cooling towers and wind tunnels." />
-      <Button text="OUR CAPABILITIES" href="capabalitites" />
+      <Button text="OUR CAPABILITIES" href="/capabalities" />
       
     </div>
   );
