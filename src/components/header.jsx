@@ -84,7 +84,7 @@ const Header = () => {
           <li className="group relative">
             <Link
               to="/capabilities"
-              className="text-gray-700 hover:text-gray-900 font-extrabold"
+              className="text-gray-700 hover:text-gray-900 font-extrabold underline-offset-10"
               onClick={(e) => {
                 e.preventDefault();
                 showOverlay("ourCapabilities");
@@ -97,7 +97,7 @@ const Header = () => {
           <li className="group relative">
             <a
               href="services.html"
-              className="text-gray-700 hover:text-gray-900 font-extrabold"
+              className="text-gray-700 hover:text-gray-900 font-extrabold underline-offset-10"
               onClick={(e) => {
                 e.preventDefault();
                 showOverlay("services");
@@ -106,15 +106,20 @@ const Header = () => {
               Services
             </a>
           </li>
-          <li >
+          <li>
             <a
-              href="/about" className="text-gray-700 hover:text-gray-900 font-extrabold">
-             About Us
+              href="/about"
+              className="text-gray-700 hover:text-gray-900 font-extrabold underline-offset-10"
+            >
+              About Us
             </a>
           </li>
           {/* Contact */}
           <li>
-            <a href="/contact" className="text-gray-700 hover:text-gray-900 font-extrabold">
+            <a
+              href="/contact"
+              className="text-gray-700 hover:text-gray-900 font-extrabold underline-offset-10"
+            >
               Contact
             </a>
           </li>
@@ -126,138 +131,140 @@ const Header = () => {
       </nav>
 
       {/* Overlay for Our Capabilities */}
-      {activeOverlay === "ourCapabilities" && (
-        <div className="overlay-menu fixed top-0 left-0 w-screen h-screen bg-white z-40">
-          <button
-            className="close-overlay absolute top-5 left-5 text-gray-800 text-3xl focus:outline-none"
-            aria-label="Close overlay menu"
-            onClick={closeOverlay}
-          >
-            ×
-          </button>
-          <div className="grid grid-cols-2 h-full">
-            {/* Left Menu */}
-            <div className="flex flex-col items-center justify-center h-full space-y-5">
-              <ul className="flex flex-col items-center space-y-5">
-                <li>
-                  <a
-                    href="/capabalities"
-                    className="text-gray-700 text-lg hover:text-gray-900"
-                  >
-                    Our Capabilities
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/ourCapabilites/technologies"
-                    className="block text-gray-700 hover:text-gray-900 text-lg"
-                  >
-                    Technologies
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/ourCapabilities/equipment"
-                    className="block text-gray-700 hover:text-gray-900 text-lg"
-                  >
-                    Equipment
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/ourCapabilities/production-facilities"
-                    className="block text-gray-700 hover:text-gray-900 text-lg"
-                  >
-                    Production facilities
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      )}
-      {activeOverlay === "services" && (
-        <div className="overlay-menu fixed top-0 left-0 w-screen h-screen bg-white z-40">
-          <button
-            className="close-overlay absolute top-5 left-5 text-gray-800 text-3xl focus:outline-none"
-            aria-label="Close overlay menu"
-            onClick={closeOverlay}
-          >
-            ×
-          </button>
-          <div className="grid grid-cols-2 h-full">
-            {/* Left Menu */}
-            <div className="flex flex-col items-center justify-center h-full space-y-5">
-              <ul className="flex flex-col items-center space-y-5">
-                <li>
-                  <a
-                    href="/services"
-                    className="text-gray-700 text-lg hover:text-gray-900"
-                  >
-                    Services
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/services/design-office"
-                    className="block text-gray-700 hover:text-gray-900 text-lg"
-                  >
-                    Design office
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/services/paint-shop"
-                    className="block text-gray-700 hover:text-gray-900 text-lg"
-                  >
-                    paint shop
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/services/canopy-production"
-                    className="block text-gray-700 hover:text-gray-900 text-lg"
-                  >
-                    Canopy production
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/services/cnc-milling"
-                    className="block text-gray-700 hover:text-gray-900 text-lg"
-                  >
-                    CNC milling
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/services/cutting-plotter"
-                    className="block text-gray-700 hover:text-gray-900 text-lg"
-                  >
-                    Cutting plotter
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/services/production-of-models"
-                    className="block text-gray-700 hover:text-gray-900 text-lg"
-                  >
-                    Production of models
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="/services/production-of-moulds-and-tooling"
-                    className="block text-gray-700 hover:text-gray-900 text-lg"
-                  >
-                    Production of moulds and tooling
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      )}
+            {activeOverlay === "ourCapabilities" && (
+              <div className="overlay-menu fixed top-0 left-0 w-screen h-screen bg-white bg-opacity-70 z-40">
+                <button
+                  className="close-overlay absolute top-5 left-5 text-gray-800 bg-white text-3xl focus:outline-none cursor-pointer"
+                  aria-label="Close overlay menu"
+                  onClick={closeOverlay}
+                >
+                  ×
+                </button>
+                <div className="grid grid-cols-4 h-full">
+                  {/* Left Menu */}
+                  <div className="col-span-1 flex flex-col items-center justify-center h-full space-y-5 bg-white">
+                    <ul className="flex flex-col items-center space-y-5">
+                      <li>
+                        <a
+                          href="/capabalities"
+                          className="text-gray-700 text-lg hover:text-gray-900 hover-effect"
+                        >
+                          Our Capabilities
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="/ourCapabilities/technologies"
+                          className="block text-gray-700 hover:text-gray-900 text-lg hover-effect"
+                        >
+                          Technologies
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="/ourCapabilities/equipment"
+                          className="block text-gray-700 hover:text-gray-900 text-lg hover-effect"
+                        >
+                          Equipment
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="/ourCapabilites/production-facilities"
+                          className="block text-gray-700 hover:text-gray-900 text-lg hover-effect"
+                        >
+                          Production facilities
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="col-span-3"></div>
+                </div>
+              </div>
+            )}
+            {activeOverlay === "services" && (
+              <div className="overlay-menu fixed top-0 left-0 w-screen h-screen bg-white bg-opacity-70 z-40">
+                <button
+                  className="close-overlay absolute top-5 left-5 bg-white text-3xl focus:outline-none cursor-pointer"
+                  aria-label="Close overlay menu"
+                  onClick={closeOverlay}
+                >
+                  ×
+                </button>
+                <div className="grid grid-cols-4 h-full">
+                  {/* Left Menu */}
+                  <div className="col-span-1 flex flex-col items-center justify-center h-full space-y-5 bg-white">
+                    <ul className="flex flex-col items-center space-y-5">
+                      <li>
+                        <a
+                          href="/services"
+                          className="text-gray-700 text-lg hover:text-gray-900 hover-effect"
+                        >
+                          Services
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="/services/design-office"
+                          className="block text-gray-700 hover:text-gray-900 text-lg hover-effect"
+                        >
+                          Design office
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="/services/paint-shop"
+                          className="block text-gray-700 hover:text-gray-900 text-lg hover-effect"
+                        >
+                          paint shop
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="/services/canopy-production"
+                          className="block text-gray-700 hover:text-gray-900 text-lg hover-effect"
+                        >
+                          Canopy production
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="/services/cnc-milling"
+                          className="block text-gray-700 hover:text-gray-900 text-lg hover-effect"
+                        >
+                          CNC milling
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="/services/cutting-plotter"
+                          className="block text-gray-700 hover:text-gray-900 text-lg hover-effect"
+                        >
+                          Cutting plotter
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="/services/production-of-models"
+                          className="block text-gray-700 hover:text-gray-900 text-lg hover-effect"
+                        >
+                          Production of models
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="/services/production-of-moulds-and-tooling"
+                          className="block text-gray-700 hover:text-gray-900 text-lg hover-effect"
+                        >
+                          Production of moulds and tooling
+                        </a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div className="col-span-3"></div>
+                </div>
+              </div>
+            )}
     </header>
   );
 };
