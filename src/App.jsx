@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Home from "./components/home/home";
 import Capabalitites from "./components/ourCapabalitiles/ourcapabilities";
 import Technologies from "./components/ourCapabalitiles/technologies";
@@ -21,7 +21,7 @@ import PaintShop from "./components/services/paintShop";
 
 function App() {
   return (
-    <Router>
+    <>
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -53,7 +53,7 @@ function App() {
         <Route path="/contact" element={<Contact />} />
       </Routes>
       <Footer />
-    </Router>
+    </>
   );
 }
 
