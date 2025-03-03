@@ -4,6 +4,13 @@ import HeroImgSection from "../heroImgSection";
 import img from "../../assets/A1.jpg";
 import HeroIframe from "../heroIframe";
 import serviceVid from "../../assets/services.mp4";
+import designImg from "../../assets/design.jpg";
+import paintImg from "../../assets/paint.jpg";
+import canopyImg from "../../assets/canopy.jpg";
+import cncImg from "../../assets/cnc.jpg";
+import productionImg from "../../assets/production.jpg";
+import toolingImg from "../../assets/tooling.jpg";
+
 const Services = () => {
   return (
     <div>
@@ -17,7 +24,7 @@ const Services = () => {
       />
 
       <Section
-        image="src/assets/design.jpg"
+        image={designImg}
         altText="Design Office"
         bgColor="bg-[#f8f8f8]"
         title="Design office"
@@ -25,7 +32,7 @@ const Services = () => {
         link="#"
       />
       <Section
-        image="src/assets/paint.jpg"
+        image={paintImg}
         altText="PAINT SHOP"
         bgColor="bg-black"
         title="PAINT SHOP"
@@ -33,7 +40,7 @@ const Services = () => {
         link="#"
       />
       <Section
-        image="src/assets/canopy.jpg"
+        image={canopyImg}
         altText="Canopy production"
         bgColor="bg-[#f8f8f8]"
         title="Canopy production"
@@ -41,7 +48,7 @@ const Services = () => {
         link="#"
       />
       <Section
-        image="src/assets/cnc.jpg"
+        image={cncImg}
         altText="CNC milling"
         bgColor="bg-black"
         title="CNC milling"
@@ -49,7 +56,7 @@ const Services = () => {
         link="#"
       />
       <Section
-        image="src/assets/production.jpg"
+        image={productionImg}
         altText="Production of models"
         bgColor="bg-[#f8f8f8]"
         title="Production of models"
@@ -57,7 +64,7 @@ const Services = () => {
         link="#"
       />
       <Section
-        image="src/assets/tooling.jpg"
+        image={toolingImg}
         altText="Production of moulds and tooling"
         bgColor="bg-black"
         title="Production of moulds and tooling"
