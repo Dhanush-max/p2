@@ -21,17 +21,17 @@ const Home = () => {
   // Image paths & descriptions
   const swiperImages = [
     {
-      src: { S1 },
+      src: S1 ,
       title: "High-Tech Manufacturing",
       desc: "Advanced production facilities with cutting-edge technology.",
     },
     {
-      src: { S2 },
+      src: S2 ,
       title: "Precision Engineering",
       desc: "State-of-the-art tools ensuring top-notch accuracy.",
     },
     {
-      src: { S3 },
+      src: S3,
       title: "Aerodynamic Design",
       desc: "Innovative aircraft structures built for efficiency.",
     },
