@@ -20,25 +20,24 @@ const imageList = [p1, p2, p3, p4, p5, p6, p7, p8, p9, p10, p11, p12];
 const description =
   "Lorem ipsum dolor sit amet consectetur adipisicing elit.  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum eligendi quidem magni ratione corrupti deleniti quia assumenda consequuntur. Consectetur quidem sequi fugiat dolorem odio veritatis corrupti nulla! Blanditiis, magni quidem? ";
 const listItems = [
-  { name: "Design office", link: "" },
-  { name: "Canopy production", link: "" },
-  { name: "CNC milling", link: "" },
-  { name: "Cutting plotter", link: "" },
-  { name: "Production of models", link: "" },
-  { name: "production of models and tooling", link: "" },
+  { name: "Design office", link: "/services/design-office" },
+  { name: "Canopy production", link: "/services/canopy-production" },
+  { name: "CNC milling", link: "/services/cnc-milling" },
+  { name: "Cutting plotter", link: "/services/cutting-plotter" },
+  { name: "Production of models", link: "/services/production-of-models" },
+  { name: "Production of moulds and tooling", link: "/services/production-of-moulds-and-tooling" },
 ];
 const PaintShop = () => {
   return (
     <>
       <HeroImgSection
         img={p1}
-        title="paint shop"
+        title="Paint shop"
         details="We have a modern painting chamber, and also a grinding chamber."
       />
       <ImageSec
         imageUrl="../src/assets/p2.jpg"
-        description="We offer not only painting of new aircrafts, but also comprehensive renovation of used gliders and motor gliders.
-        "
+        description="We offer not only painting of new aircrafts, but also comprehensive renovation of used gliders and motor gliders."
       />
       <ImageCarousel imageList={imageList} description={description} />
       <SeeAlsoList title="See also" items={listItems} />

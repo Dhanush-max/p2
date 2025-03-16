@@ -18,15 +18,15 @@ import About from "./components/aboutUs/about";
 import Contact from "./components/contact/contact";
 import "./styles/animation.css";
 import PaintShop from "./components/services/paintShop";
-
+import autoclave from "./components/ourCapabalitiles/autoclave";
 function App() {
   return (
     <>
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/capabalities" element={<Capabalitites />} />
-        <Route path="/ourCapabilities/technologies" element={<Technologies />} />
+        <Route path="/facilities" element={<Capabalitites />} />
+        <Route path="/ourCapabilities/technologies" element={ <autoclave />} />
         <Route path="/ourCapabilities/equipment" element={<Equpiments />} />
         <Route
           path="/ourCapabilites/production-facilities"
