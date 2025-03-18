@@ -2,7 +2,8 @@ import roboticArm from "../../assets/6axisRoboarm.jpg";
 import HeroImgSection from "../heroImgSection";
 import ImageSec from "../aboutUs/imageSec";
 import ImageCarousel from "../aboutUs/imageCarousel";
-import SeeAlsoList from "./seeAlsoList";
+import SeeAlsoList from "../services/seeAlsoList";
+
 
 const imageList = [roboticArm, roboticArm, roboticArm]; // Add more images as needed
 const description =

@@ -2,7 +2,8 @@ import ResinStorageImage from "../../assets/resin.jpg";
 import HeroImgSection from "../heroImgSection";
 import ImageSec from "../aboutUs/imageSec";
 import ImageCarousel from "../aboutUs/imageCarousel";
-import SeeAlsoList from "./seeAlsoList";
+import SeeAlsoList from "../services/seeAlsoList";
+
 
 const imageList = [ResinStorageImage, ResinStorageImage, ResinStorageImage]; // Add more images as needed
 const description =

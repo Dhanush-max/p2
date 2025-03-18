@@ -3,7 +3,8 @@ import cncCuttingPlotter2 from "../../assets/cncCutting2.jpg";
 import HeroImgSection from "../heroImgSection";
 import ImageSec from "../aboutUs/imageSec";
 import ImageCarousel from "../aboutUs/imageCarousel";
-import SeeAlsoList from "./seeAlsoList";
+import SeeAlsoList from "../services/seeAlsoList";
+
 
 const imageList = [cncCuttingPlotter, cncCuttingPlotter2, cncCuttingPlotter]; // Add more images as needed
 const description =

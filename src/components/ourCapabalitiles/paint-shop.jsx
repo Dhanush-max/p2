@@ -2,7 +2,8 @@ import paintShop from "../../assets/paint.jpg";
 import HeroImgSection from "../heroImgSection";
 import ImageSec from "../aboutUs/imageSec";
 import ImageCarousel from "../aboutUs/imageCarousel";
-import SeeAlsoList from "./seeAlsoList";
+import SeeAlsoList from "../services/seeAlsoList";
+
 
 const imageList = [paintShop, paintShop, paintShop]; // Add more images as needed
 const description =

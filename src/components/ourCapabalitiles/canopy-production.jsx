@@ -2,7 +2,8 @@ import canopyProduction from "../../assets/canopy.jpg";
 import HeroImgSection from "../heroImgSection";
 import ImageSec from "../aboutUs/imageSec";
 import ImageCarousel from "../aboutUs/imageCarousel";
-import SeeAlsoList from "./seeAlsoList";
+import SeeAlsoList from "../services/seeAlsoList";
+
 
 const imageList = [canopyProduction, canopyProduction, canopyProduction]; // Add more images as needed
 const description =

@@ -2,7 +2,8 @@ import cleanRoomFacility from "../../assets/cleanRoom.jpg";
 import HeroImgSection from "../heroImgSection";
 import ImageSec from "../aboutUs/imageSec";
 import ImageCarousel from "../aboutUs/imageCarousel";
-import SeeAlsoList from "./seeAlsoList";
+import SeeAlsoList from "../services/seeAlsoList";
+
 
 const imageList = [cleanRoomFacility, cleanRoomFacility, cleanRoomFacility]; // Add more images as needed
 const description =

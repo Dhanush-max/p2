@@ -3,7 +3,7 @@ import autoclave2 from "../../assets/autoclave2.jpg";
 import HeroImgSection from "../heroImgSection";
 import ImageSec from "../aboutUs/imageSec";
 import ImageCarousel from "../aboutUs/imageCarousel";
-import SeeAlsoList from "./seeAlsoList";
+import SeeAlsoList from "../services/seeAlsoList";
 
 const imageList = [autoclave, autoclave2, autoclave]; // Add more images as needed
 const description =

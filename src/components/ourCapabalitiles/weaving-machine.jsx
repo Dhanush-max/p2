@@ -2,7 +2,8 @@ import weavingMachine from "../../assets/fiber.jpg";
 import HeroImgSection from "../heroImgSection";
 import ImageSec from "../aboutUs/imageSec";
 import ImageCarousel from "../aboutUs/imageCarousel";
-import SeeAlsoList from "./seeAlsoList";
+import SeeAlsoList from "../services/seeAlsoList";
+
 
 const imageList = [weavingMachine, weavingMachine, weavingMachine]; // Add more images as needed
 const description =

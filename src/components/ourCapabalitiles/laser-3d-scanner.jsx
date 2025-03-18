@@ -2,7 +2,8 @@ import laser3dScanner from "../../assets/3dScanning.jpg";
 import HeroImgSection from "../heroImgSection";
 import ImageSec from "../aboutUs/imageSec";
 import ImageCarousel from "../aboutUs/imageCarousel";
-import SeeAlsoList from "./seeAlsoList";
+import SeeAlsoList from "../services/seeAlsoList";
+
 
 const imageList = [laser3dScanner, laser3dScanner, laser3dScanner]; // Add more images as needed
 const description =

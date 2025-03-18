@@ -2,7 +2,8 @@ import testFacility from "../../assets/testing.jpg";
 import HeroImgSection from "../heroImgSection";
 import ImageSec from "../aboutUs/imageSec";
 import ImageCarousel from "../aboutUs/imageCarousel";
-import SeeAlsoList from "./seeAlsoList";
+import SeeAlsoList from "../services/seeAlsoList";
+
 
 const imageList = [testFacility, testFacility, testFacility]; // Add more images as needed
 const description =

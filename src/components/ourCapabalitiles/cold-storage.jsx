@@ -2,7 +2,8 @@ import coldStorage from "../../assets/coldStorage.jpg";
 import HeroImgSection from "../heroImgSection";
 import ImageSec from "../aboutUs/imageSec";
 import ImageCarousel from "../aboutUs/imageCarousel";
-import SeeAlsoList from "./seeAlsoList";
+import SeeAlsoList from "../services/seeAlsoList";
+
 
 const imageList = [coldStorage, coldStorage, coldStorage]; // Add more images as needed
 const description =
