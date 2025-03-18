@@ -17,7 +17,8 @@ import design15 from "../../assets/design15.jpg";
 import HeroImgSection from "../heroImgSection";
 import ImageSec from "../aboutUs/imageSec";
 import ImageCarousel from "../aboutUs/imageCarousel";
-import SeeAlsoList from "./seeAlsoList";
+import SeeAlsoList from "../services/seeAlsoList";
+
 
 const imageList = [
   design2,

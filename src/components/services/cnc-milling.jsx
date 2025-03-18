@@ -13,14 +13,14 @@ const imageList = [cnc1, cnc2, cnc3, cnc4, cnc5];
 
 const description =
   "Lorem ipsum dolor sit amet consectetur adipisicing elit.  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum eligendi quidem magni ratione corrupti deleniti quia assumenda consequuntur. Consectetur quidem sequi fugiat dolorem odio veritatis corrupti nulla! Blanditiis, magni quidem? ";
-const listItems = [
-  { name: "Design office", link: "" },
-  { name: "paint shop", link: "" },
-  { name: "canopy production", link: "" },
-  { name: "Cutting plotter", link: "" },
-  { name: "Production of models", link: "" },
-  { name: "production of models and tooling", link: "" },
-];
+  const listItems = [
+    { name: "Design office", link: "/services/design-office" },
+    { name: "Paint shop", link: "/services/paint-shop" },
+    { name: "Canopy production", link: "/services/canopy-production" },
+    { name: "Cutting plotter", link: "/services/cutting-plotter" },
+    { name: "Production of models", link: "/services/production-of-models" },
+    { name: "Production of moulds and tooling", link: "/services/production-of-moulds-and-tooling" },
+  ];
 const CNCMilling = () => {
   return (
     <>

@@ -23,12 +23,12 @@ const imageList = [c, c2, c3, c4, c5, c6, c7, c8, c9, c10, c11, c12, c13, c14];
 const description =
   "Lorem ipsum dolor sit amet consectetur adipisicing elit.  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum eligendi quidem magni ratione corrupti deleniti quia assumenda consequuntur. Consectetur quidem sequi fugiat dolorem odio veritatis corrupti nulla! Blanditiis, magni quidem? ";
 const listItems = [
-  { name: "Design office", link: "" },
-  { name: "paint shop", link: "" },
-  { name: "CNC milling", link: "" },
-  { name: "Cutting plotter", link: "" },
-  { name: "Production of models", link: "" },
-  { name: "production of models and tooling", link: "" },
+  { name: "Design office", link: "/services/design-office" },
+  { name: "Paint shop", link: "/services/paint-shop" },
+  { name: "CNC milling", link: "/services/cnc-milling" },
+  { name: "Cutting plotter", link: "/services/cutting-plotter" },
+  { name: "Production of models", link: "/services/production-of-models" },
+  { name: "Production of moulds and tooling", link: "/services/production-of-moulds-and-tooling" },
 ];
 const CanopyProduction = () => {
   return (

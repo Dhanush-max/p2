@@ -41,10 +41,10 @@ const Header = () => {
             <ul className="flex flex-col items-center space-y-5">
               <li>
                 <Link
-                  to="/capabalities"
+                  to="/facilities"
                   className="text-gray-700 text-lg hover:text-gray-900"
                 >
-                  Our Capabilities
+                  Our Facilities
                 </Link>
               </li>
               <li>
@@ -83,14 +83,14 @@ const Header = () => {
           {/* Our Capabilities */}
           <li className="group relative">
             <Link
-              to="/capabilities"
+              to="/facilities"
               className="text-gray-700 hover:text-gray-900 font-extrabold underline-offset-10"
               onClick={(e) => {
                 e.preventDefault();
                 showOverlay("ourCapabilities");
               }}
             >
-              Our Capabilities
+              Our Facilities
             </Link>
           </li>
           {/* Services */}
@@ -146,10 +146,10 @@ const Header = () => {
                     <ul className="flex flex-col items-center space-y-5">
                       <li>
                         <a
-                          href="/capabalities"
+                          href="facilities"
                           className="text-gray-700 text-lg hover:text-gray-900 hover-effect"
                         >
-                          Our Capabilities
+                          Our Facilities
                         </a>
                       </li>
                       <li>

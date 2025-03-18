@@ -51,7 +51,7 @@ const About = () => {
       <Button text="PRODUTION FACILITIES" href="ourCapabilites/production-facilities" />
       <ImageSec imageUrl={A5} title="" description="We manufacture high quality composite parts, each piece is handmade (sometimes with mechanical help) with the utmost care. We manufacture both components and componentry as well as finished airframes.
       <br/><br/>Although the main trend of our activity is aviation, we also produce such composite parts as blades for fans of high power, used in mining, cooling towers and wind tunnels." />
-      <Button text="OUR CAPABILITIES" href="/capabalities" />
+      <Button text="OUR facilities" href="/facilities" />
       
     </div>
   );

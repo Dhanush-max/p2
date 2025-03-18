@@ -45,7 +45,7 @@ const Home = () => {
         <div className="container ml-24 w-[calc(100%-6rem)] text-center">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center py-20">
             <div className="flex">
-              <h1 className="text-3xl font-extrabold">OUR CAPABILITIES</h1>
+              <h1 className="text-3xl font-extrabold uppercase">OUR Facilities</h1>
             </div>
             <div className="flex">
               <h3 className="font-medium text-start">
