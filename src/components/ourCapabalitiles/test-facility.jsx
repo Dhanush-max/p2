@@ -4,17 +4,16 @@ import ImageSec from "../aboutUs/imageSec";
 import ImageCarousel from "../aboutUs/imageCarousel";
 import SeeAlsoList from "../services/seeAlsoList";
 
-
 const imageList = [testFacility, testFacility, testFacility]; // Add more images as needed
 const description =
-  "Lorem ipsum dolor sit amet consectetur adipisicing elit.  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum eligendi quidem magni ratione corrupti deleniti quia assumenda consequuntur. Consectetur quidem sequi fugiat dolorem odio veritatis corrupti nulla! Blanditiis, magni quidem? ";
+  "Our state-of-the-art test facility is designed to ensure the highest standards of quality and performance for all our products. We employ advanced testing methods to guarantee reliability and precision.";
 const listItems = [
-  { name: "Paint shop", link: "/services/paint-shop" },
-  { name: "Canopy production", link: "/services/canopy-production" },
-  { name: "CNC milling", link: "/services/cnc-milling" },
-  { name: "Cutting plotter", link: "/services/cutting-plotter" },
-  { name: "Production of models", link: "/services/production-of-models" },
-  { name: "Production of moulds and tooling", link: "/services/production-of-moulds-and-tooling" },
+  { name: "Material testing", link: "/services/material-testing" },
+  { name: "Environmental testing", link: "/services/environmental-testing" },
+  { name: "Performance analysis", link: "/services/performance-analysis" },
+  { name: "Durability testing", link: "/services/durability-testing" },
+  { name: "Prototype validation", link: "/services/prototype-validation" },
+  { name: "Advanced diagnostics", link: "/services/advanced-diagnostics" },
 ];
 
 const TestFacility = () => {
@@ -28,10 +27,10 @@ const TestFacility = () => {
       <ImageSec
         imageUrl={testFacility}
         title="State-of-the-art Test Facility"
-        description="Our test facility is equipped with the latest technology to ensure rigorous testing and quality assurance."
+        description="Equipped with cutting-edge technology, our test facility guarantees thorough testing and validation for every product."
       />
       <ImageCarousel imageList={imageList} description={description} />
-      <SeeAlsoList title="See also" items={listItems} />
+      <SeeAlsoList title="Explore More Services" items={listItems} />
     </div>
   );
 };

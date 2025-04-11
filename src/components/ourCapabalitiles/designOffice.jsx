@@ -19,7 +19,6 @@ import ImageSec from "../aboutUs/imageSec";
 import ImageCarousel from "../aboutUs/imageCarousel";
 import SeeAlsoList from "../services/seeAlsoList";
 
-
 const imageList = [
   design2,
   design3,
@@ -37,14 +36,14 @@ const imageList = [
   design15,
 ]; // Add more images as needed
 const description =
-  "Lorem ipsum dolor sit amet consectetur adipisicing elit.  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum eligendi quidem magni ratione corrupti deleniti quia assumenda consequuntur. Consectetur quidem sequi fugiat dolorem odio veritatis corrupti nulla! Blanditiis, magni quidem? ";
+  "Our design office is home to a team of highly skilled engineers who specialize in creating innovative and efficient designs. With years of experience, we have contributed to the development of numerous aircraft and engineering projects worldwide.";
 const listItems = [
-  { name: "Paint shop", link: "/services/paint-shop" },
-  { name: "Canopy production", link: "/services/canopy-production" },
-  { name: "CNC milling", link: "/services/cnc-milling" },
-  { name: "Cutting plotter", link: "/services/cutting-plotter" },
-  { name: "Production of models", link: "/services/production-of-models" },
-  { name: "Production of moulds and tooling", link: "/services/production-of-moulds-and-tooling" },
+  { name: "Paint Shop", link: "/services/paint-shop" },
+  { name: "Canopy Production", link: "/services/canopy-production" },
+  { name: "CNC Milling", link: "/services/cnc-milling" },
+  { name: "Cutting Plotter", link: "/services/cutting-plotter" },
+  { name: "Production of Models", link: "/services/production-of-models" },
+  { name: "Production of Moulds and Tooling", link: "/services/production-of-moulds-and-tooling" },
 ];
 
 const DesignOffice = () => {
@@ -52,13 +51,13 @@ const DesignOffice = () => {
     <div>
       <HeroImgSection
         img={design}
-        title="Design office"
-        details="In our design office we employ engineers who graduated from the best Polish technical universities."
+        title="Design Office"
+        details="Our design office employs engineers from top technical universities, delivering innovative solutions for the aviation industry."
       />
       <ImageSec
         imageUrl={design2}
-        title="600 aircrafts, 6 continents"
-        description="Over the years, our team has created about 600 aircraft of various types (among which there are gliders, motor gliders, light and ultralight aircrafts) that fly on 6 continents."
+        title="600 Aircraft, 6 Continents"
+        description="Our team has designed over 600 aircraft of various types, including gliders, motor gliders, and ultralight aircraft, flying across 6 continents."
       />
       <ImageCarousel imageList={imageList} description={description} />
       <SeeAlsoList title="See also" items={listItems} />

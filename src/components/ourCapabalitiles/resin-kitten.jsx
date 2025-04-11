@@ -4,17 +4,16 @@ import ImageSec from "../aboutUs/imageSec";
 import ImageCarousel from "../aboutUs/imageCarousel";
 import SeeAlsoList from "../services/seeAlsoList";
 
-
 const imageList = [ResinStorageImage, ResinStorageImage, ResinStorageImage]; // Add more images as needed
 const description =
-  "Lorem ipsum dolor sit amet consectetur adipisicing elit.  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum eligendi quidem magni ratione corrupti deleniti quia assumenda consequuntur. Consectetur quidem sequi fugiat dolorem odio veritatis corrupti nulla! Blanditiis, magni quidem? ";
+  "Our resin kitten facility is designed to deliver exceptional quality and precision for all resin-based projects. We ensure durability and reliability in every product.";
 const listItems = [
-  { name: "Paint shop", link: "/services/paint-shop" },
-  { name: "Canopy production", link: "/services/canopy-production" },
-  { name: "CNC milling", link: "/services/cnc-milling" },
-  { name: "Cutting plotter", link: "/services/cutting-plotter" },
-  { name: "Production of models", link: "/services/production-of-models" },
-  { name: "Production of moulds and tooling", link: "/services/production-of-moulds-and-tooling" },
+  { name: "Resin casting", link: "/services/resin-casting" },
+  { name: "Custom resin designs", link: "/services/custom-resin-designs" },
+  { name: "Resin prototyping", link: "/services/resin-prototyping" },
+  { name: "Resin finishing", link: "/services/resin-finishing" },
+  { name: "Resin mold production", link: "/services/resin-mold-production" },
+  { name: "Advanced resin tooling", link: "/services/advanced-resin-tooling" },
 ];
 
 const ResinStorage = () => {
@@ -23,15 +22,15 @@ const ResinStorage = () => {
       <HeroImgSection
         img={ResinStorageImage}
         title="Resin Kitten"
-        details="Our resin kitten facility ensures high-quality and precise resin products for all projects."
+        details="Our resin kitten facility ensures top-notch quality and precision for all resin-based projects."
       />
       <ImageSec
         imageUrl={ResinStorageImage}
-        title="State-of-the-art Resin Kitten"
-        description="Our resin kitten facility is equipped with the latest technology to ensure high-quality and precise resin products."
+        title="Cutting-edge Resin Kitten Facility"
+        description="Equipped with advanced technology, our resin kitten facility guarantees exceptional results for every project."
       />
       <ImageCarousel imageList={imageList} description={description} />
-      <SeeAlsoList title="See also" items={listItems} />
+      <SeeAlsoList title="Explore More" items={listItems} />
     </div>
   );
 };

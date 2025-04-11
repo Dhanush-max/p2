@@ -29,7 +29,7 @@ const ImageSec = ({ imageUrl, title, description }) => {
   return (
     <div
       ref={sectionRef}
-      className={`relative inline-block mb-10 items-center justify-center flex ${
+      className={`relative mb-10 items-center justify-center flex ${
         isVisible ? "animate" : ""
       }`}
     >

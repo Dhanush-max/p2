@@ -134,7 +134,7 @@ const Header = () => {
             {activeOverlay === "ourCapabilities" && (
               <div className="overlay-menu fixed top-0 left-0 w-screen h-screen bg-white bg-opacity-70 z-40">
                 <button
-                  className="close-overlay absolute top-5 left-5 text-gray-800 bg-white text-3xl focus:outline-none cursor-pointer"
+                  className="close-overlay absolute top-5 left-5 text-gray-800 bg-white text-3xl cursor-pointer"
                   aria-label="Close overlay menu"
                   onClick={closeOverlay}
                 >
@@ -143,37 +143,141 @@ const Header = () => {
                 <div className="grid grid-cols-4 h-full">
                   {/* Left Menu */}
                   <div className="col-span-1 flex flex-col items-center justify-center h-full space-y-5 bg-white">
-                    <ul className="flex flex-col items-center space-y-5">
-                      <li>
+                    <ul className="flex flex-col items-center space-y-2">
+                    <li>
                         <a
-                          href="facilities"
-                          className="text-gray-700 text-lg hover:text-gray-900 hover-effect"
+                          href="/ourCapabilities/canopy-production"
+                          className="block text-gray-700 hover:text-gray-900 text-md font-semibold hover-effect"
                         >
-                          Our Facilities
+                          Canopy Production
                         </a>
                       </li>
                       <li>
                         <a
-                          href="/ourCapabilities/technologies"
-                          className="block text-gray-700 hover:text-gray-900 text-lg hover-effect"
+                          href="/ourCapabilities/autoclave"
+                          className="block text-gray-700 hover:text-gray-900 text-md font-semibold hover-effect"
                         >
-                          Technologies
+                          Autoclave
+                        </a>
+                      </li>
+                      {/* <li>
+                        <a
+                          href="/ourCapabilities/test-facility"
+                          className="block text-gray-700 hover:text-gray-900 text-md font-semibold hover-effect"
+                        >
+                          Test Facility
+                        </a>
+                      </li> */}
+                      <li>
+                        <a
+                          href="/ourCapabilities/cnc-milling"
+                          className="block text-gray-700 hover:text-gray-900 text-md font-semibold hover-effect"
+                        >
+                          CNC Cutting
                         </a>
                       </li>
                       <li>
                         <a
-                          href="/ourCapabilities/equipment"
-                          className="block text-gray-700 hover:text-gray-900 text-lg hover-effect"
+                          href="/ourCapabilities/production-of-moulds"
+                          className="block text-gray-700 hover:text-gray-900 text-md font-semibold hover-effect"
                         >
-                          Equipment
+                          Production of Moulds
                         </a>
                       </li>
                       <li>
                         <a
-                          href="/ourCapabilites/production-facilities"
-                          className="block text-gray-700 hover:text-gray-900 text-lg hover-effect"
+                          href="/ourCapabilities/design-office"
+                          className="block text-gray-700 hover:text-gray-900 text-md font-semibold hover-effect"
                         >
-                          Production facilities
+                          Design Office
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="/ourCapabilities/paint-shop"
+                          className="block text-gray-700 hover:text-gray-900 text-md font-semibold hover-effect"
+                        >
+                          Paint Shop
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="/ourCapabilities/oven"
+                          className="block text-gray-700 hover:text-gray-900 text-md font-semibold hover-effect"
+                        >
+                          Oven
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="/ourCapabilities/resin-kitten"
+                          className="block text-gray-700 hover:text-gray-900 text-md font-semibold hover-effect"
+                        >
+                          Resin Kitten
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="/ourCapabilities/cold-storage"
+                          className="block text-gray-700 hover:text-gray-900 text-md font-semibold hover-effect"
+                        >
+                          Cold Storage
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="/ourCapabilities/laser-3d-scanner"
+                          className="block text-gray-700 hover:text-gray-900 text-md font-semibold hover-effect"
+                        >
+                          Laser 3D Scanner
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="/ourCapabilities/laser-cutting-modeling"
+                          className="block text-gray-700 hover:text-gray-900 text-md font-semibold hover-effect"
+                        >
+                          Laser Cutting & Modeling
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="/ourCapabilities/6axis-robotic-arm"
+                          className="block text-gray-700 hover:text-gray-900 text-md font-semibold hover-effect"
+                        >
+                          6-Axis Robotic Arm
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="/ourCapabilities/clean-room-facility"
+                          className="block text-gray-700 hover:text-gray-900 text-md font-semibold hover-effect"
+                        >
+                          Clean Room Facility
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="/ourCapabilities/weaving-machine"
+                          className="block text-gray-700 hover:text-gray-900 text-md font-semibold hover-effect"
+                        >
+                          Weaving Machine
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="/ourCapabilities/hydrolic-press"
+                          className="block text-gray-700 hover:text-gray-900 text-md font-semibold hover-effect"
+                        >
+                          Hydraulic Press
+                        </a>
+                      </li>
+                      <li>
+                        <a
+                          href="/ourCapabilities/epoxy-storage"
+                          className="block text-gray-700 hover:text-gray-900 text-md font-semibold hover-effect"
+                        >
+                          Epoxy Storage
                         </a>
                       </li>
                     </ul>

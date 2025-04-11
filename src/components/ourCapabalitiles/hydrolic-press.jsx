@@ -4,17 +4,16 @@ import ImageSec from "../aboutUs/imageSec";
 import ImageCarousel from "../aboutUs/imageCarousel";
 import SeeAlsoList from "../services/seeAlsoList";
 
-
 const imageList = [hydrolicPress, hydrolicPress, hydrolicPress]; // Add more images as needed
 const description =
-  "Lorem ipsum dolor sit amet consectetur adipisicing elit.  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum eligendi quidem magni ratione corrupti deleniti quia assumenda consequuntur. Consectetur quidem sequi fugiat dolorem odio veritatis corrupti nulla! Blanditiis, magni quidem? ";
+  "Our hydraulic press facility is designed to deliver precision and efficiency in pressing operations. With advanced technology, it ensures high-quality results for a variety of applications.";
 const listItems = [
-  { name: "Paint shop", link: "/services/paint-shop" },
-  { name: "Canopy production", link: "/services/canopy-production" },
-  { name: "CNC milling", link: "/services/cnc-milling" },
-  { name: "Cutting plotter", link: "/services/cutting-plotter" },
-  { name: "Production of models", link: "/services/production-of-models" },
-  { name: "Production of moulds and tooling", link: "/services/production-of-moulds-and-tooling" },
+  { name: "Paint Shop", link: "/services/paint-shop" },
+  { name: "Canopy Production", link: "/services/canopy-production" },
+  { name: "CNC Milling", link: "/services/cnc-milling" },
+  { name: "Cutting Plotter", link: "/services/cutting-plotter" },
+  { name: "Production of Models", link: "/services/production-of-models" },
+  { name: "Production of Moulds and Tooling", link: "/services/production-of-moulds-and-tooling" },
 ];
 
 const HydrolicPress = () => {
@@ -22,13 +21,13 @@ const HydrolicPress = () => {
     <div>
       <HeroImgSection
         img={hydrolicPress}
-        title="Hydrolic Press"
-        details="Our hydrolic press facility ensures high-quality and precise pressing products for all projects."
+        title="Hydraulic Press"
+        details="Our hydraulic press facility ensures high-quality and precise pressing products for all projects."
       />
       <ImageSec
         imageUrl={hydrolicPress}
-        title="State-of-the-art Hydrolic Press"
-        description="Our hydrolic press facility is equipped with the latest technology to ensure high-quality and precise pressing products."
+        title="State-of-the-art Hydraulic Press"
+        description="Our hydraulic press facility is equipped with the latest technology to ensure high-quality and precise pressing products."
       />
       <ImageCarousel imageList={imageList} description={description} />
       <SeeAlsoList title="See also" items={listItems} />

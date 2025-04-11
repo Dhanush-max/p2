@@ -54,7 +54,7 @@ const Home = () => {
               </h3>
             </div>
             <div className="flex justify-end mr-10 max-md:justify-start">
-              <a href="/capabalities">
+              <a href="/ourCapabilities/canopy-production">
                 <h3 className="font-bold">See All</h3>
               </a>
             </div>
@@ -146,7 +146,7 @@ const Home = () => {
                 <button className="custom-next p-1 sm:px-2 sm:py-3 bg-black transition">
                   <img
                     src={RightArrow}
-                    alt="Right Arrow"
+                    alt="Right Arrow" 
                     className="w-[70px] sm:w-12 sm:h-12 rotate-180"
                   />
                 </button>
