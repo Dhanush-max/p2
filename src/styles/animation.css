@@ -21,7 +21,7 @@
 
 .fade-in-up {
   opacity: 0;
-  animation: fadeInSlideIn 3s ease-in-out;
+  animation: fadeInSlideIn 2s ease-in-out;
   opacity: 1;
 }
 @keyframes fadeInSlideInRight {
@@ -37,7 +37,7 @@
 
 .fade-in-right {
   opacity: 0;
-  animation: fadeInSlideInRight 3s ease-in-out;
+  animation: fadeInSlideInRight 2s ease-in-out;
   opacity: 1;
 }
 @keyframes fadeInSlideInUp {
@@ -53,7 +53,7 @@
 
 .fade-in-button {
   opacity: 0;
-  animation: fadeInSlideInUp 3s ease-in-out;
+  animation: fadeInSlideInUp 2s ease-in-out;
   opacity: 1;
 }
 
@@ -67,7 +67,7 @@
 }
 
 .animate-zoom {
-  animation: zoom 3s infinite;
+  animation: zoom 2s infinite;
 }
 
 @keyframes dot-to-line {

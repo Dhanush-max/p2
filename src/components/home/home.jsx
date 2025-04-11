@@ -54,7 +54,7 @@ const Home = () => {
               </h3>
             </div>
             <div className="flex justify-end mr-10 max-md:justify-start">
-              <a href="/capabalities">
+              <a href="/ourCapabilities/canopy-production">
                 <h3 className="font-bold">See All</h3>
               </a>
             </div>
