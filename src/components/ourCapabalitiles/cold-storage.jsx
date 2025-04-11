@@ -4,17 +4,16 @@ import ImageSec from "../aboutUs/imageSec";
 import ImageCarousel from "../aboutUs/imageCarousel";
 import SeeAlsoList from "../services/seeAlsoList";
 
-
 const imageList = [coldStorage, coldStorage, coldStorage]; // Add more images as needed
 const description =
-  "Lorem ipsum dolor sit amet consectetur adipisicing elit.  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum eligendi quidem magni ratione corrupti deleniti quia assumenda consequuntur. Consectetur quidem sequi fugiat dolorem odio veritatis corrupti nulla! Blanditiis, magni quidem? ";
+  "Our cold storage facility is designed to preserve materials at optimal temperatures, ensuring their quality and longevity. With advanced temperature control systems, we cater to a wide range of storage needs.";
 const listItems = [
-  { name: "Paint shop", link: "/services/paint-shop" },
-  { name: "Canopy production", link: "/services/canopy-production" },
-  { name: "CNC milling", link: "/services/cnc-milling" },
-  { name: "Cutting plotter", link: "/services/cutting-plotter" },
-  { name: "Production of models", link: "/services/production-of-models" },
-  { name: "Production of moulds and tooling", link: "/services/production-of-moulds-and-tooling" },
+  { name: "Paint Shop", link: "/services/paint-shop" },
+  { name: "Canopy Production", link: "/services/canopy-production" },
+  { name: "CNC Milling", link: "/services/cnc-milling" },
+  { name: "Cutting Plotter", link: "/services/cutting-plotter" },
+  { name: "Production of Models", link: "/services/production-of-models" },
+  { name: "Production of Moulds and Tooling", link: "/services/production-of-moulds-and-tooling" },
 ];
 
 const ColdStorage = () => {

@@ -4,17 +4,16 @@ import ImageSec from "../aboutUs/imageSec";
 import ImageCarousel from "../aboutUs/imageCarousel";
 import SeeAlsoList from "../services/seeAlsoList";
 
-
 const imageList = [roboticArm, roboticArm, roboticArm]; // Add more images as needed
 const description =
-  "Lorem ipsum dolor sit amet consectetur adipisicing elit.  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum eligendi quidem magni ratione corrupti deleniti quia assumenda consequuntur. Consectetur quidem sequi fugiat dolorem odio veritatis corrupti nulla! Blanditiis, magni quidem? ";
+  "Our 6-axis robotic arm is a cutting-edge solution for industrial automation, offering unmatched precision, flexibility, and efficiency. It is designed to handle complex tasks with ease, making it an essential tool for modern manufacturing.";
 const listItems = [
-  { name: "Paint shop", link: "/services/paint-shop" },
-  { name: "Canopy production", link: "/services/canopy-production" },
-  { name: "CNC milling", link: "/services/cnc-milling" },
-  { name: "Cutting plotter", link: "/services/cutting-plotter" },
-  { name: "Production of models", link: "/services/production-of-models" },
-  { name: "Production of moulds and tooling", link: "/services/production-of-moulds-and-tooling" },
+  { name: "Robotic Welding", link: "/services/robotic-welding" },
+  { name: "Material Handling", link: "/services/material-handling" },
+  { name: "Assembly Automation", link: "/services/assembly-automation" },
+  { name: "3D Printing", link: "/services/3d-printing" },
+  { name: "Pick and Place", link: "/services/pick-and-place" },
+  { name: "Quality Inspection", link: "/services/quality-inspection" },
 ];
 
 const SixAxisRoboticArm = () => {
@@ -23,15 +22,15 @@ const SixAxisRoboticArm = () => {
       <HeroImgSection
         img={roboticArm}
         title="6-Axis Robotic Arm"
-        details="Our 6-axis robotic arm provides precise and efficient automation solutions."
+        details="Experience advanced automation with our 6-axis robotic arm, designed for precision and efficiency."
       />
       <ImageSec
         imageUrl={roboticArm}
         title="Advanced 6-Axis Robotic Arm"
-        description="Our 6-axis robotic arm is equipped with the latest technology to ensure precise and efficient automation."
+        description="Our 6-axis robotic arm is equipped with state-of-the-art technology to deliver exceptional performance in industrial automation."
       />
       <ImageCarousel imageList={imageList} description={description} />
-      <SeeAlsoList title="See also" items={listItems} />
+      <SeeAlsoList title="Explore More" items={listItems} />
     </div>
   );
 };

@@ -5,17 +5,16 @@ import ImageSec from "../aboutUs/imageSec";
 import ImageCarousel from "../aboutUs/imageCarousel";
 import SeeAlsoList from "../services/seeAlsoList";
 
-
 const imageList = [cncCuttingPlotter, cncCuttingPlotter2, cncCuttingPlotter]; // Add more images as needed
 const description =
-  "Lorem ipsum dolor sit amet consectetur adipisicing elit.  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum eligendi quidem magni ratione corrupti deleniti quia assumenda consequuntur. Consectetur quidem sequi fugiat dolorem odio veritatis corrupti nulla! Blanditiis, magni quidem? ";
+  "Our CNC cutting plotter is designed to deliver precision and efficiency in cutting operations. With advanced technology, it ensures high-quality results for a variety of applications.";
 const listItems = [
-  { name: "Paint shop", link: "/services/paint-shop" },
-  { name: "Canopy production", link: "/services/canopy-production" },
-  { name: "CNC milling", link: "/services/cnc-milling" },
-  { name: "Cutting plotter", link: "/services/cutting-plotter" },
-  { name: "Production of models", link: "/services/production-of-models" },
-  { name: "Production of moulds and tooling", link: "/services/production-of-moulds-and-tooling" },
+  { name: "Paint Shop", link: "/services/paint-shop" },
+  { name: "Canopy Production", link: "/services/canopy-production" },
+  { name: "CNC Milling", link: "/services/cnc-milling" },
+  { name: "Cutting Plotter", link: "/services/cutting-plotter" },
+  { name: "Production of Models", link: "/services/production-of-models" },
+  { name: "Production of Moulds and Tooling", link: "/services/production-of-moulds-and-tooling" },
 ];
 
 const CNCCuttingPlotter = () => {

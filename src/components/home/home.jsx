@@ -146,7 +146,7 @@ const Home = () => {
                 <button className="custom-next p-1 sm:px-2 sm:py-3 bg-black transition">
                   <img
                     src={RightArrow}
-                    alt="Right Arrow"
+                    alt="Right Arrow" 
                     className="w-[70px] sm:w-12 sm:h-12 rotate-180"
                   />
                 </button>

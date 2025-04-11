@@ -4,17 +4,16 @@ import ImageSec from "../aboutUs/imageSec";
 import ImageCarousel from "../aboutUs/imageCarousel";
 import SeeAlsoList from "../services/seeAlsoList";
 
-
 const imageList = [paintShop, paintShop, paintShop]; // Add more images as needed
 const description =
-  "Lorem ipsum dolor sit amet consectetur adipisicing elit.  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum eligendi quidem magni ratione corrupti deleniti quia assumenda consequuntur. Consectetur quidem sequi fugiat dolorem odio veritatis corrupti nulla! Blanditiis, magni quidem? ";
+  "Our paint shop is designed to deliver high-quality painting services for various materials. With advanced equipment and skilled professionals, we ensure superior results.";
 const listItems = [
-  { name: "Design office", link: "/services/design-office" },
-  { name: "Canopy production", link: "/services/canopy-production" },
-  { name: "CNC milling", link: "/services/cnc-milling" },
-  { name: "Cutting plotter", link: "/services/cutting-plotter" },
-  { name: "Production of models", link: "/services/production-of-models" },
-  { name: "Production of moulds and tooling", link: "/services/production-of-moulds-and-tooling" },
+  { name: "Design Office", link: "/services/design-office" },
+  { name: "Canopy Production", link: "/services/canopy-production" },
+  { name: "CNC Milling", link: "/services/cnc-milling" },
+  { name: "Cutting Plotter", link: "/services/cutting-plotter" },
+  { name: "Production of Models", link: "/services/production-of-models" },
+  { name: "Production of Moulds and Tooling", link: "/services/production-of-moulds-and-tooling" },
 ];
 
 const PaintShop = () => {
