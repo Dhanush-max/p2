@@ -5,16 +5,9 @@ import autoprefixer from 'autoprefixer';
 export default defineConfig({
   plugins: [react()],
   base: '/p2/', // Make sure this is correct for your GitHub Pages setup
-  build: {
-    rollupOptions: {
-      input: {
-        main: './index.html'
-      }
-  },
   css: {
     postcss: {
       plugins: [autoprefixer], // Using autoprefixer directly
     },
-  }
-  }
+  },
 });
