@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-
+import logo from "../assets/logo.png"; 
 const Header = () => {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeOverlay, setActiveOverlay] = useState(null);
@@ -12,12 +12,12 @@ const Header = () => {
   const closeOverlay = () => setActiveOverlay(null);
 
   return (
-    <header className="bg-white ml-19 w-[calc(100%-6rem)] md:ml-24 md:w-[calc(100%-6rem)] float-right h-20 fixed right-0 top-0 z-50">
+    <header className="bg-gray-50 ml-19 w-[calc(100%-6rem)] md:ml-24 md:w-[calc(100%-6rem)] float-right h-20 fixed right-0 top-0 z-50">
       <nav className="container mx-auto flex justify-between items-center py-4 h-full uppercase">
         {/* Hamburger Icon for Mobile */}
         <button
           id="menu-toggle"
-          className="block md:hidden text-gray-800 text-3xl focus:outline-none"
+          className="block md:hidden bg-white text-3xl focus:outline-none"
           aria-label="Open mobile menu"
           onClick={toggleMobileMenu}
         >
@@ -32,11 +32,11 @@ const Header = () => {
           >
             <button
               id="close-mobile-menu"
-              className="absolute top-5 right-5 text-gray-800 text-3xl focus:outline-none"
+              className="absolute top-5 right-5 bg-white text-3xl focus:outline-none"
               aria-label="Close mobile menu"
               onClick={closeMobileMenu}
             >
-              ×
+              x
             </button>
             <ul className="flex flex-col items-center space-y-5">
               <li>
@@ -125,8 +125,9 @@ const Header = () => {
           </li>
         </ul>
 
-        <Link to="/" className="text-2xl font-bold text-gray-800 mr-5">
-          Brand Name
+        <Link to="/" className="flex items-center text-md lg:text-xl font-bold text-gray-800 mr-5">
+        <img src={logo} alt="Company Logo" className="h-8 lg:h-12 w-auto" />
+        <span className="text-black ">PERIDOT</span>
         </Link>
       </nav>
 
@@ -138,7 +139,7 @@ const Header = () => {
                   aria-label="Close overlay menu"
                   onClick={closeOverlay}
                 >
-                  ×
+                  x
                 </button>
                 <div className="grid grid-cols-4 h-full">
                   {/* Left Menu */}
@@ -293,7 +294,7 @@ const Header = () => {
                   aria-label="Close overlay menu"
                   onClick={closeOverlay}
                 >
-                  ×
+                  x
                 </button>
                 <div className="grid grid-cols-4 h-full">
                   {/* Left Menu */}
