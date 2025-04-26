@@ -1,10 +1,12 @@
-import weavingMachine from "../../assets/fiber.jpg";
+import weavingMachine from "../../assets/weavingMachine.jpg";
+import weavingMachine1 from "../../assets/weavingMachine1.jpg";
+
 import HeroImgSection from "../heroImgSection";
 import ImageSec from "../aboutUs/imageSec";
 import ImageCarousel from "../aboutUs/imageCarousel";
 import SeeAlsoList from "../services/seeAlsoList";
 
-const imageList = [weavingMachine, weavingMachine, weavingMachine]; // Add more images as needed
+const imageList = [weavingMachine1, weavingMachine, weavingMachine]; // Add more images as needed
 const description =
   "Our weaving machine facility is designed to deliver precision and efficiency in weaving operations. With advanced technology, it ensures high-quality results for a variety of applications.";
 const listItems = [
@@ -20,7 +22,7 @@ const WeavingMachine = () => {
   return (
     <div>
       <HeroImgSection
-        img={weavingMachine}
+        img={weavingMachine1}
         title="Weaving Machine"
         details="Our weaving machine facility ensures high-quality and precise weaving products for all projects."
       />

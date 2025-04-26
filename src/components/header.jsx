@@ -211,10 +211,10 @@ const Header = () => {
                       </li>
                       <li>
                         <a
-                          href="/ourCapabilities/resin-kitten"
+                          href="/ourCapabilities/resin-kitchen"
                           className="block text-gray-700 hover:text-gray-900 text-md font-semibold hover-effect"
                         >
-                          Resin Kitten
+                          Resin kitchen
                         </a>
                       </li>
                       <li>

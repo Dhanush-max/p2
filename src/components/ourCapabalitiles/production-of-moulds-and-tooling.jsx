@@ -1,10 +1,15 @@
-import productionOfMouldsAndTooling from "../../assets/productionMoulds.jpg";
+import productionOfMouldsAndTooling from "../../assets/moulds.jpg";
+import productionOfMouldsAndTooling1 from "../../assets/moulds1.jpg";
+
+import productionOfMouldsAndTooling2 from "../../assets/moulds2.jpg";
+import productionOfMouldsAndTooling3 from "../../assets/moulds3.jpg";
+
 import HeroImgSection from "../heroImgSection";
 import ImageSec from "../aboutUs/imageSec";
 import ImageCarousel from "../aboutUs/imageCarousel";
 import SeeAlsoList from "../services/seeAlsoList";
 
-const imageList = [productionOfMouldsAndTooling, productionOfMouldsAndTooling, productionOfMouldsAndTooling]; // Add more images as needed
+const imageList = [productionOfMouldsAndTooling1, productionOfMouldsAndTooling2, productionOfMouldsAndTooling3]; // Add more images as needed
 const description =
   "Our production of moulds and tooling facility is designed to deliver precision and efficiency in mould and tool manufacturing. With advanced technology, it ensures high-quality results for a variety of applications.";
 const listItems = [

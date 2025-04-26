@@ -1,10 +1,12 @@
-import laserCuttingModeling from "../../assets/2dlaser2.jpg";
+import laserCuttingModeling from "../../assets/laserCutting.jpg";
+import laserCuttingModeling2 from "../../assets/laserCutting1.jpg";
+
 import HeroImgSection from "../heroImgSection";
 import ImageSec from "../aboutUs/imageSec";
 import ImageCarousel from "../aboutUs/imageCarousel";
 import SeeAlsoList from "../services/seeAlsoList";
 
-const imageList = [laserCuttingModeling, laserCuttingModeling, laserCuttingModeling]; // Add more images as needed
+const imageList = [laserCuttingModeling2, laserCuttingModeling, laserCuttingModeling]; // Add more images as needed
 const description =
   "Our laser cutting modeling facility is designed to deliver precision and efficiency in cutting operations. With advanced technology, it ensures high-quality results for a variety of applications.";
 const listItems = [
@@ -20,7 +22,7 @@ const LaserCuttingModeling = () => {
   return (
     <div>
       <HeroImgSection
-        img={laserCuttingModeling}
+        img={laserCuttingModeling2}
         title="Laser Cutting Modeling"
         details="Our laser cutting modeling facility ensures precise and accurate cuts for all projects."
       />

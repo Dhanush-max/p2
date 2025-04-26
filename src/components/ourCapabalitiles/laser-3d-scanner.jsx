@@ -1,4 +1,4 @@
-import laser3dScanner from "../../assets/3dScanning.jpg";
+import laser3dScanner from "../../assets/3dscanning.jpg";
 import HeroImgSection from "../heroImgSection";
 import ImageSec from "../aboutUs/imageSec";
 import ImageCarousel from "../aboutUs/imageCarousel";
