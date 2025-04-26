@@ -1,13 +1,30 @@
-import React from "react";
+import React, { useRef } from "react";
 import vid1 from "../assets/Av1.mp4"; // Import your video file
 
 const HeroSection = () => {
+  const videoRef = useRef(null);
+
+  const handleFullScreen = () => {
+    if (videoRef.current) {
+      if (videoRef.current.requestFullscreen) {
+        videoRef.current.requestFullscreen();
+      } else if (videoRef.current.webkitRequestFullscreen) {
+        videoRef.current.webkitRequestFullscreen(); // For Safari
+      } else if (videoRef.current.mozRequestFullScreen) {
+        videoRef.current.mozRequestFullScreen(); // For Firefox
+      } else if (videoRef.current.msRequestFullscreen) {
+        videoRef.current.msRequestFullscreen(); // For IE/Edge
+      }
+    }
+  };
+
   return (
     <>
       <section className="bg-gradient-to-b from-transparent to-black h-screen section-before relative z-10">
         {/* Video Background */}
         <div className="w-full h-screen absolute z-0">
           <video
+            ref={videoRef}
             className="object-cover w-full h-full"
             autoPlay
             muted
@@ -32,11 +49,9 @@ const HeroSection = () => {
           </div>
 
           {/* See Movie Button */}
-          <a
-            href="https://www.youtube.com/embed/QYYGBWniXnA?si=hMfqq21qQ4EqJopv&autoplay=1&loop=1&playlist=QYYGBWniXnA&mute=1"
-            className="ml-1 mt-16 flex items-center gap-4 text-white text-xl font-semibold relative z-50 animate-zoom"
-            target="_blank"
-            rel="noopener noreferrer"
+          <button
+            onClick={handleFullScreen}
+            className="ml-1 mt-16 flex items-center gap-4 text-white bg-transparent text-xl font-semibold relative z-50 animate-zoom"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -59,7 +74,7 @@ const HeroSection = () => {
               </g>
             </svg>
             See movie
-          </a>
+          </button>
         </div>
         <div
           className="absolute bottom-20 right-10 z-30 flex flex-col items-center cursor-pointer"
