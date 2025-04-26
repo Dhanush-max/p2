@@ -20,7 +20,7 @@ import PaintShop from "./components/ourCapabalitiles/paint-shop";
 import Autoclave from "./components/ourCapabalitiles/autoclave";
 import TestFacility from "./components/ourCapabalitiles/test-facility";
 import Oven from "./components/ourCapabalitiles/oven";
-import ResinKitten from "./components/ourCapabalitiles/resin-kitten";
+import Resinkitchen from "./components/ourCapabalitiles/resin-kitchen";
 import ColdStorage from "./components/ourCapabalitiles/cold-storage";
 import Laser3DScanner from "./components/ourCapabalitiles/laser-3d-scanner";
 import LaserCuttingModeling from "./components/ourCapabalitiles/laser-cutting-modeling";
@@ -81,7 +81,7 @@ function App() {
           element={<TestFacility />}
         />
         <Route path="/ourCapabilities/oven" element={<Oven />} />
-        <Route path="/ourCapabilities/resin-kitten" element={<ResinKitten />} />
+        <Route path="/ourCapabilities/resin-kitchen" element={<Resinkitchen />} />
         <Route path="/ourCapabilities/cold-storage" element={<ColdStorage />} />
         <Route
           path="/ourCapabilities/laser-3d-scanner"

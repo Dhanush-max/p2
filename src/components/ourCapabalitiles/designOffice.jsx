@@ -34,9 +34,11 @@ const imageList = [
   design13,
   design14,
   design15,
-]; // Add more images as needed
+];
+
 const description =
-  "Our design office is home to a team of highly skilled engineers who specialize in creating innovative and efficient designs. With years of experience, we have contributed to the development of numerous aircraft and engineering projects worldwide.";
+  "Our aerospace design office is powered by a team of expert engineers and CAD specialists who bring innovation, precision, and efficiency to every project. From conceptual sketches to complete 3D models, we provide end-to-end design solutions for gliders, ultralight aircraft, and complex aerospace components used worldwide.";
+
 const listItems = [
   { name: "Paint Shop", link: "/services/paint-shop" },
   { name: "Canopy Production", link: "/services/canopy-production" },
@@ -51,16 +53,16 @@ const DesignOffice = () => {
     <div>
       <HeroImgSection
         img={design}
-        title="Design Office"
-        details="Our design office employs engineers from top technical universities, delivering innovative solutions for the aviation industry."
+        title="Aerospace Design Office"
+        details="Explore our design office, where top-tier engineers create high-precision aircraft and aviation solutions using advanced CAD and simulation tools."
       />
       <ImageSec
         imageUrl={design2}
-        title="600 Aircraft, 6 Continents"
-        description="Our team has designed over 600 aircraft of various types, including gliders, motor gliders, and ultralight aircraft, flying across 6 continents."
+        title="Over 600 Aircraft Designed Globally"
+        description="With a portfolio of more than 600 aircraft—including gliders, motor gliders, and ultralight planes—our aviation design team has contributed to aerospace engineering projects across six continents."
       />
       <ImageCarousel imageList={imageList} description={description} />
-      <SeeAlsoList title="See also" items={listItems} />
+      <SeeAlsoList title="Related Manufacturing Services" items={listItems} />
     </div>
   );
 };

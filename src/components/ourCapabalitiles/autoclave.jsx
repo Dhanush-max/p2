@@ -1,37 +1,38 @@
-import autoclave from "../../assets/autoclave1.jpg";
-import autoclave2 from "../../assets/autoclave2.jpg";
+import autoclave from "../../assets/autoclave.jpg";
+import autoclave2 from "../../assets/autoclave1.jpg";
 import HeroImgSection from "../heroImgSection";
 import ImageSec from "../aboutUs/imageSec";
 import ImageCarousel from "../aboutUs/imageCarousel";
 import SeeAlsoList from "../services/seeAlsoList";
 
 const imageList = [autoclave, autoclave2, autoclave]; // Add more images as needed
-const description =
-  "Our autoclave facility is designed to deliver precision and reliability in composite manufacturing. With advanced pressure and temperature control, we ensure the production of high-quality components for aerospace, automotive, and other industries.";
-const listItems = [
-  { name: "Composite Curing", link: "/services/composite-curing" },
-  { name: "Aerospace Components", link: "/services/aerospace-components" },
-  { name: "Automotive Parts", link: "/services/automotive-parts" },
-  { name: "Custom Tooling", link: "/services/custom-tooling" },
-  { name: "Prototyping", link: "/services/prototyping" },
-  { name: "High-Pressure Moulding", link: "/services/high-pressure-moulding" },
-];
 
+const description =
+  "Our industrial autoclave facility features advanced high-pressure and high-temperature technology, ensuring precise composite curing and material processing. Trusted by aerospace, automotive, and medical industries, we deliver consistent, high-performance components that meet the most stringent standards.";
+
+  const listItems = [
+    { name: "Paint Shop", link: "/services/paint-shop" },
+    { name: "Canopy Production", link: "/services/canopy-production" },
+    { name: "CNC Milling", link: "/services/cnc-milling" },
+    { name: "Cutting Plotter", link: "/services/cutting-plotter" },
+    { name: "Production of Models", link: "/services/production-of-models" },
+    { name: "Production of Moulds and Tooling", link: "/services/production-of-moulds-and-tooling" },
+  ];
 const Autoclave = () => {
   return (
     <div>
       <HeroImgSection
         img={autoclave}
         title="Autoclave"
-        details="Experience precision and reliability with our advanced autoclave facility for composite manufacturing."
+        details="Delivering precision, strength, and reliability in composite manufacturing through advanced autoclave technology."
       />
       <ImageSec
         imageUrl={autoclave}
-        title="State-of-the-art Autoclave"
-        description="Our autoclave facility is equipped with cutting-edge technology to deliver exceptional results in composite curing and manufacturing."
+        title="Advanced Autoclave Technology for Composites"
+        description="Our state-of-the-art industrial autoclave system is designed for high-performance composite curing, ensuring durability and dimensional accuracy for aerospace, automotive, and specialized industrial applications."
       />
       <ImageCarousel imageList={imageList} description={description} />
-      <SeeAlsoList title="Explore More" items={listItems} />
+      <SeeAlsoList title="Related Services" items={listItems} />
     </div>
   );
 };

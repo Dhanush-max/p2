@@ -1,10 +1,12 @@
-import coldStorage from "../../assets/coldStorage.jpg";
+import coldStorage from "../../assets/cold.jpg";
+import coldStorage2 from "../../assets/cold2.jpg";
+
 import HeroImgSection from "../heroImgSection";
 import ImageSec from "../aboutUs/imageSec";
 import ImageCarousel from "../aboutUs/imageCarousel";
 import SeeAlsoList from "../services/seeAlsoList";
 
-const imageList = [coldStorage, coldStorage, coldStorage]; // Add more images as needed
+const imageList = [coldStorage, coldStorage, coldStorage2]; // Add more images as needed
 const description =
   "Our cold storage facility is designed to preserve materials at optimal temperatures, ensuring their quality and longevity. With advanced temperature control systems, we cater to a wide range of storage needs.";
 const listItems = [
@@ -20,7 +22,7 @@ const ColdStorage = () => {
   return (
     <div>
       <HeroImgSection
-        img={coldStorage}
+        img={coldStorage2}
         title="Cold Storage"
         details="Our cold storage facility ensures the preservation of materials at optimal temperatures."
       />

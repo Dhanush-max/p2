@@ -1,5 +1,5 @@
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Pagination, Navigation } from "swiper/modules";
+import { Navigation } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
@@ -10,19 +10,18 @@ const ImageCarousel = ({ imageList, description }) => {
       <Swiper
         slidesPerView={"auto"}
         spaceBetween={0}
-        pagination={{ clickable: true }}
         navigation={{
           nextEl: ".custom-next",
           prevEl: ".custom-prev",
         }}
         loop={true}
         centeredSlides={true}
-        modules={[Pagination, Navigation]}
+        modules={[Navigation]}  
         className="mySwiper"
       >
         {imageList.map((image, index) => (
           <SwiperSlide key={index}>
-            <div className="flex flex-col md:flex-row items-center h-full overflow-hidden md:left-[10%]">
+            <div className="flex flex-col md:flex-row items-center md:h-[600px] overflow-hidden md:left-[10%]">
               <div className="w-[90%]">
                 <img
                   src={image}
@@ -36,14 +35,15 @@ const ImageCarousel = ({ imageList, description }) => {
       </Swiper>
 
       {/* Custom Navigation Buttons */}
+      <div className="hidden md:block">
       <button className="custom-prev absolute top-1/2 left-4 transform -translate-y-1/2 bg-gray-800 text-white p-4 py-6 rounded-md shadow-lg bg-opacity-40 hover:bg-gray-700 hover:bg-opacity-70 z-50">
         &#8592;
       </button>
       <button className="custom-next absolute top-1/2 right-4 transform -translate-y-1/2 bg-gray-800 text-white p-4 py-6 rounded-md shadow-lg  bg-opacity-40 hover:bg-gray-700 hover:bg-opacity-70 z-50">
         &#8594;
       </button>
-
-      <div className="w-[90%] md:w-[70%] bg-white text-black p-5 mx-auto md:mx-0 md:absolute z-10 md:bottom-9 md:left-[5%] motion-opacity-in-0 motion-translate-y-in-100 motion-blur-in-md">
+      </div>
+      <div className="w-[90%] md:w-[70%] bg-white text-black p-6 mx-auto md:mx-0 md:absolute z-10 md:bottom-9 md:left-[5%] motion-opacity-in-0 motion-translate-y-in-100 motion-blur-in-md">
         <p>{description}</p>
       </div>
     </section>

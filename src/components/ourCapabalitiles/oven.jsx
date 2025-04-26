@@ -1,10 +1,13 @@
-import oven from "../../assets/oven.jpg";
+import oven from "../../assets/ovens.jpg";
+import oven1 from "../../assets/ovens1.jpg";
+
+
 import HeroImgSection from "../heroImgSection";
 import ImageSec from "../aboutUs/imageSec";
 import ImageCarousel from "../aboutUs/imageCarousel";
 import SeeAlsoList from "../services/seeAlsoList";
 
-const imageList = [oven, oven, oven]; // Add more images as needed
+const imageList = [oven, oven1, oven]; // Add more images as needed
 const description =
   "Our oven facility is designed to deliver precise and controlled heating processes. With advanced technology, it ensures high-quality results for a variety of applications.";
 const listItems = [
@@ -20,7 +23,7 @@ const Oven = () => {
   return (
     <div>
       <HeroImgSection
-        img={oven}
+        img={oven1}
         title="Oven"
         details="Our oven facility ensures precise and controlled heating processes."
       />
