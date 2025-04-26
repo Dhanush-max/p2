@@ -300,14 +300,14 @@ const Header = () => {
                   {/* Left Menu */}
                   <div className="col-span-1 flex flex-col items-center justify-center h-full space-y-5 bg-white">
                     <ul className="flex flex-col items-center space-y-5">
-                      <li>
+                      {/* <li>
                         <a
                           href="/services"
                           className="text-gray-700 text-lg hover:text-gray-900 hover-effect"
                         >
                           Services
                         </a>
-                      </li>
+                      </li> */}
                       <li>
                         <a
                           href="/services/design-office"

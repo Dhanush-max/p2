@@ -1,5 +1,5 @@
 import React from "react";
-import vid1 from "../assets/Vid1.mp4";
+import vid1 from "../assets/Av1.mp4"; // Import your video file
 
 const HeroSection = () => {
   return (
@@ -75,7 +75,7 @@ const HeroSection = () => {
             width="32.342"
             height="52.483"
             viewBox="0 0 32.342 52.483"
-            className="mt-6 cursor-pointer" // Add cursor-pointer for better UX
+            className="mt-6 cursor-pointer"
           >
             <g transform="translate(-1661.068 -952.998)">
               <line
