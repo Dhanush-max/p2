@@ -1,104 +1,84 @@
-import { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import logo from "../assets/logo.png"; 
 const Header = () => {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeOverlay, setActiveOverlay] = useState(null);
-  const [isMobile, setIsMobile] = useState(false);
-
-  // Check if the screen is mobile or tablet sized
-  useEffect(() => {
-    const handleResize = () => {
-      setIsMobile(window.innerWidth < 1024); // 1024px is the lg breakpoint in Tailwind
-    };
-    
-    handleResize(); // Initial check
-    window.addEventListener('resize', handleResize);
-    
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
 
   const toggleMobileMenu = () => setMobileMenuOpen(!isMobileMenuOpen);
   const closeMobileMenu = () => setMobileMenuOpen(false);
 
-  const showOverlay = (overlay) => {
-    setActiveOverlay(overlay);
-    if (isMobile) {
-      setMobileMenuOpen(false);
-    }
-  };
+  const showOverlay = (overlay) => setActiveOverlay(overlay);
   const closeOverlay = () => setActiveOverlay(null);
 
-  // First, create a function to close overlays and handle clicks
-  const handleLinkClick = () => {
-    closeOverlay();
-    closeMobileMenu();
-  };
-
   return (
-    <header className="bg-gray-50 w-full lg:ml-24 lg:w-[calc(100%-6rem)] float-none lg:float-right h-16 lg:h-20 fixed top-0 right-0 left-0 lg:left-auto z-50 shadow-sm">
-      <nav className="px-4 md:px-6 lg:container mx-auto flex justify-between items-center py-2 lg:py-4 h-full uppercase">
-        {/* Hamburger Icon for Mobile and Tablet */}
+    <header className="bg-gray-50 ml-19 w-[calc(100%-6rem)] md:ml-24 md:w-[calc(100%-6rem)] float-right h-20 fixed right-0 top-0 z-50">
+      <nav className="container mx-auto flex justify-between items-center py-4 h-full uppercase">
+        {/* Hamburger Icon for Mobile */}
         <button
           id="menu-toggle"
-          className="block lg:hidden text-2xl focus:outline-none z-50 relative p-2 rounded-md hover:bg-gray-100 transition-colors bg-inherit"
+          className="block md:hidden bg-white text-3xl focus:outline-none"
           aria-label="Open mobile menu"
           onClick={toggleMobileMenu}
         >
-          {isMobileMenuOpen ? "×" : "☰"}
+          ☰
         </button>
 
         {/* Full-Screen Hamburger Menu Overlay */}
-        <div
-          id="mobile-menu-overlay"
-          className={`fixed top-0 left-0 w-screen h-screen bg-white z-40 flex flex-col items-center justify-center space-y-5 overflow-y-auto transition-all duration-300 ease-in-out ${
-            isMobileMenuOpen ? "opacity-100 visible" : "opacity-0 invisible"
-          }`}
-        >
-            <ul className="flex flex-col items-center space-y-7 py-20 w-full max-w-sm">
-              <li className="w-full text-center transform transition-all hover:scale-105">
-                <button
-                  onClick={() => showOverlay("ourCapabilities")}
-                  className="text-gray-700 text-xl font-bold hover:text-gray-900 w-full py-2 px-4 rounded-md hover:bg-gray-50 transition-colors bg-inherit"
+        {isMobileMenuOpen && (
+          <div
+            id="mobile-menu-overlay"
+            className="fixed top-0 left-0 w-screen h-screen bg-white z-40 flex flex-col items-center justify-center space-y-5"
+          >
+            <button
+              id="close-mobile-menu"
+              className="absolute top-5 right-5 bg-white text-3xl focus:outline-none"
+              aria-label="Close mobile menu"
+              onClick={closeMobileMenu}
+            >
+              x
+            </button>
+            <ul className="flex flex-col items-center space-y-5">
+              <li>
+                <Link
+                  to="/facilities"
+                  className="text-gray-700 text-lg hover:text-gray-900"
                 >
                   Our Facilities
-                </button>
+                </Link>
               </li>
-              <li className="w-full text-center transform transition-all hover:scale-105">
-                <button
-                  onClick={() => showOverlay("services")}
-                  className="text-gray-700 text-xl font-bold hover:text-gray-900 w-full py-2 px-4 rounded-md hover:bg-gray-50 transition-colors bg-inherit"
+              <li>
+                <a
+                  href="/services"
+                  className="text-gray-700 text-lg hover:text-gray-900"
                 >
                   Services
-                </button>
+                </a>
               </li>
-              <li className="w-full text-center transform transition-all hover:scale-105">
-                <Link
-                  to="/about"
-                  className="text-gray-700 text-xl font-bold hover:text-gray-900 block w-full py-2 px-4 rounded-md hover:bg-gray-50 transition-colors"
-                  onClick={closeMobileMenu}
+              <li>
+                <a
+                  href="/about"
+                  className="text-gray-700 text-lg hover:text-gray-900"
                 >
                   About Us
-                </Link>
+                </a>
               </li>
-              <li className="w-full text-center transform transition-all hover:scale-105">
-                <Link
-                  to="/contact"
-                  className="text-gray-700 text-xl font-bold hover:text-gray-900 block w-full py-2 px-4 rounded-md hover:bg-gray-50 transition-colors"
-                  onClick={closeMobileMenu}
+              <li>
+                <a
+                  href="/contact"
+                  className="text-gray-700 text-lg hover:text-gray-900"
                 >
                   Contact
-                </Link>
+                </a>
               </li>
             </ul>
           </div>
+        )}
 
         {/* Desktop Navigation Menu */}
         <ul
           id="menu"
-          className="hidden lg:flex space-x-5 mx-auto relative justify-between w-[50%]"
+          className="hidden md:flex space-x-5 mx-auto relative justify-between w-[50%]"
         >
           {/* Our Capabilities */}
           <li className="group relative">
@@ -127,50 +107,48 @@ const Header = () => {
             </a>
           </li>
           <li>
-            <Link
-              to="/about"
+            <a
+              href="/about"
               className="text-gray-700 hover:text-gray-900 font-extrabold underline-offset-10"
             >
               About Us
-            </Link>
+            </a>
           </li>
           {/* Contact */}
           <li>
-            <Link
-              to="/contact"
+            <a
+              href="/contact"
               className="text-gray-700 hover:text-gray-900 font-extrabold underline-offset-10"
             >
               Contact
-            </Link>
+            </a>
           </li>
         </ul>
 
-        <Link to="/" className="flex items-center text-sm md:text-md lg:text-xl font-bold text-gray-800 lg:mr-5 ml-auto lg:ml-0">
-          <img src={logo} alt="Company Logo" className="h-7 md:h-10 lg:h-12 w-auto" />
-          <span className="text-black">PERIDOT</span>
+        <Link to="/" className="flex items-center text-md lg:text-xl font-bold text-gray-800 mr-5">
+        <img src={logo} alt="Company Logo" className="h-8 lg:h-12 w-auto" />
+        <span className="text-black ">PERIDOT</span>
         </Link>
       </nav>
 
       {/* Overlay for Our Capabilities */}
-            <div className={`overlay-menu fixed top-0 left-0 w-screen h-screen bg-white bg-opacity-70 backdrop-blur-sm z-50 overflow-y-auto transition-all duration-300 ease-in-out ${
-              activeOverlay === "ourCapabilities" ? "opacity-100 visible" : "opacity-0 invisible pointer-events-none"
-            }`}>
+            {activeOverlay === "ourCapabilities" && (
+              <div className="overlay-menu fixed top-0 left-0 w-screen h-screen bg-white bg-opacity-70 z-40">
                 <button
-                  className="close-overlay absolute top-5 right-5 lg:left-5 lg:right-auto text-gray-800 bg-white text-3xl cursor-pointer z-50 w-10 h-10 rounded-full flex items-center justify-center hover:bg-gray-100 transition-colors"
+                  className="close-overlay absolute top-5 left-5 text-gray-800 bg-white text-3xl cursor-pointer"
                   aria-label="Close overlay menu"
                   onClick={closeOverlay}
                 >
-                  ×
+                  x
                 </button>
-                <div className="grid grid-cols-1 lg:grid-cols-4 h-full">
-                  {/* Menu - Full width on mobile/tablet, left side on desktop */}
-                  <div className="col-span-1 flex flex-col items-center justify-center h-full space-y-5 bg-white py-16 lg:py-0">
-                    <ul className="flex flex-col items-center space-y-3 py-5 lg:py-0 lg:space-y-2 overflow-y-auto max-h-[70vh] lg:max-h-none px-4">
+                <div className="grid grid-cols-4 h-full">
+                  {/* Left Menu */}
+                  <div className="col-span-1 flex flex-col items-center justify-center h-full space-y-5 bg-white">
+                    <ul className="flex flex-col items-center space-y-2">
                     <li>
                         <a
                           href="/ourCapabilities/canopy-production"
-                          className="block text-gray-700 hover:text-gray-900 text-md font-semibold transition-all hover:pl-1"
-                          onClick={handleLinkClick}
+                          className="block text-gray-700 hover:text-gray-900 text-md font-semibold hover-effect"
                         >
                           Canopy Production
                         </a>
@@ -179,7 +157,6 @@ const Header = () => {
                         <a
                           href="/ourCapabilities/autoclave"
                           className="block text-gray-700 hover:text-gray-900 text-md font-semibold hover-effect"
-                          onClick={handleLinkClick}
                         >
                           Autoclave
                         </a>
@@ -196,7 +173,6 @@ const Header = () => {
                         <a
                           href="/ourCapabilities/cnc-milling"
                           className="block text-gray-700 hover:text-gray-900 text-md font-semibold hover-effect"
-                          onClick={handleLinkClick}
                         >
                           CNC Cutting
                         </a>
@@ -205,7 +181,6 @@ const Header = () => {
                         <a
                           href="/ourCapabilities/production-of-moulds"
                           className="block text-gray-700 hover:text-gray-900 text-md font-semibold hover-effect"
-                          onClick={handleLinkClick}
                         >
                           Production of Moulds
                         </a>
@@ -214,7 +189,6 @@ const Header = () => {
                         <a
                           href="/ourCapabilities/design-office"
                           className="block text-gray-700 hover:text-gray-900 text-md font-semibold hover-effect"
-                          onClick={handleLinkClick}
                         >
                           Design Office
                         </a>
@@ -223,7 +197,6 @@ const Header = () => {
                         <a
                           href="/ourCapabilities/paint-shop"
                           className="block text-gray-700 hover:text-gray-900 text-md font-semibold hover-effect"
-                          onClick={handleLinkClick}
                         >
                           Paint Shop
                         </a>
@@ -232,7 +205,6 @@ const Header = () => {
                         <a
                           href="/ourCapabilities/oven"
                           className="block text-gray-700 hover:text-gray-900 text-md font-semibold hover-effect"
-                          onClick={handleLinkClick}
                         >
                           Oven
                         </a>
@@ -241,7 +213,6 @@ const Header = () => {
                         <a
                           href="/ourCapabilities/resin-kitchen"
                           className="block text-gray-700 hover:text-gray-900 text-md font-semibold hover-effect"
-                          onClick={handleLinkClick}
                         >
                           Resin kitchen
                         </a>
@@ -250,7 +221,6 @@ const Header = () => {
                         <a
                           href="/ourCapabilities/cold-storage"
                           className="block text-gray-700 hover:text-gray-900 text-md font-semibold hover-effect"
-                          onClick={handleLinkClick}
                         >
                           Cold Storage
                         </a>
@@ -259,7 +229,6 @@ const Header = () => {
                         <a
                           href="/ourCapabilities/laser-3d-scanner"
                           className="block text-gray-700 hover:text-gray-900 text-md font-semibold hover-effect"
-                          onClick={handleLinkClick}
                         >
                           Laser 3D Scanner
                         </a>
@@ -268,7 +237,6 @@ const Header = () => {
                         <a
                           href="/ourCapabilities/laser-cutting-modeling"
                           className="block text-gray-700 hover:text-gray-900 text-md font-semibold hover-effect"
-                          onClick={handleLinkClick}
                         >
                           Laser Cutting & Modeling
                         </a>
@@ -277,7 +245,6 @@ const Header = () => {
                         <a
                           href="/ourCapabilities/6axis-robotic-arm"
                           className="block text-gray-700 hover:text-gray-900 text-md font-semibold hover-effect"
-                          onClick={handleLinkClick}
                         >
                           6-Axis Robotic Arm
                         </a>
@@ -286,7 +253,6 @@ const Header = () => {
                         <a
                           href="/ourCapabilities/clean-room-facility"
                           className="block text-gray-700 hover:text-gray-900 text-md font-semibold hover-effect"
-                          onClick={handleLinkClick}
                         >
                           Clean Room Facility
                         </a>
@@ -295,7 +261,6 @@ const Header = () => {
                         <a
                           href="/ourCapabilities/weaving-machine"
                           className="block text-gray-700 hover:text-gray-900 text-md font-semibold hover-effect"
-                          onClick={handleLinkClick}
                         >
                           Weaving Machine
                         </a>
@@ -304,7 +269,6 @@ const Header = () => {
                         <a
                           href="/ourCapabilities/hydrolic-press"
                           className="block text-gray-700 hover:text-gray-900 text-md font-semibold hover-effect"
-                          onClick={handleLinkClick}
                         >
                           Hydraulic Press
                         </a>
@@ -313,7 +277,6 @@ const Header = () => {
                         <a
                           href="/ourCapabilities/epoxy-storage"
                           className="block text-gray-700 hover:text-gray-900 text-md font-semibold hover-effect"
-                          onClick={handleLinkClick}
                         >
                           Epoxy Storage
                         </a>
@@ -323,21 +286,20 @@ const Header = () => {
                   <div className="col-span-3"></div>
                 </div>
               </div>
-            
-            <div className={`overlay-menu fixed top-0 left-0 w-screen h-screen bg-white bg-opacity-70 backdrop-blur-sm z-50 overflow-y-auto transition-all duration-300 ease-in-out ${
-              activeOverlay === "services" ? "opacity-100 visible" : "opacity-0 invisible pointer-events-none"
-            }`}>
+            )}
+            {activeOverlay === "services" && (
+              <div className="overlay-menu fixed top-0 left-0 w-screen h-screen bg-white bg-opacity-70 z-40">
                 <button
-                  className="close-overlay absolute top-5 right-5 lg:left-5 lg:right-auto bg-white text-3xl focus:outline-none cursor-pointer z-50 w-10 h-10 rounded-full flex items-center justify-center hover:bg-gray-100 transition-colors"
+                  className="close-overlay absolute top-5 left-5 bg-white text-3xl focus:outline-none cursor-pointer"
                   aria-label="Close overlay menu"
                   onClick={closeOverlay}
                 >
-                  ×
+                  x
                 </button>
-                <div className="grid grid-cols-1 lg:grid-cols-4 h-full">
-                  {/* Menu - Full width on mobile/tablet, left side on desktop */}
-                  <div className="col-span-1 flex flex-col items-center justify-center h-full space-y-5 bg-white py-16 lg:py-0">
-                    <ul className="flex flex-col items-center space-y-5 py-5 lg:py-0 overflow-y-auto max-h-[70vh] lg:max-h-none px-4">
+                <div className="grid grid-cols-4 h-full">
+                  {/* Left Menu */}
+                  <div className="col-span-1 flex flex-col items-center justify-center h-full space-y-5 bg-white">
+                    <ul className="flex flex-col items-center space-y-5">
                       {/* <li>
                         <a
                           href="/services"
@@ -349,8 +311,7 @@ const Header = () => {
                       <li>
                         <a
                           href="/services/design-office"
-                          className="block text-gray-700 hover:text-gray-900 text-lg transition-all hover:pl-1"
-                          onClick={handleLinkClick}
+                          className="block text-gray-700 hover:text-gray-900 text-lg hover-effect"
                         >
                           Design office
                         </a>
@@ -358,17 +319,15 @@ const Header = () => {
                       <li>
                         <a
                           href="/services/paint-shop"
-                          className="block text-gray-700 hover:text-gray-900 text-lg transition-all hover:pl-1"
-                          onClick={handleLinkClick}
+                          className="block text-gray-700 hover:text-gray-900 text-lg hover-effect"
                         >
-                          Paint shop
+                          paint shop
                         </a>
                       </li>
                       <li>
                         <a
                           href="/services/canopy-production"
                           className="block text-gray-700 hover:text-gray-900 text-lg hover-effect"
-                          onClick={handleLinkClick}
                         >
                           Canopy production
                         </a>
@@ -377,7 +336,6 @@ const Header = () => {
                         <a
                           href="/services/cnc-milling"
                           className="block text-gray-700 hover:text-gray-900 text-lg hover-effect"
-                          onClick={handleLinkClick}
                         >
                           CNC milling
                         </a>
@@ -386,7 +344,6 @@ const Header = () => {
                         <a
                           href="/services/cutting-plotter"
                           className="block text-gray-700 hover:text-gray-900 text-lg hover-effect"
-                          onClick={handleLinkClick}
                         >
                           Cutting plotter
                         </a>
@@ -395,7 +352,6 @@ const Header = () => {
                         <a
                           href="/services/production-of-models"
                           className="block text-gray-700 hover:text-gray-900 text-lg hover-effect"
-                          onClick={handleLinkClick}
                         >
                           Production of models
                         </a>
@@ -404,7 +360,6 @@ const Header = () => {
                         <a
                           href="/services/production-of-moulds-and-tooling"
                           className="block text-gray-700 hover:text-gray-900 text-lg hover-effect"
-                          onClick={handleLinkClick}
                         >
                           Production of moulds and tooling
                         </a>
@@ -414,6 +369,7 @@ const Header = () => {
                   <div className="col-span-3"></div>
                 </div>
               </div>
+            )}
     </header>
   );
 };
