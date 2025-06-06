@@ -6,6 +6,52 @@ const ContactForm = () => {
   const formRef = useRef(null);
   const [status, setStatus] = useState('');
   const [selectedSubject, setSelectedSubject] = useState(''); // State for selected subject
+  const [errors, setErrors] = useState({
+    email: '',
+    phone: ''
+  });
+
+  // Email validation function
+  const validateEmail = (email) => {
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
+  };
+
+  // Phone validation function - validates 13 or less digits with country code
+  const validatePhone = (phone) => {
+    if (!phone) return true; // Phone is optional
+    // Remove all non-digit characters to count just the numbers
+    const digitsOnly = phone.replace(/\D/g, '');
+    // Valid if 13 or fewer digits and starts with a country code (assumed to be 1-3 digits)
+    return digitsOnly.length <= 13 && digitsOnly.length >= 8;
+  };
+
+  // Form validation
+  const validateForm = () => {
+    const formValues = new FormData(formRef.current);
+    const email = formValues.get('user_email');
+    const phone = formValues.get('user_phone');
+    
+    const newErrors = {
+      email: '',
+      phone: ''
+    };
+    
+    let isValid = true;
+    
+    if (!validateEmail(email)) {
+      newErrors.email = 'Please enter a valid email address';
+      isValid = false;
+    }
+    
+    if (phone && !validatePhone(phone)) {
+      newErrors.phone = 'Phone number must contain 8-13 digits with country code';
+      isValid = false;
+    }
+    
+    setErrors(newErrors);
+    return isValid;
+  };
 
   useEffect(() => {
     const observer = new IntersectionObserver((entries) => {
@@ -35,18 +81,24 @@ const ContactForm = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
+    if (!validateForm()) {
+      setStatus('Please fix the errors in the form');
+      return;
+    }
+
     emailjs.sendForm(
       'YOUR_SERVICE_ID', // Replace with your EmailJS Service ID
       'YOUR_TEMPLATE_ID', // Replace with your EmailJS Template ID
       formRef.current,
       'YOUR_PUBLIC_KEY' // Replace with your EmailJS Public Key
     )
-    .then((result) => {
+    .then(() => {
       setStatus('Message sent successfully!');
       formRef.current.reset(); // Reset the form
       setSelectedSubject(''); // Reset the selected subject
+      setErrors({ email: '', phone: '' }); // Reset errors
     })
-    .catch((error) => {
+    .catch(() => {
       setStatus('Failed to send message. Please try again.');
     });
   };
@@ -115,15 +167,58 @@ const ContactForm = () => {
               placeholder="Email*"
               required
               className="w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-2 focus:ring-gray-400 focus:outline-none"
+              onChange={() => {
+                if (errors.email) {
+                  setErrors(prev => ({ ...prev, email: '' }));
+                }
+              }}
             />
+            {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email}</p>}
           </div>
           <div>
             <input
               type="tel"
               name="user_phone"
-              placeholder="Phone"
+              placeholder="Phone (with country code)"
+              maxLength={17} // Allow for formatting characters
+              onKeyPress={(e) => {
+                // Only allow numbers and common formatting characters
+                const pattern = /[0-9+\-\s()]/;
+                const inputChar = String.fromCharCode(e.charCode);
+                if (!pattern.test(inputChar)) {
+                  e.preventDefault();
+                  return;
+                }
+                
+                // Count digits only (ignore formatting characters)
+                const input = e.target.value;
+                const digitsOnly = input.replace(/\D/g, '');
+                
+                // If we already have 13 digits and trying to add another digit, prevent it
+                if (digitsOnly.length >= 13 && /[0-9]/.test(inputChar)) {
+                  e.preventDefault();
+                }
+              }}
               className="w-full px-4 py-3 border border-gray-300 rounded-lg shadow-sm focus:ring-2 focus:ring-gray-400 focus:outline-none"
+              onChange={(e) => {
+                if (errors.phone) {
+                  setErrors(prev => ({ ...prev, phone: '' }));
+                }
+                
+                // Enforce digit limit on paste or other input methods
+                const input = e.target.value;
+                const digitsOnly = input.replace(/\D/g, '');
+                
+                if (digitsOnly.length > 13) {
+                  // If we have more than 13 digits, truncate to 13 digits
+                  // This is needed for paste events or other input methods
+                  const truncated = digitsOnly.slice(0, 13);
+                  // Create a formatted string if needed
+                  e.target.value = truncated;
+                }
+              }}
             />
+            {errors.phone && <p className="text-red-500 text-sm mt-1">{errors.phone}</p>}
           </div>
         </div>
 
@@ -149,7 +244,7 @@ const ContactForm = () => {
       </div>
 
       {/* Status Message */}
-      {status && <p className="mt-4 text-center text-lg">{status}</p>}
+      {status && <p className={`mt-4 text-center text-lg ${status.includes('successfully') ? 'text-green-600' : 'text-red-600'}`}>{status}</p>}
     </form>
   );
 };
