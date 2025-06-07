@@ -39,24 +39,12 @@ const ContactInfo = () => {
           <h2 className="text-2xl font-semibold border-b border-gray-700 pb-4 mb-8">Contact</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div ref={el => elementsRef.current[0] = el} className="space-y-4 fade-in">
-              <p className="text-lg">Secretariat/telephone exchange:</p>
-              <p className="font-light text-xl">(0048) 33 815 33 07</p>
-            </div>
-            <div ref={el => elementsRef.current[0] = el} className="space-y-4 fade-in">
-              <p className="text-lg">Management:</p>
-              <p className="font-light text-xl">extension 24</p>
+              <p className="text-lg">Phone:</p>
+              <p className="font-light text-xl">+91 96896 11616</p>
             </div>
             <div ref={el => elementsRef.current[0] = el} className="space-y-4 fade-in-right">
-              <p className="text-lg">Design office:</p>
-              <p className="font-light text-xl">extension 35</p>
-            </div>
-            <div ref={el => elementsRef.current[0] = el} className="space-y-4 fade-in">
-              <p className="text-lg">Warehouse and logistics:</p>
-              <p className="font-light text-xl">extension 29</p>
-            </div>
-            <div ref={el => elementsRef.current[0] = el} className="space-y-4 fade-in">
-              <p className="text-lg">Organization of production:</p>
-              <p className="font-light text-xl">extension 32</p>
+              <p className="text-lg">Email:</p>
+              <p className="font-light text-xl">composite@peridotam.in</p>
             </div>
           </div>
         </div>
@@ -65,10 +53,10 @@ const ContactInfo = () => {
         <div ref={el => elementsRef.current[1] = el} className="fade-in">
           <h2 className="text-2xl font-semibold border-b border-gray-700 pb-4 mb-8">Address</h2>
           <address className="not-italic space-y-2 text-lg">
-            <p>AP AIRCRAFTS Sp. z o.o.</p>
-            <p>Strumieńska 829 a</p>
-            <p>43-385 Jasienica</p>
-            <p>Poland</p>
+            <p>PERIDOT ADVANCED MATERIALS PVT LTD</p>
+            <p>NO 59/4, HESARAGHATTA HOBLI</p>
+            <p>SASIVEGHATTA, BENGALURU</p>
+            <p>KARNATAKA - 560107</p>
           </address>
         </div>
         <div className="overflow-hidden rounded-xl border border-gray-700">
