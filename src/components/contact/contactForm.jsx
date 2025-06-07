@@ -78,6 +78,11 @@ const ContactForm = () => {
     };
   }, []);
 
+  useEffect(() => {
+    // Initialize EmailJS with your public key
+    emailjs.init(import.meta.env.VITE_EMAILJS_PUBLIC_KEY);
+  }, []);
+
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -87,10 +92,10 @@ const ContactForm = () => {
     }
 
     emailjs.sendForm(
-      'YOUR_SERVICE_ID', // Replace with your EmailJS Service ID
-      'YOUR_TEMPLATE_ID', // Replace with your EmailJS Template ID
+      import.meta.env.VITE_EMAILJS_SERVICE_ID,
+      import.meta.env.VITE_EMAILJS_TEMPLATE_ID,
       formRef.current,
-      'YOUR_PUBLIC_KEY' // Replace with your EmailJS Public Key
+      import.meta.env.VITE_EMAILJS_PUBLIC_KEY
     )
     .then(() => {
       setStatus('Message sent successfully!');
@@ -98,7 +103,8 @@ const ContactForm = () => {
       setSelectedSubject(''); // Reset the selected subject
       setErrors({ email: '', phone: '' }); // Reset errors
     })
-    .catch(() => {
+    .catch((error) => {
+      console.error('EmailJS error:', error);
       setStatus('Failed to send message. Please try again.');
     });
   };
@@ -243,7 +249,6 @@ const ContactForm = () => {
         </button>
       </div>
 
-      {/* Status Message */}
       {status && <p className={`mt-4 text-center text-lg ${status.includes('successfully') ? 'text-green-600' : 'text-red-600'}`}>{status}</p>}
     </form>
   );
