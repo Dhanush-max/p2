@@ -46,11 +46,12 @@ const About = () => {
           <div className="text-base text-black mt-6 lg:max-w-[calc(100%-60%)] max-w-[calc(100%-20%)]">was founded out of love for aviation in 2025, but based on almost 30 years of experience obtained during the production of nearly 600 aircrafts.</div>
         </div>
       </div> */}
-      <ImageSec imageUrl={A3} title="600 aircrafts, 6 continents" description="Over the years, our team has created about 600 aircraft of various types (among which there are gliders, motor gliders, light and ultralight aircrafts) that fly on 6 continents." />
-      <ImageSec imageUrl={A4} title="5000 sq m area" description="Over the years, our team has created about 600 aircraft of various types (among which there are gliders, motor gliders, light and ultralight aircrafts) that fly on 6 continents." />
+      <ImageSec imageUrl={A3} title="Peridot Advanced Materials Pvt. Ltd" description="is a leading innovator and manufacturer specializing in high-performance composite materials, including carbon fibre, glass fibre, and other advanced composites. As a trusted name in the aerospace and defence sectors, Peridot provides cutting edge solutions that meet the rigorous demands of these industries, delivering unparalleled strength, durability, and lightweight properties for critical applications. " />
+      <ImageSec imageUrl={A4} title="56,852 sq ft" description="Our facility in located in north Bengaluru in a 56,852 sq ft campus equipped with a start of the art manufacturing facilities making it a one stop solution for aerospace and defence composite manufacturing industries.
+" />
       <Button text="Production Facilities" href="/ourCapabilities/production-of-moulds" />
-      <ImageSec imageUrl={A5} title="" description="We manufacture high quality composite parts, each piece is handmade (sometimes with mechanical help) with the utmost care. We manufacture both components and componentry as well as finished airframes.
-      <br/><br/>Although the main trend of our activity is aviation, we also produce such composite parts as blades for fans of high power, used in mining, cooling towers and wind tunnels." />
+      <ImageSec imageUrl={A5} title="" description="Our composite materials are engineered to withstand the most demanding environments, providing exceptional strength-to-weight ratios, high fatigue resistance, and excellent thermal stability. These qualities make our products ideal for applications in aircraft structures, defence systems, spacecraft, and more.
+" />
       <Button text="Our Facilities" href="/ourCapabilities/canopy-production" />
       
     </div>
