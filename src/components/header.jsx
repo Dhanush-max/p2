@@ -63,7 +63,7 @@ const Header = () => {
                   onClick={() => showOverlay("ourCapabilities")}
                   className="text-gray-700 text-xl font-bold hover:text-gray-900 w-full py-2 px-4 rounded-md hover:bg-gray-50 transition-colors bg-inherit"
                 >
-                  our capabilities
+                  Our capabilities
                 </button>
               </li>
               <li className="w-full text-center transform transition-all hover:scale-105">

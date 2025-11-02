@@ -6,7 +6,7 @@ const HeroImgSection = ({ img, title, details, gradientColor = "black" }) => {
   return (
     <>
       <section className="h-screen relative">
-        <div className="w-full h-screen absolute z-0">
+        <div className="w-full h-screen absolute z-0 ">
           <img
             className="object-cover w-full h-full filter-brightness"
             src={img}
