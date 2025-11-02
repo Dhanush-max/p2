@@ -12,6 +12,7 @@ import Arrow from "../../assets/b1.svg";
 import uavHomepage from "../../assets/UAV-homepage.jpg";
 import cncUpclose from "../../assets/CNC-upclose-homepage.JPG";
 import radomeHomepage from "../../assets/radome-homepage.jpg";
+import ImageWithLoader from "../common/ImageWithLoader";
 
 const Home = () => {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
@@ -79,10 +80,12 @@ const Home = () => {
                       activeIndex === index ? "" : "overlay"
                     }`}
                   >
-                    <img
+                    <ImageWithLoader
                       src={item.src}
                       alt={`thumb ${index}`}
                       className="w-full h-48 object-cover cursor-pointer transition duration-300 hover:brightness-110 px-4"
+                      loaderClassName="w-full h-48"
+                      useSkeletonLoader={true}
                     />
                   </div>
                 </SwiperSlide>
@@ -105,10 +108,12 @@ const Home = () => {
             >
               {swiperImages.map((item, index) => (
                 <SwiperSlide key={index}>
-                  <img
+                  <ImageWithLoader
                     src={item.src}
                     alt={`image ${index}`}
                     className="w-full h-full object-fit transition duration-300 hover:brightness-110"
+                    loaderClassName="w-full h-full"
+                    useSkeletonLoader={true}
                   />
                 </SwiperSlide>
               ))}

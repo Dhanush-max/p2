@@ -1,5 +1,6 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
+import ImageWithLoader from "../common/ImageWithLoader";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
@@ -11,10 +12,12 @@ const ImageCarousel = ({ imageList, description }) => {
       <section className="tech ml-19 w-[100%] md:ml-24 md:w-[calc(100%-6rem)] pb-8 relative flex flex-col z-30 mx-auto">
         <div className="flex flex-col md:flex-row items-center md:h-[600px] overflow-hidden">
           <div className="w-[90%]">
-            <img
+            <ImageWithLoader
               src={imageList[0]}
               alt="Single Image"
               className="w-full h-full object-cover"
+              loaderClassName="w-full h-full"
+              useSkeletonLoader={true}
             />
           </div>
         </div>
@@ -46,10 +49,12 @@ const ImageCarousel = ({ imageList, description }) => {
           <SwiperSlide key={index}>
             <div className="flex flex-col md:flex-row items-center md:h-[600px] overflow-hidden md:left-[10%]">
               <div className="w-[90%]">
-                <img
+                <ImageWithLoader
                   src={image}
                   alt={`Slide ${index + 1}`}
                   className="w-full h-full object-cover"
+                  loaderClassName="w-full h-full"
+                  useSkeletonLoader={true}
                 />
               </div>
             </div>

@@ -1,4 +1,5 @@
 import React, { useEffect, useRef, useState } from "react";
+import ImageWithLoader from "../common/ImageWithLoader";
 
 const ImageSec = ({ imageUrl, title, description }) => {
   const sectionRef = useRef(null);
@@ -34,10 +35,11 @@ const ImageSec = ({ imageUrl, title, description }) => {
       }`}
     >
       <div className="relative w-full sm:w-[75%] h-[50vh] lg:h-[70vh]">
-        <img
+        <ImageWithLoader
           src={imageUrl}
           alt={title}
           className="w-full h-full object-cover fade-in-right"
+          loaderClassName="w-full h-full"
         />
         <div className="absolute bottom-0 left-0 px-4 pt-4 bg-white max-w-[calc(100%-15%)] ">
           <h2 className="text-xl sm:text-2xl font-extrabold fade-in-up">

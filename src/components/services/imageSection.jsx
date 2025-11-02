@@ -1,10 +1,17 @@
+import ImageWithLoader from "../common/ImageWithLoader";
+
 const Section = ({ image, altText, bgColor, title, description, link }) => {
   return (
     <section className="ml-19 w-[calc(100%-6rem)] md:ml-24 md:w-[calc(100%-6rem)] py-8 relative flex flex-col md:flex-row z-30 mx-auto">
       <div className="flex flex-col md:flex-row items-center h-full overflow-hidden">
         {/* Image (on the left side) */}
         <div className="w-full md:w-2/3 h-64 md:h-full mt-5 md:mt-14">
-          <img src={image} alt={altText} className="w-full h-full object-fit" />
+          <ImageWithLoader 
+            src={image} 
+            alt={altText} 
+            className="w-full h-full object-fit"
+            loaderClassName="w-full h-full" 
+          />
         </div>
 
         {/* Text (on the right side for md and above, below image for smaller screens) */}
