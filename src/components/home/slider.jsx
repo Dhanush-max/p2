@@ -2,7 +2,6 @@ import uavHomepage from "../../assets/UAV-homepage.jpg";
 import cncUpclose from "../../assets/CNC-upclose-homepage.JPG";
 import radomeHomepage from "../../assets/radome-homepage.jpg";
 import background2 from "../../assets/background-2.png";
-import ImageWithLoader from "../common/ImageWithLoader";
 
 const Slider = () => {
   return (
@@ -10,12 +9,10 @@ const Slider = () => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-6xl w-full">
         {/* First Image - UAV */}
         <div className="relative overflow-hidden mt-8">
-          <ImageWithLoader
+          <img
             src={uavHomepage}
             alt="UAV Manufacturing"
             className="w-full h-auto"
-            loaderClassName="w-full h-64"
-            useSkeletonLoader={true}
           />
           <div className="absolute w-40 bottom-0 right-0 bg-white bg-opacity-90 p-4 text-center">
             <h3 className="text-lg font-bold">UAV Production</h3>
@@ -28,12 +25,10 @@ const Slider = () => {
 
         {/* Second Image - CNC */}
         <div className="relative overflow-hidden">
-          <ImageWithLoader
+          <img
             src={cncUpclose}
             alt="CNC Manufacturing"
             className="w-full h-auto"
-            loaderClassName="w-full h-64"
-            useSkeletonLoader={true}
           />
           <div className="absolute w-40 bottom-0 right-0 bg-white bg-opacity-90 p-4 text-center">
             <h3 className="text-lg font-bold">CNC Precision</h3>
@@ -46,12 +41,10 @@ const Slider = () => {
 
         {/* Third Image - Radome */}
         <div className="relative overflow-hidden mt-8">
-          <ImageWithLoader
+          <img
             src={radomeHomepage}
             alt="Radome Manufacturing"
             className="w-full h-auto"
-            loaderClassName="w-full h-64"
-            useSkeletonLoader={true}
           />
           <div className="absolute w-40 bottom-0 right-0 bg-white bg-opacity-90 p-4 text-center">
             <h3 className="text-lg font-bold">Radome Production</h3>
@@ -64,12 +57,10 @@ const Slider = () => {
 
         {/* Fourth Image - Background */}
         <div className="relative overflow-hidden">
-          <ImageWithLoader
+          <img
             src={background2}
             alt="Manufacturing Facility"
             className="w-full h-auto"
-            loaderClassName="w-full h-64"
-            useSkeletonLoader={true}
           />
           <div className="absolute w-40 bottom-0 right-0 bg-white bg-opacity-90 p-4 text-center">
             <h3 className="text-lg font-bold">Facility Overview</h3>
