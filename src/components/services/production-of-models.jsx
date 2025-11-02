@@ -3,7 +3,7 @@ import HeroImgSection from "../heroImgSection";
 import ImageSec from "../aboutUs/imageSec";
 import ImageCarousel from "../aboutUs/imageCarousel";
 import SeeAlsoList from "./seeAlsoList";
-const imageList = [air, air, air]; // Add more images as needed
+const imageList = [air]; // Single image used
 const description =
   "Lorem ipsum dolor sit amet consectetur adipisicing elit.  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum eligendi quidem magni ratione corrupti deleniti quia assumenda consequuntur. Consectetur quidem sequi fugiat dolorem odio veritatis corrupti nulla! Blanditiis, magni quidem? ";
 const listItems = [

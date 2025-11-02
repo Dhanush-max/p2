@@ -1,16 +1,11 @@
-import fallbackImg from "../../assets/fallback.jpg";
-let resinImg;
-try {
-  resinImg = require("../../assets/resin-infusion.jpg");
-} catch (e) {
-  resinImg = fallbackImg;
-}
+import resinInfusion1 from "../../assets/resin-infusion-1.png";
+import resinInfusion2 from "../../assets/resin-infusion-2.png";
+import resinInfusion3 from "../../assets/resin-infusion-3.png";
 import HeroImgSection from "../heroImgSection";
 import ImageSec from "../aboutUs/imageSec";
 import ImageCarousel from "../aboutUs/imageCarousel";
 import SeeAlsoList from "./seeAlsoList";
 
-const imageList = [resinImg];
 const description =
   "Our resin infusion techniques produce high-quality laminates with minimal voids and consistent fibre wet-out. Combining accuracy with process control, we deliver large and complex parts that meet the highest standards in strength and finish.";
 const listItems = [
@@ -26,16 +21,16 @@ const ResinInfusion = () => {
   return (
     <div>
       <HeroImgSection
-        img={resinImg}
+        img={resinInfusion1}
         title="RESIN INFUSION"
         details="Efficiency and precision in closed-mould composite manufacturing."
       />
       <ImageSec
-        imageUrl={resinImg}
+        imageUrl={resinInfusion2}
         title="RESIN INFUSION"
         description="Our resin infusion techniques produce high-quality laminates with minimal voids and consistent fibre wet-out. Combining accuracy with process control, we deliver large and complex parts that meet the highest standards in strength and finish."
       />
-      <ImageCarousel imageList={imageList} description={description} />
+      <ImageCarousel imageList={[resinInfusion2, resinInfusion3]} description={description} />
       <SeeAlsoList title="Related Services" items={listItems} />
     </div>
   );

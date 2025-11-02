@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import "./home.css";
 import HeroSection from "../herosection";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -7,12 +7,11 @@ import "swiper/css/free-mode";
 import "swiper/css/navigation";
 import "swiper/css/thumbs";
 import "swiper/css/pagination";
-import { FreeMode, Navigation, Thumbs, Pagination } from "swiper/modules";
-import LeftArrow from "../../assets/b1.svg";
-import RightArrow from "../../assets/b1.svg";
-import S1 from "../../assets/S1.jpg";
-import S2 from "../../assets/S2.jpg";
-import S3 from "../../assets/S3.jpg";
+import { FreeMode, Navigation, Thumbs } from "swiper/modules";
+import Arrow from "../../assets/b1.svg";
+import uavHomepage from "../../assets/UAV-homepage.jpg";
+import cncUpclose from "../../assets/CNC-upclose-homepage.JPG";
+import radomeHomepage from "../../assets/radome-homepage.jpg";
 
 const Home = () => {
   const [thumbsSwiper, setThumbsSwiper] = useState(null);
@@ -21,19 +20,19 @@ const Home = () => {
   // Image paths & descriptions
   const swiperImages = [
     {
-      src: S1 ,
-      title: "High-Tech Manufacturing",
-      desc: "Advanced production facilities with cutting-edge technology.",
+      src: uavHomepage,
+      title: "UAV Manufacturing",
+      desc: "Advanced UAV production with precision engineering and cutting-edge technology.",
     },
     {
-      src: S2 ,
-      title: "Precision Engineering",
-      desc: "State-of-the-art tools ensuring top-notch accuracy.",
+      src: cncUpclose,
+      title: "CNC Precision Manufacturing",
+      desc: "High-precision CNC machining for complex components and intricate designs.",
     },
     {
-      src: S3,
-      title: "Aerodynamic Design",
-      desc: "Innovative aircraft structures built for efficiency.",
+      src: radomeHomepage,
+      title: "Radome Production",
+      desc: "Specialized radome manufacturing for aerospace and defense applications with superior quality.",
     },
   ];
 
@@ -49,7 +48,7 @@ const Home = () => {
             </div>
             <div className="flex">
               <h3 className="font-medium text-start">
-                Empowered by state-of-the-art infrastructure and a dedicated team, we craft high-performance solutions tailored to every industry's unique needs.
+                Empowered by state-of-the-art infrastructure and a dedicated team, we craft high-performance solutions tailored to every industry&apos;s unique needs.
               </h3>
             </div>
             {/* <div className="flex justify-end mr-10 max-md:justify-start">
@@ -137,14 +136,14 @@ const Home = () => {
               <div className="flex space-x-4">
                 <button className="custom-prev bg-black p-1 sm:px-2 sm:py-3">
                   <img
-                    src={LeftArrow}
+                    src={Arrow}
                     alt="Left Arrow"
                     className="w-[70px] sm:w-12 sm:h-12"
                   />
                 </button>
                 <button className="custom-next p-1 sm:px-2 sm:py-3 bg-black transition">
                   <img
-                    src={RightArrow}
+                    src={Arrow}
                     alt="Right Arrow" 
                     className="w-[70px] sm:w-12 sm:h-12 rotate-180"
                   />

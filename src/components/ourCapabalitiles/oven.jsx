@@ -7,7 +7,7 @@ import ImageSec from "../aboutUs/imageSec";
 import ImageCarousel from "../aboutUs/imageCarousel";
 import SeeAlsoList from "../services/seeAlsoList";
 
-const imageList = [oven, oven1, oven]; // Add more images as needed
+const imageList = [oven, oven1]; // Two unique oven images
 const description =
   "Engineered for consistent curing cycles, it enhances component quality and structural integrity- supporting aerospace, defence, and industrial-grade composite applications.";
 const listItems = [

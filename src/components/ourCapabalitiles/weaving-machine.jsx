@@ -6,7 +6,7 @@ import ImageSec from "../aboutUs/imageSec";
 import ImageCarousel from "../aboutUs/imageCarousel";
 import SeeAlsoList from "../services/seeAlsoList";
 
-const imageList = [weavingMachine1, weavingMachine, weavingMachine]; // Add more images as needed
+const imageList = [weavingMachine1, weavingMachine]; // Two unique weaving machine images
 const description =
   "Our weaving machine facility is designed to deliver precision and efficiency in weaving operations. With advanced technology, it ensures high-quality results for a variety of applications.";
 const listItems = [

@@ -1,27 +1,12 @@
-import fallbackImg from "../../assets/fallback.jpg";
-let cleanRoomFacility, cleanRoomFacility1, cleanRoomFacility2;
-try {
-  cleanRoomFacility = require("../../assets/cleanroom.jpg");
-} catch (e) {
-  cleanRoomFacility = fallbackImg;
-}
-try {
-  cleanRoomFacility1 = require("../../assets/cleanroom1.jpg");
-} catch (e) {
-  cleanRoomFacility1 = fallbackImg;
-}
-try {
-  cleanRoomFacility2 = require("../../assets/cleanroom2.jpg");
-} catch (e) {
-  cleanRoomFacility2 = fallbackImg;
-}
+import cleanRoom1 from "../../assets/clean-room-1.JPG";
+import cleanRoom2 from "../../assets/clean-room-2.JPG";
+import cleanRoom3 from "../../assets/clean-room-3.JPG";
 
 import HeroImgSection from "../heroImgSection";
 import ImageSec from "../aboutUs/imageSec";
 import ImageCarousel from "../aboutUs/imageCarousel";
 import SeeAlsoList from "../services/seeAlsoList";
 
-const imageList = [cleanRoomFacility1, cleanRoomFacility2, cleanRoomFacility];
 const description =
   "Supported by an ante room (2–4 °C), it ensures optimal temperature and particulate control, enabling high-quality production for aerospace, defence, and medical-grade assemblies.";
 const listItems = [
@@ -37,16 +22,16 @@ const CleanRoomFacility = () => {
   return (
     <div>
       <HeroImgSection
-        img={cleanRoomFacility1}
+        img={cleanRoom1}
         title="CLEAN ROOM"
         details="Maintaining purity and precision at every stage of production."
       />
       <ImageSec
-        imageUrl={cleanRoomFacility}
+        imageUrl={cleanRoom2}
         title="CLEAN ROOM"
         description="Our 1,800 sq ft Class 8-grade clean room provides a contamination-free environment for composite manufacturing."
       />
-      <ImageCarousel imageList={imageList} description={description} />
+      <ImageCarousel imageList={[cleanRoom2, cleanRoom3]} description={description} />
       <SeeAlsoList title="Related Facilities" items={listItems} />
     </div>
   );

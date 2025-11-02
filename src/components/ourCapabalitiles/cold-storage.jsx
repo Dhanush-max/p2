@@ -1,22 +1,12 @@
-import fallbackImg from "../../assets/fallback.jpg";
-let coldStorage, coldStorage2;
-try {
-  coldStorage = require("../../assets/cold.jpg");
-} catch (e) {
-  coldStorage = fallbackImg;
-}
-try {
-  coldStorage2 = require("../../assets/cold2.jpg");
-} catch (e) {
-  coldStorage2 = fallbackImg;
-}
+import coldStorage1 from "../../assets/cold-storage-1.JPG";
+import coldStorage2 from "../../assets/cold-storage-2.jpg";
+import coldStorage4 from "../../assets/cold-storage-4.JPG";
 
 import HeroImgSection from "../heroImgSection";
 import ImageSec from "../aboutUs/imageSec";
 import ImageCarousel from "../aboutUs/imageCarousel";
 import SeeAlsoList from "../services/seeAlsoList";
 
-const imageList = [coldStorage, coldStorage, coldStorage2];
 const description =
   "Combined with a 2–4 °C ante room, it maintains the highest quality standards for resin systems and composite components throughout production.";
 const listItems = [
@@ -32,16 +22,16 @@ const ColdStorage = () => {
   return (
     <div>
       <HeroImgSection
-        img={coldStorage2}
+        img={coldStorage1}
         title="COLD STORAGE"
         details="Preserving material integrity through advanced temperature management."
       />
       <ImageSec
-        imageUrl={coldStorage}
+        imageUrl={coldStorage2}
         title="COLD STORAGE"
         description="Our –18 °C cold storage ensures the stability of prepreg  and temperature-sensitive materials."
       />
-      <ImageCarousel imageList={imageList} description={description} />
+      <ImageCarousel imageList={[coldStorage2, coldStorage4]} description={description} />
       <SeeAlsoList title="Related Facilities" items={listItems} />
     </div>
   );

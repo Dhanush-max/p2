@@ -1,16 +1,11 @@
-import fallbackImg from "../../assets/fallback.jpg";
-let laserCutImg;
-try {
-  laserCutImg = require("../../assets/laser-cutting-machine.jpg");
-} catch (e) {
-  laserCutImg = fallbackImg;
-}
+import laserMachine1 from "../../assets/laser-machine1.jpg";
+import laserMachine2 from "../../assets/laser-machine-2.jpg";
+import laserMachine3 from "../../assets/laser-machine-3.JPG";
 import HeroImgSection from "../heroImgSection";
 import ImageSec from "../aboutUs/imageSec";
 import ImageCarousel from "../aboutUs/imageCarousel";
 import SeeAlsoList from "../services/seeAlsoList";
 
-const imageList = [laserCutImg];
 const description =
   "Ideal for complex geometries and lightweight structures, it enables efficiency, consistency, and zero-defect performance.";
 const listItems = [
@@ -26,16 +21,16 @@ const LaserCuttingMachine = () => {
   return (
     <div>
       <HeroImgSection
-        img={laserCutImg}
+        img={laserMachine1}
         title="LASER CUTTING MACHINE"
         details="Accuracy beyond measure for intricate designs."
       />
       <ImageSec
-        imageUrl={laserCutImg}
+        imageUrl={laserMachine2}
         title="LASER CUTTING MACHINE"
         description="Our laser cutting technology provides fine detailing and clean cuts on composite and metallic materials."
       />
-      <ImageCarousel imageList={imageList} description={description} />
+      <ImageCarousel imageList={[laserMachine2, laserMachine3]} description={description} />
       <SeeAlsoList title="Related Facilities" items={listItems} />
     </div>
   );

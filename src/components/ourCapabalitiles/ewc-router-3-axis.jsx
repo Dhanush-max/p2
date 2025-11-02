@@ -1,28 +1,13 @@
 
-import fallbackImg from "../../assets/fallback.jpg";
-let cncRouter, cncRouter1, cncRouter2;
-try {
-  cncRouter = require("../../assets/ewc-router-3-axis.jpg");
-} catch (e) {
-  cncRouter = fallbackImg;
-}
-try {
-  cncRouter1 = require("../../assets/ewc-router-3-axis-2.jpg");
-} catch (e) {
-  cncRouter1 = fallbackImg;
-}
-try {
-  cncRouter2 = require("../../assets/ewc-router-3-axis-3.jpg");
-} catch (e) {
-  cncRouter2 = fallbackImg;
-}
+import cncRouter1 from "../../assets/cnc-router-1.JPG";
+import cncRouter2 from "../../assets/cnc-router-2.JPG";
+import cncRouter3 from "../../assets/cnc-router-3.JPG";
 
 import HeroImgSection from "../heroImgSection";
 import ImageSec from "../aboutUs/imageSec";
 import ImageCarousel from "../aboutUs/imageCarousel";
 import SeeAlsoList from "../services/seeAlsoList";
 
-const imageList = [cncRouter, cncRouter1, cncRouter2];
 const description =
   "With precision machining and smooth surface finish, we ensure every mould delivers repeatable performance across multiple production runs.";
 const listItems = [
@@ -40,11 +25,11 @@ const ThreeAxisCncPatternMouldMachine = () => {
         details="Precision begins with perfect patterns and moulds."
       />
       <ImageSec
-        imageUrl={cncRouter}
+        imageUrl={cncRouter2}
         title="3-AXIS CNC PATTERN & MOULD MACHINE"
         description="Our 3-axis CNC machines create high-accuracy tooling for composite and metal parts."
       />
-      <ImageCarousel imageList={imageList} description={description} />
+      <ImageCarousel imageList={[cncRouter2, cncRouter3]} description={description} />
       <SeeAlsoList title="Related Facilities" items={listItems} />
     </div>
   );

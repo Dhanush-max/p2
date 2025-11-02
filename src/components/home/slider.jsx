@@ -1,67 +1,78 @@
-<section className="ml-24 w-[calc(100%-6rem)] py-8 relative flex z-30">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-6xl w-full">
-          {/* First Image */}
-          <div className="relative overflow-hidden mt-8">
-            <img
-              src="https://via.placeholder.com/400x300"
-              alt="Placeholder Image 1"
-              className="w-full h-auto"
-            />
-            <div className="absolute w-40 bottom-0 right-0 bg-white bg-opacity-90 p-4 text-center">
-              <h3 className="text-lg font-bold">Description 1</h3>
-              <p className="text-sm text-gray-600">
-                Description for the first image. Description for the first
-                image. Description for the first image.
-              </p>
-            </div>
-          </div>
+import uavHomepage from "../../assets/UAV-homepage.jpg";
+import cncUpclose from "../../assets/CNC-upclose-homepage.JPG";
+import radomeHomepage from "../../assets/radome-homepage.jpg";
+import background2 from "../../assets/background-2.png";
 
-          {/* Second Image */}
-          <div className="relative overflow-hidden">
-            <img
-              src="https://via.placeholder.com/400x300"
-              alt="Placeholder Image 2"
-              className="w-full h-auto"
-            />
-            <div className="absolute w-40 bottom-0 right-0 bg-white bg-opacity-90 p-4 text-center">
-              <h3 className="text-lg font-bold">Title 2</h3>
-              <p className="text-sm text-gray-600">
-                Description for the second image. Description for the second
-                image. Description for the second image.
-              </p>
-            </div>
-          </div>
-
-          {/* Third Image */}
-          <div className="relative overflow-hidden mt-8">
-            <img
-              src="https://via.placeholder.com/400x300"
-              alt="Placeholder Image 3"
-              className="w-full h-auto"
-            />
-            <div className="absolute w-40 bottom-0 right-0 bg-white bg-opacity-90 p-4 text-center">
-              <h3 className="text-lg font-bold">Title 3</h3>
-              <p className="text-sm text-gray-600">
-                Description for the third image. Description for the third
-                image. Description for the third image.
-              </p>
-            </div>
-          </div>
-
-          {/* Fourth Image */}
-          <div className="relative overflow-hidden">
-            <img
-              src="https://via.placeholder.com/400x300"
-              alt="Placeholder Image 4"
-              className="w-full h-auto"
-            />
-            <div className="absolute w-40 bottom-0 right-0 bg-white bg-opacity-90 p-4 text-center">
-              <h3 className="text-lg font-bold">Title 4</h3>
-              <p className="text-sm text-gray-600">
-                Description for the fourth image. Description for the fourth
-                image. Description for the fourth image.
-              </p>
-            </div>
+const Slider = () => {
+  return (
+    <section className="ml-24 w-[calc(100%-6rem)] py-8 relative flex z-30">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-6xl w-full">
+        {/* First Image - UAV */}
+        <div className="relative overflow-hidden mt-8">
+          <img
+            src={uavHomepage}
+            alt="UAV Manufacturing"
+            className="w-full h-auto"
+          />
+          <div className="absolute w-40 bottom-0 right-0 bg-white bg-opacity-90 p-4 text-center">
+            <h3 className="text-lg font-bold">UAV Production</h3>
+            <p className="text-sm text-gray-600">
+              Advanced UAV manufacturing with precision engineering and 
+              cutting-edge technology.
+            </p>
           </div>
         </div>
-      </section>
+
+        {/* Second Image - CNC */}
+        <div className="relative overflow-hidden">
+          <img
+            src={cncUpclose}
+            alt="CNC Manufacturing"
+            className="w-full h-auto"
+          />
+          <div className="absolute w-40 bottom-0 right-0 bg-white bg-opacity-90 p-4 text-center">
+            <h3 className="text-lg font-bold">CNC Precision</h3>
+            <p className="text-sm text-gray-600">
+              High-precision CNC machining for complex components and 
+              intricate designs.
+            </p>
+          </div>
+        </div>
+
+        {/* Third Image - Radome */}
+        <div className="relative overflow-hidden mt-8">
+          <img
+            src={radomeHomepage}
+            alt="Radome Manufacturing"
+            className="w-full h-auto"
+          />
+          <div className="absolute w-40 bottom-0 right-0 bg-white bg-opacity-90 p-4 text-center">
+            <h3 className="text-lg font-bold">Radome Production</h3>
+            <p className="text-sm text-gray-600">
+              Specialized radome manufacturing for aerospace and 
+              defense applications.
+            </p>
+          </div>
+        </div>
+
+        {/* Fourth Image - Background */}
+        <div className="relative overflow-hidden">
+          <img
+            src={background2}
+            alt="Manufacturing Facility"
+            className="w-full h-auto"
+          />
+          <div className="absolute w-40 bottom-0 right-0 bg-white bg-opacity-90 p-4 text-center">
+            <h3 className="text-lg font-bold">Facility Overview</h3>
+            <p className="text-sm text-gray-600">
+              State-of-the-art manufacturing facility with advanced 
+              equipment and processes.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Slider;

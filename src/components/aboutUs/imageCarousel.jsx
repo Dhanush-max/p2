@@ -5,6 +5,29 @@ import "swiper/css/pagination";
 import "swiper/css/navigation";
 
 const ImageCarousel = ({ imageList, description }) => {
+  // If only one image, show a simple static display
+  if (imageList.length === 1) {
+    return (
+      <section className="tech ml-19 w-[100%] md:ml-24 md:w-[calc(100%-6rem)] pb-8 relative flex flex-col z-30 mx-auto">
+        <div className="flex flex-col md:flex-row items-center md:h-[600px] overflow-hidden">
+          <div className="w-[90%]">
+            <img
+              src={imageList[0]}
+              alt="Single Image"
+              className="w-full h-full object-cover"
+            />
+          </div>
+        </div>
+        <div className="w-[90%] md:w-[70%] bg-white text-black p-6 mx-auto md:mx-0 md:absolute z-10 md:bottom-9 md:left-[5%] motion-opacity-in-0 motion-translate-y-in-100 motion-blur-in-md">
+          <p>{description}</p>
+        </div>
+      </section>
+    );
+  }
+
+  // For multiple images, show carousel but disable loop if less than 3 images
+  const shouldLoop = imageList.length >= 3;
+  
   return (
     <section className="tech ml-19 w-[100%] md:ml-24 md:w-[calc(100%-6rem)] pb-8 relative flex flex-col z-30 mx-auto">
       <Swiper
@@ -14,7 +37,7 @@ const ImageCarousel = ({ imageList, description }) => {
           nextEl: ".custom-next",
           prevEl: ".custom-prev",
         }}
-        loop={true}
+        loop={shouldLoop}
         centeredSlides={true}
         modules={[Navigation]}  
         className="mySwiper"

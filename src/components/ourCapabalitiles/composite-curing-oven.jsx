@@ -1,16 +1,11 @@
-import fallbackImg from "../../assets/fallback.jpg";
-let ovenImg;
-try {
-  ovenImg = require("../../assets/oven.jpg");
-} catch (e) {
-  ovenImg = fallbackImg;
-}
+import ovenImg1 from "../../assets/curing-oven-1.JPG";
+import ovenImg2 from "../../assets/curing-oven-2.JPG";
+import ovenImg3 from "../../assets/curing-oven-3.JPG";
 import HeroImgSection from "../heroImgSection";
 import ImageSec from "../aboutUs/imageSec";
 import ImageCarousel from "../aboutUs/imageCarousel";
 import SeeAlsoList from "../services/seeAlsoList";
 
-const imageList = [ovenImg];
 const description =
   "Engineered for consistent curing cycles, it enhances component quality and structural integrity- supporting aerospace, defence, and industrial-grade composite applications.";
 const listItems = [
@@ -26,16 +21,16 @@ const CompositeCuringOven = () => {
   return (
     <div>
       <HeroImgSection
-        img={ovenImg}
+        img={ovenImg1}
         title="COMPOSITE CURING OVEN"
         details="Ensuring uniformity and performance through precision-controlled curing environments."
       />
       <ImageSec
-        imageUrl={ovenImg}
+        imageUrl={ovenImg2}
         title="COMPOSITE CURING OVEN"
         description="Our 4 × 4 × 8 ft composite curing oven offers stable thermal performance for optimal material properties."
       />
-      <ImageCarousel imageList={imageList} description={description} />
+      <ImageCarousel imageList={[ovenImg2, ovenImg3]} description={description} />
       <SeeAlsoList title="Related Facilities" items={listItems} />
     </div>
   );

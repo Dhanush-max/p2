@@ -1,5 +1,5 @@
 import React, { useRef } from "react";
-import vid1 from "../assets/Av1.mp4"; // Import your video file
+import vid1 from "../assets/pam-background-video.mov"; // Import your video file
 
 const HeroSection = () => {
   const videoRef = useRef(null);

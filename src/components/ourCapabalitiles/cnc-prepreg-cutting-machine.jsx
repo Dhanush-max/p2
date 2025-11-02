@@ -1,16 +1,11 @@
-import fallbackImg from "../../assets/fallback.jpg";
-let prepregImg;
-try {
-  prepregImg = require("../../assets/cnc-prepreg-cutting-machine.jpg");
-} catch (e) {
-  prepregImg = fallbackImg;
-}
+import prepregImg1 from "../../assets/cnc-prepreg-1.JPG";
+import prepregImg2 from "../../assets/cnc-prepreg-2.JPG";
+import prepregImg3 from "../../assets/cnc-prepreg-3.JPG";
 import HeroImgSection from "../heroImgSection";
 import ImageSec from "../aboutUs/imageSec";
 import ImageCarousel from "../aboutUs/imageCarousel";
 import SeeAlsoList from "../services/seeAlsoList";
 
-const imageList = [prepregImg];
 const description =
   "Delivering clean edges and consistent quality, our CNC system enhances manufacturing efficiency for aerospace, automotive, and defence applications.";
 const listItems = [
@@ -26,16 +21,16 @@ const CncPrepregCuttingMachine = () => {
   return (
     <div>
       <HeroImgSection
-        img={prepregImg}
+        img={prepregImg1}
         title="CNC PREPREG CUTTING MACHINE"
         details="Precision cutting that transforms design into accuracy."
       />
       <ImageSec
-        imageUrl={prepregImg}
+        imageUrl={prepregImg2}
         title="CNC PREPREG CUTTING MACHINE"
         description="Automated prepreg cutting ensures high-speed, waste-free processing of composite laminates."
       />
-      <ImageCarousel imageList={imageList} description={description} />
+      <ImageCarousel imageList={[prepregImg2, prepregImg3]} description={description} />
       <SeeAlsoList title="Related Facilities" items={listItems} />
     </div>
   );

@@ -1,16 +1,11 @@
-import fallbackImg from "../../assets/fallback.jpg";
-let weavingImg;
-try {
-  weavingImg = require("../../assets/carbonfibre-weaving-machine.jpg");
-} catch (e) {
-  weavingImg = fallbackImg;
-}
+import weavingImg1 from "../../assets/carbon-weaving-1.png";
+import weavingImg2 from "../../assets/carbon-weaving-2.png";
+import weavingImg3 from "../../assets/carbon-weaving-3.png";
 import HeroImgSection from "../heroImgSection";
 import ImageSec from "../aboutUs/imageSec";
 import ImageCarousel from "../aboutUs/imageCarousel";
 import SeeAlsoList from "../services/seeAlsoList";
 
-const imageList = [weavingImg];
 const description =
   "Our process ensures dimensional stability, superior tensile strength, and performance-ready materials for aerospace and high-end industrial use.";
 const listItems = [
@@ -26,16 +21,16 @@ const CarbonfibreWeavingMachine = () => {
   return (
     <div>
       <HeroImgSection
-        img={weavingImg}
+        img={weavingImg1}
         title="CARBON FIBER WEAVING MACHINE"
         details="Engineering strength from the fiber up."
       />
       <ImageSec
-        imageUrl={weavingImg}
+        imageUrl={weavingImg2}
         title="CARBON FIBER WEAVING MACHINE"
         description="Advanced carbon fibre weaving for custom fabric architectures and reinforcement structures."
       />
-      <ImageCarousel imageList={imageList} description={description} />
+      <ImageCarousel imageList={[weavingImg2, weavingImg3]} description={description} />
       <SeeAlsoList title="Related Facilities" items={listItems} />
     </div>
   );

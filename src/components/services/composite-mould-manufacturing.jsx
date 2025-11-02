@@ -1,16 +1,11 @@
-import fallbackImg from "../../assets/fallback.jpg";
-let mouldImg;
-try {
-  mouldImg = require("../../assets/composite-mould-manufacturing.jpg");
-} catch (e) {
-  mouldImg = fallbackImg;
-}
+import mouldImg1 from "../../assets/composite-mould-1.JPG";
+import mouldImg2 from "../../assets/composite-mould-2.JPG";
+import mouldImg3 from "../../assets/composite-mould-3.JPG";
 import HeroImgSection from "../heroImgSection";
 import ImageSec from "../aboutUs/imageSec";
 import ImageCarousel from "../aboutUs/imageCarousel";
 import SeeAlsoList from "./seeAlsoList";
 
-const imageList = [mouldImg];
 const description =
   "Our in-house tooling and mould manufacturing ensure accuracy, repeatability, and compatibility across all production stages. From design to machining and finishing, our process guarantees reliable moulds that deliver high-quality composite components every time.";
 const listItems = [
@@ -26,16 +21,16 @@ const CompositeMouldManufacturing = () => {
   return (
     <div>
       <HeroImgSection
-        img={mouldImg}
+        img={mouldImg1}
         title="COMPOSITE MOULD MANUFACTURING"
         details="Crafting precision at the foundation of every part."
       />
       <ImageSec
-        imageUrl={mouldImg}
+        imageUrl={mouldImg2}
         title="COMPOSITE MOULD MANUFACTURING"
         description="Our in-house tooling and mould manufacturing ensure accuracy, repeatability, and compatibility across all production stages. From design to machining and finishing, our process guarantees reliable moulds that deliver high-quality composite components every time."
       />
-      <ImageCarousel imageList={imageList} description={description} />
+      <ImageCarousel imageList={[mouldImg2, mouldImg3]} description={description} />
       <SeeAlsoList title="Related Services" items={listItems} />
     </div>
   );

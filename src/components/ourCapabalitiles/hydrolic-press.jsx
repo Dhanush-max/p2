@@ -1,16 +1,11 @@
-import fallbackImg from "../../assets/fallback.jpg";
-let hydrolicPress;
-try {
-  hydrolicPress = require("../../assets/hydrolic.jpg");
-} catch (e) {
-  hydrolicPress = fallbackImg;
-}
+import hydraulicPress1 from "../../assets/hydraulic-press-1.png";
+import hydraulicPress2 from "../../assets/hydraulic-press-2.png";
+import hydraulicPress3 from "../../assets/hydraulic-press-3.jpg";
 import HeroImgSection from "../heroImgSection";
 import ImageSec from "../aboutUs/imageSec";
 import ImageCarousel from "../aboutUs/imageCarousel";
 import SeeAlsoList from "../services/seeAlsoList";
 
-const imageList = [hydrolicPress, hydrolicPress, hydrolicPress];
 const description =
   "Delivering consistent thickness, shape, and bonding, it supports high-strength applications in aerospace, defence, and mobility sectors.";
 const listItems = [
@@ -23,16 +18,16 @@ const HydrolicPress = () => {
   return (
     <div>
       <HeroImgSection
-        img={hydrolicPress}
+        img={hydraulicPress1}
         title="650-TONNE HYDRAULIC PRESS"
         details="Powering precision through controlled pressure."
       />
       <ImageSec
-        imageUrl={hydrolicPress}
+        imageUrl={hydraulicPress2}
         title="650-TONNE HYDRAULIC PRESS"
         description="Our 650-tonne hydraulic press forms large and complex composite components with uniform compaction."
       />
-      <ImageCarousel imageList={imageList} description={description} />
+      <ImageCarousel imageList={[hydraulicPress2, hydraulicPress3]} description={description} />
       <SeeAlsoList title="Related Facilities" items={listItems} />
     </div>
   );

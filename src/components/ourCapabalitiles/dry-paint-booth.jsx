@@ -1,16 +1,12 @@
-import fallbackImg from "../../assets/fallback.jpg";
-let paintBoothImg;
-try {
-  paintBoothImg = require("../../assets/dry-paint-booth.jpg");
-} catch (e) {
-  paintBoothImg = fallbackImg;
-}
+import paintBooth1 from "../../assets/PAINT-BOOTH-1.jpg";
+import paintBooth2 from "../../assets/paint-booth-2.jpg";
+import paintBooth3 from "../../assets/paint-booth-3.jpg";
 import HeroImgSection from "../heroImgSection";
 import ImageSec from "../aboutUs/imageSec";
 import ImageCarousel from "../aboutUs/imageCarousel";
 import SeeAlsoList from "../services/seeAlsoList";
 
-const imageList = [paintBoothImg];
+const imageList = [paintBooth2, paintBooth3]; // Exclude first image to avoid repetition
 const description =
   "Delivering durable, high-quality finishes for aerospace, automotive, and engineering components—our booth guarantees both performance and visual excellence.";
 const listItems = [
@@ -26,12 +22,12 @@ const DryPaintBooth = () => {
   return (
     <div>
       <HeroImgSection
-        img={paintBoothImg}
+        img={paintBooth1}
         title="DRY PAINT BOOTH"
         details="Achieving flawless surface finishes through controlled coating environments."
       />
       <ImageSec
-        imageUrl={paintBoothImg}
+        imageUrl={paintBooth2}
         title="DRY PAINT BOOTH"
         description="Our industrial dry paint booth is designed for precision coating, ensuring uniform application and premium aesthetics."
       />

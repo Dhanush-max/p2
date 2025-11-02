@@ -6,7 +6,6 @@ import design5 from "../../assets/design5.jpg";
 import design6 from "../../assets/design6.jpg";
 import design7 from "../../assets/design7.jpg";
 import design8 from "../../assets/design8.jpg";
-import design9 from "../../assets/design2.jpg";
 import design10 from "../../assets/design10.jpg";
 import design11 from "../../assets/design11.jpg";
 import design12 from "../../assets/design12.jpg";
@@ -27,7 +26,6 @@ const imageList = [
   design6,
   design7,
   design8,
-  design9,
   design10,
   design11,
   design12,

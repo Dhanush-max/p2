@@ -2,7 +2,7 @@ import React from 'react';
 import HeroImgSection from '../heroImgSection';
 import ContactForm from './contactForm';
 import ContactInfo from './contactInfo';
-import C1 from '../../assets/C1.jpg';
+import C1 from '../../assets/contact-us-background.jpg';
 
 const Contact = () => {
   return (

@@ -1,16 +1,11 @@
-import fallbackImg from "../../assets/fallback.jpg";
-let honeycombImg;
-try {
-  honeycombImg = require("../../assets/composite-honeycomb-bonding.jpg");
-} catch (e) {
-  honeycombImg = fallbackImg;
-}
+import honeycombImg1 from "../../assets/honeycomb-bonding-1.jpg";
+import honeycombImg2 from "../../assets/honeycomb-bonding-2.JPG";
+import honeycombImg3 from "../../assets/honeycomb-bonding-3.JPG";
 import HeroImgSection from "../heroImgSection";
 import ImageSec from "../aboutUs/imageSec";
 import ImageCarousel from "../aboutUs/imageCarousel";
 import SeeAlsoList from "./seeAlsoList";
 
-const imageList = [honeycombImg];
 const description =
   "We specialize in honeycomb core bonding for sandwich-structured composites, achieving strength-to-weight ratios ideal for aerospace and mobility applications. Our precision bonding process ensures uniform adhesive distribution, long-term durability, and superior mechanical performance.";
 const listItems = [
@@ -26,16 +21,16 @@ const CompositeHoneycombBonding = () => {
   return (
     <div>
       <HeroImgSection
-        img={honeycombImg}
+        img={honeycombImg1}
         title="COMPOSITE HONEYCOMB BONDING"
         details="Lightweight strength through advanced bonding technology."
       />
       <ImageSec
-        imageUrl={honeycombImg}
+        imageUrl={honeycombImg2}
         title="COMPOSITE HONEYCOMB BONDING"
         description="We specialize in honeycomb core bonding for sandwich-structured composites, achieving strength-to-weight ratios ideal for aerospace and mobility applications. Our precision bonding process ensures uniform adhesive distribution, long-term durability, and superior mechanical performance."
       />
-      <ImageCarousel imageList={imageList} description={description} />
+      <ImageCarousel imageList={[honeycombImg2, honeycombImg3]} description={description} />
       <SeeAlsoList title="Related Services" items={listItems} />
     </div>
   );

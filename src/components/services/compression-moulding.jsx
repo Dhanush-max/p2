@@ -1,16 +1,10 @@
-import fallbackImg from "../../assets/fallback.jpg";
-let compressionImg;
-try {
-  compressionImg = require("../../assets/compression-moulding.jpg");
-} catch (e) {
-  compressionImg = fallbackImg;
-}
+import compressionImg1 from "../../assets/compression-moulding-1.png";
+import compressionImg2 from "../../assets/compression-moulding-2.png";
 import HeroImgSection from "../heroImgSection";
 import ImageSec from "../aboutUs/imageSec";
 import ImageCarousel from "../aboutUs/imageCarousel";
 import SeeAlsoList from "./seeAlsoList";
 
-const imageList = [compressionImg];
 const description =
   "Our compression moulding process uses high tonnage and temperature control to form complex composite structures with superior finish and uniformity. Ideal for high-strength components, it ensures dimensional accuracy and repeatable performance for aerospace, defence, and automotive applications.";
 const listItems = [
@@ -26,16 +20,16 @@ const CompressionMoulding = () => {
   return (
     <div>
       <HeroImgSection
-        img={compressionImg}
+        img={compressionImg1}
         title="COMPRESSION MOULDING"
         details="Shaping innovation under pressure."
       />
       <ImageSec
-        imageUrl={compressionImg}
+        imageUrl={compressionImg2}
         title="COMPRESSION MOULDING"
         description="Our compression moulding process uses high tonnage and temperature control to form complex composite structures with superior finish and uniformity. Ideal for high-strength components, it ensures dimensional accuracy and repeatable performance for aerospace, defence, and automotive applications."
       />
-      <ImageCarousel imageList={imageList} description={description} />
+      <ImageCarousel imageList={[compressionImg2]} description={description} />
       <SeeAlsoList title="Related Services" items={listItems} />
     </div>
   );

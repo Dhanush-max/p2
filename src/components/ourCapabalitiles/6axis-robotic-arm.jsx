@@ -1,27 +1,11 @@
-import fallbackImg from "../../assets/fallback.jpg";
-let roboticArm, roboticArm1, roboticArm2;
-try {
-  roboticArm = require("../../assets/6axis.jpg");
-} catch (e) {
-  roboticArm = fallbackImg;
-}
-try {
-  roboticArm1 = require("../../assets/6axis2.jpg");
-} catch (e) {
-  roboticArm1 = fallbackImg;
-}
-try {
-  roboticArm2 = require("../../assets/6axis3.jpg");
-} catch (e) {
-  roboticArm2 = fallbackImg;
-}
+import roboticArm1 from "../../assets/6axis-robotic-arm-1.jpg";
+import roboticArm2 from "../../assets/6axis-robotic-arm-2.jpg";
 
 import HeroImgSection from "../heroImgSection";
 import ImageSec from "../aboutUs/imageSec";
 import ImageCarousel from "../aboutUs/imageCarousel";
 import SeeAlsoList from "../services/seeAlsoList";
 
-const imageList = [roboticArm, roboticArm1, roboticArm2];
 const description =
   "Designed for advanced automation, it enhances repeatability and reduces manual intervention—ensuring reliability across production cycles.";
 const listItems = [
@@ -39,11 +23,11 @@ const SixAxisRoboticArm = () => {
         details="Redefining precision and flexibility in composite manufacturing."
       />
       <ImageSec
-        imageUrl={roboticArm}
+        imageUrl={roboticArm2}
         title="6-AXIS CNC ROBOTIC ARM"
         description="The 6-axis robotic arm allows complex machining, trimming, and drilling operations with micron-level accuracy."
       />
-      <ImageCarousel imageList={imageList} description={description} />
+      <ImageCarousel imageList={[roboticArm2]} description={description} />
       <SeeAlsoList title="Related Facilities" items={listItems} />
     </div>
   );

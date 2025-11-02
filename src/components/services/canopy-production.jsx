@@ -1,16 +1,12 @@
-import fallbackImg from "../../assets/fallback.jpg";
-let canopyImg;
-try {
-  canopyImg = require("../../assets/canopy-production.jpg");
-} catch (e) {
-  canopyImg = fallbackImg;
-}
+import canopyProd1 from "../../assets/canopy-prod-1.png";
+import canopyProd2 from "../../assets/canopy-prod-2.png";
+import canopyProd3 from "../../assets/canopy-prod-3.png";
 import HeroImgSection from "../heroImgSection";
 import ImageSec from "../aboutUs/imageSec";
 import ImageCarousel from "../aboutUs/imageCarousel";
 import SeeAlsoList from "./seeAlsoList";
 
-const imageList = [canopyImg];
+const imageList = [canopyProd1, canopyProd2, canopyProd3];
 const description =
   "Our canopy production integrates composite forming, finishing, and quality control to deliver high-clarity, structurally robust components. Supported by advanced tooling and curing technology, we supply canopies that meet exact optical and aerodynamic specifications.";
 const listItems = [
@@ -26,12 +22,12 @@ const CanopyProduction = () => {
   return (
     <div>
       <HeroImgSection
-        img={canopyImg}
+        img={canopyProd1}
         title="CANOPY PRODUCTION"
         details="Transparency, precision, and strength engineered together."
       />
       <ImageSec
-        imageUrl={canopyImg}
+        imageUrl={canopyProd1}
         title="CANOPY PRODUCTION"
         description="Our canopy production integrates composite forming, finishing, and quality control to deliver high-clarity, structurally robust components. Supported by advanced tooling and curing technology, we supply canopies that meet exact optical and aerodynamic specifications."
       />

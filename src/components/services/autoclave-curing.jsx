@@ -1,16 +1,12 @@
-import fallbackImg from "../../assets/fallback.jpg";
-let autoclaveImg;
-try {
-  autoclaveImg = require("../../assets/autoclave-curing.jpg");
-} catch (e) {
-  autoclaveImg = fallbackImg;
-}
+import autoclaveCuring1 from "../../assets/autoclave-curing-1.jpg";
+import autoclaveCuring2 from "../../assets/autoclave-curing-2.jpg";
+import autoclaveCuring3 from "../../assets/autoclave-curing-3.jpg";
+import autoclaveCuring4 from "../../assets/autoclave-curing-4.jpg";
 import HeroImgSection from "../heroImgSection";
 import ImageSec from "../aboutUs/imageSec";
 import ImageCarousel from "../aboutUs/imageCarousel";
 import SeeAlsoList from "./seeAlsoList";
 
-const imageList = [autoclaveImg];
 const description =
   "Using advanced high-pressure and high-temperature systems, we cure composite parts for optimal strength and durability. This process ensures void-free laminates and structural reliability—meeting the exacting demands of aerospace and mission-critical industries.";
 const listItems = [
@@ -26,16 +22,16 @@ const AutoclaveCuring = () => {
   return (
     <div>
       <HeroImgSection
-        img={autoclaveImg}
+        img={autoclaveCuring1}
         title="AUTOCLAVE CURING"
         details="Precision curing for performance without compromise."
       />
       <ImageSec
-        imageUrl={autoclaveImg}
+        imageUrl={autoclaveCuring2}
         title="AUTOCLAVE CURING"
         description="Using advanced high-pressure and high-temperature systems, we cure composite parts for optimal strength and durability. This process ensures void-free laminates and structural reliability—meeting the exacting demands of aerospace and mission-critical industries."
       />
-      <ImageCarousel imageList={imageList} description={description} />
+      <ImageCarousel imageList={[autoclaveCuring2, autoclaveCuring3, autoclaveCuring4]} description={description} />
       <SeeAlsoList title="Related Services" items={listItems} />
     </div>
   );

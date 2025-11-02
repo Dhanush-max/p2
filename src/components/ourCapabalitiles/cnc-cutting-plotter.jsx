@@ -5,7 +5,7 @@ import ImageSec from "../aboutUs/imageSec";
 import ImageCarousel from "../aboutUs/imageCarousel";
 import SeeAlsoList from "../services/seeAlsoList";
 
-const imageList = [cncCuttingPlotter, cncCuttingPlotter2, cncCuttingPlotter]; // Add more images as needed
+const imageList = [cncCuttingPlotter, cncCuttingPlotter2]; // Two unique CNC cutting plotter images
 const description =
   "Delivering clean edges and consistent quality, our CNC system enhances manufacturing efficiency for aerospace, automotive, and defence applications.";
 const listItems = [

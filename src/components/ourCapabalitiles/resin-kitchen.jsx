@@ -6,7 +6,7 @@ import ImageSec from "../aboutUs/imageSec";
 import ImageCarousel from "../aboutUs/imageCarousel";
 import SeeAlsoList from "../services/seeAlsoList";
 
-const imageList = [ResinStorageImage1, ResinStorageImage, ResinStorageImage]; // Add more images as needed
+const imageList = [ResinStorageImage1, ResinStorageImage]; // Two unique images
 const description =
   "Our resin kitchen facility is designed to deliver exceptional quality and precision for all resin-based projects. We ensure durability and reliability in every product.";
   const listItems = [
