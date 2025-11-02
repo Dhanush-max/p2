@@ -45,7 +45,7 @@ const HeroSection = () => {
         <div className="absolute flex flex-col items-start pt-96 ml-24 w-[calc(100%-6rem)] z-30">
           {/* Main Heading */}
           <div className="relative bg-white py-3 px-5 h-fit">
-            <div className="text-black font-semibold text-5xl">Let's Fly!</div>
+            <div className="text-black font-semibold text-5xl">Experience Peridot Precision</div>
           </div>
 
           {/* See Movie Button */}
@@ -73,7 +73,7 @@ const HeroSection = () => {
                 />
               </g>
             </svg>
-            See movie
+            see it in action
           </button>
         </div>
         <div

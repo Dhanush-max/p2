@@ -1,51 +1,43 @@
-import canopy from "../../assets/canopy.jpg";
+import fallbackImg from "../../assets/fallback.jpg";
+let canopyImg;
+try {
+  canopyImg = require("../../assets/canopy-production.jpg");
+} catch (e) {
+  canopyImg = fallbackImg;
+}
 import HeroImgSection from "../heroImgSection";
 import ImageSec from "../aboutUs/imageSec";
 import ImageCarousel from "../aboutUs/imageCarousel";
 import SeeAlsoList from "./seeAlsoList";
-import c from "../../assets/c.jpg";
-import c2 from "../../assets/c2.jpg";
-import c3 from "../../assets/c3.jpg";
-import c4 from "../../assets/c4.jpg";
-import c5 from "../../assets/c5.jpg";
-import c6 from "../../assets/c6.jpg";
-import c7 from "../../assets/c7.jpg";
-import c8 from "../../assets/c8.jpg";
-import c9 from "../../assets/c9.jpg";
-import c10 from "../../assets/c10.jpg";
-import c11 from "../../assets/c11.jpg";
-import c12 from "../../assets/c12.jpg";
-import c13 from "../../assets/c13.jpg";
-import c14 from "../../assets/c14.jpg";
 
-const imageList = [c, c2, c3, c4, c5, c6, c7, c8, c9, c10, c11, c12, c13, c14];
-
+const imageList = [canopyImg];
 const description =
-  "Lorem ipsum dolor sit amet consectetur adipisicing elit.  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum eligendi quidem magni ratione corrupti deleniti quia assumenda consequuntur. Consectetur quidem sequi fugiat dolorem odio veritatis corrupti nulla! Blanditiis, magni quidem? ";
+  "Our canopy production integrates composite forming, finishing, and quality control to deliver high-clarity, structurally robust components. Supported by advanced tooling and curing technology, we supply canopies that meet exact optical and aerodynamic specifications.";
 const listItems = [
-  { name: "Design office", link: "/services/design-office" },
-  { name: "Paint shop", link: "/services/paint-shop" },
-  { name: "CNC milling", link: "/services/cnc-milling" },
-  { name: "Cutting plotter", link: "/services/cutting-plotter" },
-  { name: "Production of models", link: "/services/production-of-models" },
-  { name: "Production of moulds and tooling", link: "/services/production-of-moulds-and-tooling" },
+  { name: "COMPRESSION MOULDING", link: "/services/compression-moulding" },
+  { name: "AUTOCLAVE CURING", link: "/services/autoclave-curing" },
+  { name: "COMPOSITE MOULD MANUFACTURING", link: "/services/composite-mould-manufacturing" },
+  { name: "COMPOSITE HONEYCOMB BONDING", link: "/services/composite-honeycomb-bonding" },
+  { name: "RESIN INFUSION", link: "/services/resin-infusion" },
+  { name: "WET LAYUP TECHNIQUE", link: "/services/wet-layup-technique" },
 ];
+
 const CanopyProduction = () => {
   return (
-    <>
+    <div>
       <HeroImgSection
-        img={canopy}
-        title="Canopy production"
-        details="Scratch on the glass? Don't worry! Our offer includes canopies for single and two-seater gliders, and after delivery of appropriate equipment – also other aircrafts."
+        img={canopyImg}
+        title="CANOPY PRODUCTION"
+        details="Transparency, precision, and strength engineered together."
       />
       <ImageSec
-        imageUrl="../src/assets/c3.jpg"
-        description="We offer not only painting of new aircrafts, but also comprehensive renovation of used gliders and motor gliders.
-        "
+        imageUrl={canopyImg}
+        title="CANOPY PRODUCTION"
+        description="Our canopy production integrates composite forming, finishing, and quality control to deliver high-clarity, structurally robust components. Supported by advanced tooling and curing technology, we supply canopies that meet exact optical and aerodynamic specifications."
       />
       <ImageCarousel imageList={imageList} description={description} />
-      <SeeAlsoList title="See also" items={listItems} />
-    </>
+      <SeeAlsoList title="Related Services" items={listItems} />
+    </div>
   );
 };
 

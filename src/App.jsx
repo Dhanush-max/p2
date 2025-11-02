@@ -6,12 +6,13 @@ import Technologies from "./components/ourCapabalitiles/technologies";
 import Equpiments from "./components/ourCapabalitiles/equipment";
 import ProductionFacilities from "./components/ourCapabalitiles/production-facilities";
 import Services from "./components/services/services";
-import DesignOffice from "./components/ourCapabalitiles/designOffice";
-import CanopyProduction from "./components/ourCapabalitiles/canopy-production";
-import CNCMilling from "./components/ourCapabalitiles/cnc-cutting-plotter";
-import CuttingPlotter from "./components/ourCapabalitiles/cnc-cutting-plotter";
-import ProductionOfModels from "./components/ourCapabalitiles/production-of-moulds-and-tooling";
-import ProductionOfMouldsAndTooling from "./components/ourCapabalitiles/production-of-moulds-and-tooling";
+import CompressionMoulding from "./components/services/compression-moulding";
+import AutoclaveCuring from "./components/services/autoclave-curing";
+import CompositeMouldManufacturing from "./components/services/composite-mould-manufacturing";
+import CompositeHoneycombBonding from "./components/services/composite-honeycomb-bonding";
+import ResinInfusion from "./components/services/resin-infusion";
+import WetLayupTechnique from "./components/services/wet-layup-technique";
+import CanopyProduction from "./components/services/canopy-production";
 import Header from "./components/header";
 import Footer from "./components/footer";
 import About from "./components/aboutUs/about";
@@ -29,6 +30,12 @@ import CleanRoomFacility from "./components/ourCapabalitiles/clean-room-facility
 import WeavingMachine from "./components/ourCapabalitiles/weaving-machine";
 import HydrolicPress from "./components/ourCapabalitiles/hydrolic-press";
 import EpoxyStorage from "./components/ourCapabalitiles/epoxy-storage";
+import CompositeCuringOven from "./components/ourCapabalitiles/composite-curing-oven";
+import ThreeDPrinters from "./components/ourCapabalitiles/3d-printers";
+import DryPaintBooth from "./components/ourCapabalitiles/dry-paint-booth";
+import CncPrepregCuttingMachine from "./components/ourCapabalitiles/cnc-prepreg-cutting-machine";
+import LaserCuttingMachine from "./components/ourCapabalitiles/laser-cutting-machine";
+import CarbonfibreWeavingMachine from "./components/ourCapabalitiles/carbonfibre-weaving-machine";
 import "./styles/animation.css";
 
 function App() {
@@ -48,33 +55,13 @@ function App() {
           element={<ProductionFacilities />}
         />
         <Route path="/services" element={<Services />} />
-        <Route path="/services/design-office" element={<DesignOffice />} />
-        <Route path="/ourCapabilities/design-office" element={<DesignOffice />} />
-        <Route path="/services/paint-shop" element={<PaintShop />} />
-        <Route path="/ourCapabilities/paint-shop" element={<PaintShop />} />
-        <Route
-          path="/services/canopy-production"
-          element={<CanopyProduction />}
-        />
-        <Route
-          path="/ourCapabilities/canopy-production"
-          element={<CanopyProduction />}
-        />
-        <Route path="/services/cnc-milling" element={<CNCMilling />} />
-        <Route path="/ourCapabilities/cnc-milling" element={<CNCMilling />} />
-        <Route path="/services/cutting-plotter" element={<CuttingPlotter />} />
-        <Route
-          path="/services/production-of-models"
-          element={<ProductionOfModels />}
-        />
-        <Route
-          path="/ourCapabilities/production-of-moulds"
-          element={<ProductionOfModels />}
-        />
-        <Route
-          path="/services/production-of-moulds-and-tooling"
-          element={<ProductionOfMouldsAndTooling />}
-        />
+        <Route path="/services/compression-moulding" element={<CompressionMoulding />} />
+        <Route path="/services/autoclave-curing" element={<AutoclaveCuring />} />
+        <Route path="/services/composite-mould-manufacturing" element={<CompositeMouldManufacturing />} />
+        <Route path="/services/composite-honeycomb-bonding" element={<CompositeHoneycombBonding />} />
+        <Route path="/services/resin-infusion" element={<ResinInfusion />} />
+        <Route path="/services/wet-layup-technique" element={<WetLayupTechnique />} />
+        <Route path="/services/canopy-production" element={<CanopyProduction />} />
         <Route path="/ourCapabilities/autoclave" element={<Autoclave />} />
         <Route
           path="/ourCapabilities/test-facility"
@@ -111,6 +98,15 @@ function App() {
           path="/ourCapabilities/epoxy-storage"
           element={<EpoxyStorage />}
         />
+        <Route
+          path="/ourCapabilities/composite-curing-oven"
+          element={<CompositeCuringOven />}
+        />
+        <Route path="/ourCapabilities/3d-printers" element={<ThreeDPrinters />} />
+        <Route path="/ourCapabilities/dry-paint-booth" element={<DryPaintBooth />} />
+        <Route path="/ourCapabilities/cnc-prepreg-cutting-machine" element={<CncPrepregCuttingMachine />} />
+        <Route path="/ourCapabilities/laser-cutting-machine" element={<LaserCuttingMachine />} />
+        <Route path="/ourCapabilities/carbonfibre-weaving-machine" element={<CarbonfibreWeavingMachine />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>

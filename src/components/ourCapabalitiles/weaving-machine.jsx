@@ -10,7 +10,7 @@ const imageList = [weavingMachine1, weavingMachine, weavingMachine]; // Add more
 const description =
   "Our weaving machine facility is designed to deliver precision and efficiency in weaving operations. With advanced technology, it ensures high-quality results for a variety of applications.";
 const listItems = [
-  { name: "Paint Shop", link: "/services/paint-shop" },
+  { name: "DRY PAINT BOOTH", link: "/services/paint-shop" },
   { name: "Canopy Production", link: "/services/canopy-production" },
   { name: "CNC Milling", link: "/services/cnc-milling" },
   { name: "Cutting Plotter", link: "/services/cutting-plotter" },

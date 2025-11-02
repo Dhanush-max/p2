@@ -10,7 +10,7 @@ const imageList = [ResinStorageImage1, ResinStorageImage, ResinStorageImage]; //
 const description =
   "Our resin kitchen facility is designed to deliver exceptional quality and precision for all resin-based projects. We ensure durability and reliability in every product.";
   const listItems = [
-    { name: "Paint Shop", link: "/services/paint-shop" },
+    { name: "DRY PAINT BOOTH", link: "/services/paint-shop" },
     { name: "Canopy Production", link: "/services/canopy-production" },
     { name: "CNC Milling", link: "/services/cnc-milling" },
     { name: "Cutting Plotter", link: "/services/cutting-plotter" },

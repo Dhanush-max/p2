@@ -8,7 +8,7 @@ const imageList = [canopyProduction, canopyProduction, canopyProduction]; // Add
 const description =
   "Our canopy production facility is dedicated to delivering high-quality, durable, and precision-engineered canopies. With advanced manufacturing techniques, we ensure superior results for a variety of applications.";
 const listItems = [
-  { name: "Paint Shop", link: "/services/paint-shop" },
+  { name: "DRY PAINT BOOTH", link: "/services/paint-shop" },
   { name: "Canopy Production", link: "/services/canopy-production" },
   { name: "CNC Milling", link: "/services/cnc-milling" },
   { name: "Cutting Plotter", link: "/services/cutting-plotter" },

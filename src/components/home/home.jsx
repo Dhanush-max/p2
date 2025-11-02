@@ -45,19 +45,18 @@ const Home = () => {
         <div className="container ml-24 w-[calc(100%-6rem)] text-center">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center py-20">
             <div className="flex">
-              <h1 className="text-3xl font-extrabold uppercase">OUR Facilities</h1>
+              <h1 className="text-3xl font-extrabold uppercase">our capabilities</h1>
             </div>
             <div className="flex">
               <h3 className="font-medium text-start">
-                With our knowledge, experienced people, and specialist
-                equipment, we embrace every challenge.
+                Empowered by state-of-the-art infrastructure and a dedicated team, we craft high-performance solutions tailored to every industry's unique needs.
               </h3>
             </div>
-            <div className="flex justify-end mr-10 max-md:justify-start">
+            {/* <div className="flex justify-end mr-10 max-md:justify-start">
               <a href="/ourCapabilities/canopy-production">
                 <h3 className="font-bold">See All</h3>
               </a>
-            </div>
+            </div> */}
           </div>
         </div>
 

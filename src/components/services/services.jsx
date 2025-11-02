@@ -33,9 +33,9 @@ const Services = () => {
       />
       <Section
         image={paintImg}
-        altText="PAINT SHOP"
+        altText="DRY PAINT BOOTH"
         bgColor="bg-black"
-        title="PAINT SHOP"
+        title="DRY PAINT BOOTH"
         description="We have a modern painting chamber, and also a grinding chamber."
         link="#"
       />

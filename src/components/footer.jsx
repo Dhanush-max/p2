@@ -1,7 +1,9 @@
+
+
 import React from "react";
 import { Link } from "react-router-dom";
 import ScrollToTop from "./scrollToTop";
-import logo from "../assets/logo.png"; 
+import logo from "../assets/logo.png";
 
 const Footer = () => {
   return (
@@ -9,10 +11,10 @@ const Footer = () => {
       <div className="container mx-auto px-8">
         {/* Top Section */}
         <div className="flex justify-between items-center py-8 border-b border-gray-700">
-        <Link to="/" className="flex items-center text-md lg:text-xl font-bold text-gray-800 mr-5">
-        <img src={logo} alt="Company Logo" className="h-8 lg:h-12 w-auto" />
-        <span className="text-white ">PERIDOT</span>
-        </Link>
+          <Link to="/" className="flex items-center text-md lg:text-xl font-bold text-gray-800 mr-5">
+            <img src={logo} alt="Company Logo" className="h-8 lg:h-12 w-auto" />
+            <span className="text-white ">PERIDOT</span>
+          </Link>
           <div>
             <p className="text-sm uppercase mb-2">Follow Us:</p>
             <ul className="flex space-x-4">
@@ -29,141 +31,18 @@ const Footer = () => {
           {/* Capabilities */}
           <div className="col-span-1 md:col-span-2">
             <h3 className="text-lg font-semibold mb-4 border-b border-gray-700 pb-2">
-              Our Facilities
+              our capabilities
             </h3>
-            <ul className="space-y-2 flex justify-between">
-            <div className="space-y-2 w-1/2">
-              <li>
-                <a
-                  href="/ourCapabilities/canopy-production"
-                  className="transition duration-300 hover:text-white hover:text-[16px] text-gray-400"
-                >
-                  Canopy Production
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/ourCapabilities/autoclave"
-                  className="transition duration-300 hover:text-white hover:text-[16px] text-gray-400"
-                >
-                  Autoclave
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/ourCapabilities/cnc-milling"
-                  className="transition duration-300 hover:text-white hover:text-[16px] text-gray-400"
-                >
-                  CNC Cutting
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/ourCapabilities/production-of-moulds"
-                  className="transition duration-300 hover:text-white hover:text-[16px] text-gray-400"
-                >
-                  Production of Moulds
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/ourCapabilities/design-office"
-                  className="transition duration-300 hover:text-white hover:text-[16px] text-gray-400"
-                >
-                  Design Office
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/ourCapabilities/paint-shop"
-                  className="transition duration-300 hover:text-white hover:text-[16px] text-gray-400"
-                >
-                  Paint Shop
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/ourCapabilities/oven"
-                  className="transition duration-300 hover:text-white hover:text-[16px] text-gray-400"
-                >
-                  Oven
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/ourCapabilities/resin-kitchen"
-                  className="transition duration-300 hover:text-white hover:text-[16px] text-gray-400"
-                >
-                  Resin kitchen
-                </a>
-              </li>
-              </div>
-              <div className="space-y-2 w-1/2">
-              <li>
-                <a
-                  href="/ourCapabilities/cold-storage"
-                  className="transition duration-300 hover:text-white hover:text-[16px] text-gray-400"
-                >
-                  Cold Storage
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/ourCapabilities/laser-3d-scanner"
-                  className="transition duration-300 hover:text-white hover:text-[16px] text-gray-400"
-                >
-                  Laser 3D Scanner
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/ourCapabilities/laser-cutting-modeling"
-                  className="transition duration-300 hover:text-white hover:text-[16px] text-gray-400"
-                >
-                  Laser Cutting & Modeling
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/ourCapabilities/6axis-robotic-arm"
-                  className="transition duration-300 hover:text-white hover:text-[16px] text-gray-400"
-                >
-                  6-Axis Robotic Arm
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/ourCapabilities/clean-room-facility"
-                  className="transition duration-300 hover:text-white hover:text-[16px] text-gray-400"
-                >
-                  Clean Room Facility
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/ourCapabilities/weaving-machine"
-                  className="transition duration-300 hover:text-white hover:text-[16px] text-gray-400"
-                >
-                  Weaving Machine
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/ourCapabilities/hydrolic-press"
-                  className="transition duration-300 hover:text-white hover:text-[16px] text-gray-400"
-                >
-                  Hydraulic Press
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/ourCapabilities/epoxy-storage"
-                  className="transition duration-300 hover:text-white hover:text-[16px] text-gray-400"
-                >
-                  Epoxy Storage
-                </a>
-              </li>
-              </div>
+            <ul className="space-y-2">
+              <li><a href="/ourCapabilities/autoclave" className="transition duration-300 hover:text-white hover:text-[16px] text-gray-400">Autoclaves</a></li>
+              <li><a href="/ourCapabilities/composite-curing-oven" className="transition duration-300 hover:text-white hover:text-[16px] text-gray-400">Composite curing oven</a></li>
+              <li><a href="/ourCapabilities/dry-paint-booth" className="transition duration-300 hover:text-white hover:text-[16px] text-gray-400">Dry paint booth</a></li>
+              <li><a href="/ourCapabilities/clean-room-facility" className="transition duration-300 hover:text-white hover:text-[16px] text-gray-400">Clean room</a></li>
+              <li><a href="/ourCapabilities/cold-storage" className="transition duration-300 hover:text-white hover:text-[16px] text-gray-400">Cold storage</a></li>
+              <li><a href="/ourCapabilities/cnc-prepreg-cutting-machine" className="transition duration-300 hover:text-white hover:text-[16px] text-gray-400">CNC prepreg cutting machine</a></li>
+              <li><a href="/ourCapabilities/laser-cutting-machine" className="transition duration-300 hover:text-white hover:text-[16px] text-gray-400">Laser cutting machine</a></li>
+              <li><a href="/ourCapabilities/carbonfibre-weaving-machine" className="transition duration-300 hover:text-white hover:text-[16px] text-gray-400">Carbonfibre weaving machine</a></li>
+              <li><a href="/ourCapabilities/3d-printers" className="transition duration-300 hover:text-white hover:text-[16px] text-gray-400">3D printers</a></li>
             </ul>
           </div>
 
@@ -174,52 +53,25 @@ const Footer = () => {
             </h3>
             <ul className="space-y-2">
               <li>
-                <a
-                  href="/services/design-office"
-                  className="transition duration-300 hover:text-white hover:text-[16px] text-gray-400"
-                >
-                  Design Office
-                </a>
+                <a href="/services/compression-moulding" className="transition duration-300 hover:text-white hover:text-[16px] text-gray-400">COMPRESSION MOULDING</a>
               </li>
               <li>
-                <a
-                  href="/services/canopy-production"
-                  className="transition duration-300 hover:text-white hover:text-[16px] text-gray-400"
-                >
-                  Canopy Production
-                </a>
+                <a href="/services/autoclave-curing" className="transition duration-300 hover:text-white hover:text-[16px] text-gray-400">AUTOCLAVE CURING</a>
               </li>
               <li>
-                <a
-                  href="/services/cnc-milling"
-                  className="transition duration-300 hover:text-white hover:text-[16px] text-gray-400"
-                >
-                  CNC Milling
-                </a>
+                <a href="/services/composite-mould-manufacturing" className="transition duration-300 hover:text-white hover:text-[16px] text-gray-400">COMPOSITE MOULD MANUFACTURING</a>
               </li>
               <li>
-                <a
-                  href="/services/cutting-plotter"
-                  className="transition duration-300 hover:text-white hover:text-[16px] text-gray-400"
-                >
-                  Cutting Plotter
-                </a>
+                <a href="/services/composite-honeycomb-bonding" className="transition duration-300 hover:text-white hover:text-[16px] text-gray-400">COMPOSITE HONEYCOMB BONDING</a>
               </li>
               <li>
-                <a
-                  href="/services/production-of-models"
-                  className="transition duration-300 hover:text-white hover:text-[16px] text-gray-400"
-                >
-                  Production of Models
-                </a>
+                <a href="/services/resin-infusion" className="transition duration-300 hover:text-white hover:text-[16px] text-gray-400">RESIN INFUSION</a>
               </li>
               <li>
-                <a
-                  href="/services/production-of-moulds-and-tooling"
-                  className="transition duration-300 hover:text-white hover:text-[16px] text-gray-400"
-                >
-                  Production of Moulds and Tooling
-                </a>
+                <a href="/services/wet-layup-technique" className="transition duration-300 hover:text-white hover:text-[16px] text-gray-400">WET LAYUP TECHNIQUE</a>
+              </li>
+              <li>
+                <a href="/services/canopy-production" className="transition duration-300 hover:text-white hover:text-[16px] text-gray-400">CANOPY PRODUCTION</a>
               </li>
             </ul>
           </div>

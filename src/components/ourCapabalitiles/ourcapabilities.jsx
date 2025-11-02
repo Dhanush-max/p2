@@ -9,7 +9,7 @@ const Capabalitites = () => {
     <>
       <HeroIframe
         videoSrc={capabilites}
-        text={"Our Facilities"}
+        text={"our capabilities"}
         gradient={`linear-gradient(to bottom, transparent 60%, white 100%)`}
         description={
           "Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, quis voluptatum. Deserunt facere ex rerum corporis pariatur. Hic iusto qui eaque, earum dolore error molestiae, exercitationem, repellendus fugit omnis deserunt."

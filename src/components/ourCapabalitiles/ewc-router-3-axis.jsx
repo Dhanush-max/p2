@@ -1,38 +1,53 @@
-import ewcRouter from "../../assets/ewcRouter.jpg";
+
+import fallbackImg from "../../assets/fallback.jpg";
+let cncRouter, cncRouter1, cncRouter2;
+try {
+  cncRouter = require("../../assets/ewc-router-3-axis.jpg");
+} catch (e) {
+  cncRouter = fallbackImg;
+}
+try {
+  cncRouter1 = require("../../assets/ewc-router-3-axis-2.jpg");
+} catch (e) {
+  cncRouter1 = fallbackImg;
+}
+try {
+  cncRouter2 = require("../../assets/ewc-router-3-axis-3.jpg");
+} catch (e) {
+  cncRouter2 = fallbackImg;
+}
+
 import HeroImgSection from "../heroImgSection";
 import ImageSec from "../aboutUs/imageSec";
 import ImageCarousel from "../aboutUs/imageCarousel";
 import SeeAlsoList from "../services/seeAlsoList";
 
-const imageList = [ewcRouter, ewcRouter, ewcRouter]; // Add more images as needed
+const imageList = [cncRouter, cncRouter1, cncRouter2];
 const description =
-  "Our EWC router is designed to deliver precision and efficiency in 3-axis routing operations. With advanced technology, it ensures high-quality results for a variety of applications.";
+  "With precision machining and smooth surface finish, we ensure every mould delivers repeatable performance across multiple production runs.";
 const listItems = [
-  { name: "Paint Shop", link: "/services/paint-shop" },
-  { name: "Canopy Production", link: "/services/canopy-production" },
-  { name: "CNC Milling", link: "/services/cnc-milling" },
-  { name: "Cutting Plotter", link: "/services/cutting-plotter" },
-  { name: "Production of Models", link: "/services/production-of-models" },
-  { name: "Production of Moulds and Tooling", link: "/services/production-of-moulds-and-tooling" },
+  { name: "AUTOCLAVES", link: "/ourCapabalitiles/autoclave" },
+  { name: "COMPOSITE CURING OVEN", link: "/ourCapabalitiles/composite-curing-oven" },
+  { name: "CLEAN ROOM", link: "/ourCapabalitiles/clean-room-facility" },
 ];
 
-const EWCRouter3Axis = () => {
+const ThreeAxisCncPatternMouldMachine = () => {
   return (
     <div>
       <HeroImgSection
-        img={ewcRouter}
-        title="EWC Router - 3 Axis"
-        details="Our EWC router provides precise and efficient 3-axis routing solutions."
+        img={cncRouter1}
+        title="3-AXIS CNC PATTERN & MOULD MACHINE"
+        details="Precision begins with perfect patterns and moulds."
       />
       <ImageSec
-        imageUrl={ewcRouter}
-        title="Advanced EWC Router - 3 Axis"
-        description="Our EWC router is equipped with the latest technology to ensure precise and efficient 3-axis routing."
+        imageUrl={cncRouter}
+        title="3-AXIS CNC PATTERN & MOULD MACHINE"
+        description="Our 3-axis CNC machines create high-accuracy tooling for composite and metal parts."
       />
       <ImageCarousel imageList={imageList} description={description} />
-      <SeeAlsoList title="See also" items={listItems} />
+      <SeeAlsoList title="Related Facilities" items={listItems} />
     </div>
   );
 };
 
-export default EWCRouter3Axis;
+export default ThreeAxisCncPatternMouldMachine;

@@ -1,21 +1,31 @@
-import coldStorage from "../../assets/cold.jpg";
-import coldStorage2 from "../../assets/cold2.jpg";
+import fallbackImg from "../../assets/fallback.jpg";
+let coldStorage, coldStorage2;
+try {
+  coldStorage = require("../../assets/cold.jpg");
+} catch (e) {
+  coldStorage = fallbackImg;
+}
+try {
+  coldStorage2 = require("../../assets/cold2.jpg");
+} catch (e) {
+  coldStorage2 = fallbackImg;
+}
 
 import HeroImgSection from "../heroImgSection";
 import ImageSec from "../aboutUs/imageSec";
 import ImageCarousel from "../aboutUs/imageCarousel";
 import SeeAlsoList from "../services/seeAlsoList";
 
-const imageList = [coldStorage, coldStorage, coldStorage2]; // Add more images as needed
+const imageList = [coldStorage, coldStorage, coldStorage2];
 const description =
-  "Our cold storage facility is designed to preserve materials at optimal temperatures, ensuring their quality and longevity. With advanced temperature control systems, we cater to a wide range of storage needs.";
+  "Combined with a 2–4 °C ante room, it maintains the highest quality standards for resin systems and composite components throughout production.";
 const listItems = [
-  { name: "Paint Shop", link: "/services/paint-shop" },
-  { name: "Canopy Production", link: "/services/canopy-production" },
-  { name: "CNC Milling", link: "/services/cnc-milling" },
-  { name: "Cutting Plotter", link: "/services/cutting-plotter" },
-  { name: "Production of Models", link: "/services/production-of-models" },
-  { name: "Production of Moulds and Tooling", link: "/services/production-of-moulds-and-tooling" },
+  { name: "AUTOCLAVES", link: "/ourCapabilities/autoclave" },
+  { name: "COMPOSITE CURING OVEN", link: "/ourCapabilities/composite-curing-oven" },
+  { name: "DRY PAINT BOOTH", link: "/ourCapabilities/dry-paint-booth" },
+  { name: "CLEAN ROOM", link: "/ourCapabilities/clean-room-facility" },
+  { name: "COLD STORAGE" }, // current page, no link
+  { name: "3D SCANNER & 3D PRINTERS", link: "/ourCapabilities/3d-printers" },
 ];
 
 const ColdStorage = () => {
@@ -23,16 +33,16 @@ const ColdStorage = () => {
     <div>
       <HeroImgSection
         img={coldStorage2}
-        title="Cold Storage"
-        details="Our cold storage facility ensures the preservation of materials at optimal temperatures."
+        title="COLD STORAGE"
+        details="Preserving material integrity through advanced temperature management."
       />
       <ImageSec
         imageUrl={coldStorage}
-        title="State-of-the-art Cold Storage"
-        description="Our cold storage facility is equipped with the latest technology to ensure the best preservation of materials."
+        title="COLD STORAGE"
+        description="Our –18 °C cold storage ensures the stability of prepreg  and temperature-sensitive materials."
       />
       <ImageCarousel imageList={imageList} description={description} />
-      <SeeAlsoList title="See also" items={listItems} />
+      <SeeAlsoList title="Related Facilities" items={listItems} />
     </div>
   );
 };

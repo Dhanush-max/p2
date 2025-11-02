@@ -8,7 +8,7 @@ const imageList = [epoxyStorage, epoxyStorage, epoxyStorage]; // Add more images
 const description =
   "Our epoxy storage facility is designed to preserve epoxy materials at optimal conditions. With advanced storage systems, we ensure the quality and longevity of epoxy products.";
 const listItems = [
-  { name: "Paint Shop", link: "/services/paint-shop" },
+  { name: "DRY PAINT BOOTH", link: "/services/paint-shop" },
   { name: "Canopy Production", link: "/services/canopy-production" },
   { name: "CNC Milling", link: "/services/cnc-milling" },
   { name: "Cutting Plotter", link: "/services/cutting-plotter" },

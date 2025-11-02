@@ -1,22 +1,36 @@
-import cleanRoomFacility from "../../assets/cleanroom.jpg";
-import cleanRoomFacility1 from "../../assets/cleanroom1.jpg";
-import cleanRoomFacility2 from "../../assets/cleanroom2.jpg";
+import fallbackImg from "../../assets/fallback.jpg";
+let cleanRoomFacility, cleanRoomFacility1, cleanRoomFacility2;
+try {
+  cleanRoomFacility = require("../../assets/cleanroom.jpg");
+} catch (e) {
+  cleanRoomFacility = fallbackImg;
+}
+try {
+  cleanRoomFacility1 = require("../../assets/cleanroom1.jpg");
+} catch (e) {
+  cleanRoomFacility1 = fallbackImg;
+}
+try {
+  cleanRoomFacility2 = require("../../assets/cleanroom2.jpg");
+} catch (e) {
+  cleanRoomFacility2 = fallbackImg;
+}
 
 import HeroImgSection from "../heroImgSection";
 import ImageSec from "../aboutUs/imageSec";
 import ImageCarousel from "../aboutUs/imageCarousel";
 import SeeAlsoList from "../services/seeAlsoList";
 
-const imageList = [cleanRoomFacility1, cleanRoomFacility2, cleanRoomFacility]; // Add more images as needed
+const imageList = [cleanRoomFacility1, cleanRoomFacility2, cleanRoomFacility];
 const description =
-  "Our clean room facility is designed to provide a controlled environment for precision manufacturing and sensitive processes. With advanced filtration and environmental controls, we ensure the highest standards of cleanliness and quality.";
+  "Supported by an ante room (2–4 °C), it ensures optimal temperature and particulate control, enabling high-quality production for aerospace, defence, and medical-grade assemblies.";
 const listItems = [
-  { name: "Paint Shop", link: "/services/paint-shop" },
-  { name: "Canopy Production", link: "/services/canopy-production" },
-  { name: "CNC Milling", link: "/services/cnc-milling" },
-  { name: "Cutting Plotter", link: "/services/cutting-plotter" },
-  { name: "Production of Models", link: "/services/production-of-models" },
-  { name: "Production of Moulds and Tooling", link: "/services/production-of-moulds-and-tooling" },
+  { name: "AUTOCLAVES", link: "/ourCapabilities/autoclave" },
+  { name: "COMPOSITE CURING OVEN", link: "/ourCapabilities/composite-curing-oven" },
+  { name: "DRY PAINT BOOTH", link: "/ourCapabilities/dry-paint-booth" },
+  { name: "CLEAN ROOM" }, // current page, no link
+  { name: "COLD STORAGE", link: "/ourCapabilities/cold-storage" },
+  { name: "3D SCANNER & 3D PRINTERS", link: "/ourCapabilities/3d-printers" },
 ];
 
 const CleanRoomFacility = () => {
@@ -24,16 +38,16 @@ const CleanRoomFacility = () => {
     <div>
       <HeroImgSection
         img={cleanRoomFacility1}
-        title="Clean Room Facility"
-        details="Our clean room facility ensures a controlled environment for precision manufacturing and sensitive processes."
+        title="CLEAN ROOM"
+        details="Maintaining purity and precision at every stage of production."
       />
       <ImageSec
         imageUrl={cleanRoomFacility}
-        title="State-of-the-art Clean Room Facility"
-        description="Our clean room facility is equipped with advanced technology to maintain a controlled environment for high-quality production."
+        title="CLEAN ROOM"
+        description="Our 1,800 sq ft Class 8-grade clean room provides a contamination-free environment for composite manufacturing."
       />
       <ImageCarousel imageList={imageList} description={description} />
-      <SeeAlsoList title="See also" items={listItems} />
+      <SeeAlsoList title="Related Facilities" items={listItems} />
     </div>
   );
 };

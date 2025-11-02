@@ -40,7 +40,7 @@ const description =
   "Our aerospace design office is powered by a team of expert engineers and CAD specialists who bring innovation, precision, and efficiency to every project. From conceptual sketches to complete 3D models, we provide end-to-end design solutions for gliders, ultralight aircraft, and complex aerospace components used worldwide.";
 
 const listItems = [
-  { name: "Paint Shop", link: "/services/paint-shop" },
+  { name: "DRY PAINT BOOTH", link: "/services/paint-shop" },
   { name: "Canopy Production", link: "/services/canopy-production" },
   { name: "CNC Milling", link: "/services/cnc-milling" },
   { name: "Cutting Plotter", link: "/services/cutting-plotter" },

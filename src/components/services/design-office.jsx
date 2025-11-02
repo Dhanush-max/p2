@@ -38,7 +38,7 @@ const imageList = [
 const description =
   "Lorem ipsum dolor sit amet consectetur adipisicing elit.  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum eligendi quidem magni ratione corrupti deleniti quia assumenda consequuntur. Consectetur quidem sequi fugiat dolorem odio veritatis corrupti nulla! Blanditiis, magni quidem? ";
 const listItems = [
-  { name: "Paint shop", link: "/services/paint-shop" },
+  { name: "DRY PAINT BOOTH", link: "/services/paint-shop" },
   { name: "Canopy production", link: "/services/canopy-production" },
   { name: "CNC milling", link: "/services/cnc-milling" },
   { name: "Cutting plotter", link: "/services/cutting-plotter" },
@@ -65,4 +65,4 @@ const DesignOffice = () => {
   );
 };
 
-export default DesignOffice;
+// File removed as per new service list

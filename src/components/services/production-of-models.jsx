@@ -8,7 +8,7 @@ const description =
   "Lorem ipsum dolor sit amet consectetur adipisicing elit.  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum eligendi quidem magni ratione corrupti deleniti quia assumenda consequuntur. Consectetur quidem sequi fugiat dolorem odio veritatis corrupti nulla! Blanditiis, magni quidem? ";
 const listItems = [
   { name: "Design office", link: "" },
-  { name: "paint shop", link: "" },
+  { name: "DRY PAINT BOOTH", link: "" },
   { name: "canopy production", link: "" },
   { name: "cnc milling", link: "" },
   { name: "cutting plotter", link: "" },

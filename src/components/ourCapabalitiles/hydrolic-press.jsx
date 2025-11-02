@@ -1,19 +1,22 @@
-import hydrolicPress from "../../assets/hydrolic.jpg";
+import fallbackImg from "../../assets/fallback.jpg";
+let hydrolicPress;
+try {
+  hydrolicPress = require("../../assets/hydrolic.jpg");
+} catch (e) {
+  hydrolicPress = fallbackImg;
+}
 import HeroImgSection from "../heroImgSection";
 import ImageSec from "../aboutUs/imageSec";
 import ImageCarousel from "../aboutUs/imageCarousel";
 import SeeAlsoList from "../services/seeAlsoList";
 
-const imageList = [hydrolicPress, hydrolicPress, hydrolicPress]; // Add more images as needed
+const imageList = [hydrolicPress, hydrolicPress, hydrolicPress];
 const description =
-  "Our hydraulic press facility is designed to deliver precision and efficiency in pressing operations. With advanced technology, it ensures high-quality results for a variety of applications.";
+  "Delivering consistent thickness, shape, and bonding, it supports high-strength applications in aerospace, defence, and mobility sectors.";
 const listItems = [
-  { name: "Paint Shop", link: "/services/paint-shop" },
-  { name: "Canopy Production", link: "/services/canopy-production" },
-  { name: "CNC Milling", link: "/services/cnc-milling" },
-  { name: "Cutting Plotter", link: "/services/cutting-plotter" },
-  { name: "Production of Models", link: "/services/production-of-models" },
-  { name: "Production of Moulds and Tooling", link: "/services/production-of-moulds-and-tooling" },
+  { name: "AUTOCLAVES", link: "/ourCapabalitiles/autoclave" },
+  { name: "COMPOSITE CURING OVEN", link: "/ourCapabalitiles/composite-curing-oven" },
+  { name: "CLEAN ROOM", link: "/ourCapabalitiles/clean-room-facility" },
 ];
 
 const HydrolicPress = () => {
@@ -21,16 +24,16 @@ const HydrolicPress = () => {
     <div>
       <HeroImgSection
         img={hydrolicPress}
-        title="Hydraulic Press"
-        details="Our hydraulic press facility ensures high-quality and precise pressing products for all projects."
+        title="650-TONNE HYDRAULIC PRESS"
+        details="Powering precision through controlled pressure."
       />
       <ImageSec
         imageUrl={hydrolicPress}
-        title="State-of-the-art Hydraulic Press"
-        description="Our hydraulic press facility is equipped with the latest technology to ensure high-quality and precise pressing products."
+        title="650-TONNE HYDRAULIC PRESS"
+        description="Our 650-tonne hydraulic press forms large and complex composite components with uniform compaction."
       />
       <ImageCarousel imageList={imageList} description={description} />
-      <SeeAlsoList title="See also" items={listItems} />
+      <SeeAlsoList title="Related Facilities" items={listItems} />
     </div>
   );
 };

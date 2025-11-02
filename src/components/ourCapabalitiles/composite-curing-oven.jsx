@@ -1,41 +1,44 @@
-import oven from "../../assets/ovens.jpg";
-import oven1 from "../../assets/ovens1.jpg";
-
-
+import fallbackImg from "../../assets/fallback.jpg";
+let ovenImg;
+try {
+  ovenImg = require("../../assets/oven.jpg");
+} catch (e) {
+  ovenImg = fallbackImg;
+}
 import HeroImgSection from "../heroImgSection";
 import ImageSec from "../aboutUs/imageSec";
 import ImageCarousel from "../aboutUs/imageCarousel";
 import SeeAlsoList from "../services/seeAlsoList";
 
-const imageList = [oven, oven1, oven]; // Add more images as needed
+const imageList = [ovenImg];
 const description =
   "Engineered for consistent curing cycles, it enhances component quality and structural integrity- supporting aerospace, defence, and industrial-grade composite applications.";
 const listItems = [
-  { name: "DRY PAINT BOOTH", link: "/services/paint-shop" },
-  { name: "Canopy Production", link: "/services/canopy-production" },
-  { name: "CNC Milling", link: "/services/cnc-milling" },
-  { name: "Cutting Plotter", link: "/services/cutting-plotter" },
-  { name: "Production of Models", link: "/services/production-of-models" },
-  { name: "Production of Moulds and Tooling", link: "/services/production-of-moulds-and-tooling" },
+  { name: "AUTOCLAVES", link: "/ourCapabilities/autoclave" },
+  { name: "COMPOSITE CURING OVEN" }, // current page, no link
+  { name: "DRY PAINT BOOTH", link: "/ourCapabilities/dry-paint-booth" },
+  { name: "CLEAN ROOM", link: "/ourCapabilities/clean-room-facility" },
+  { name: "COLD STORAGE", link: "/ourCapabilities/cold-storage" },
+  { name: "3D SCANNER & 3D PRINTERS", link: "/ourCapabilities/3d-printers" },
 ];
 
-const Oven = () => {
+const CompositeCuringOven = () => {
   return (
     <div>
       <HeroImgSection
-        img={oven1}
+        img={ovenImg}
         title="COMPOSITE CURING OVEN"
         details="Ensuring uniformity and performance through precision-controlled curing environments."
       />
       <ImageSec
-        imageUrl={oven}
+        imageUrl={ovenImg}
         title="COMPOSITE CURING OVEN"
         description="Our 4 × 4 × 8 ft composite curing oven offers stable thermal performance for optimal material properties."
       />
       <ImageCarousel imageList={imageList} description={description} />
-      <SeeAlsoList title="See also" items={listItems} />
+      <SeeAlsoList title="Related Facilities" items={listItems} />
     </div>
   );
 };
 
-export default Oven;
+export default CompositeCuringOven;
