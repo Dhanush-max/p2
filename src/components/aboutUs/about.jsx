@@ -1,13 +1,13 @@
-import React, { useEffect, useRef } from "react";
+import { useEffect, useRef } from "react";
 import HeroImgSection from "../heroImgSection";
-import img from "../../assets/A1.jpg";
-import Count from "./count";
 import AboutVideo from "./aboutvideo";
 import ImageSec from "./imageSec.jsx";
-import Button from "../button.jsx";
-import A3 from "../../assets/A3.jpg";
-import A4 from "../../assets/A4.jpg";
-import A5 from "../../assets/A5.jpg";
+// Import background images from who we are folder (now in assets) to replace existing images
+import background1 from "../../assets/background 1.png";
+import background2 from "../../assets/background 2.png";
+import background3 from "../../assets/background 3.png";
+import background4 from "../../assets/background 4.JPG";
+import backgorund22 from "../../assets/backgorund 22.jpg";
 
 const About = () => {
   const sectionRef = useRef(null);
@@ -24,20 +24,21 @@ const About = () => {
       { threshold: 0.1 }
     );
 
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current);
+    const currentSectionRef = sectionRef.current;
+    if (currentSectionRef) {
+      observer.observe(currentSectionRef);
     }
 
     return () => {
-      if (sectionRef.current) {
-        observer.unobserve(sectionRef.current);
+      if (currentSectionRef) {
+        observer.unobserve(currentSectionRef);
       }
     };
   }, []);
 
   return (
     <div className="mx-auto">
-      <HeroImgSection img={img} title="About Us" details="At Peridot Advanced Materials Pvt. Ltd., precision is our defining principle.
+      <HeroImgSection img={background1} title="About Us" details="At Peridot Advanced Materials Pvt. Ltd., precision is our defining principle.
 We are a leading innovator and manufacturer of high-performance composite materials — including carbon fibre, glass fibre, and hybrid composites — engineered to meet the most demanding requirements of aerospace, defence, and advanced industrial sectors.
 " />
       {/* <Count /> */}
@@ -48,15 +49,15 @@ We are a leading innovator and manufacturer of high-performance composite materi
           <div className="text-base text-black mt-6 lg:max-w-[calc(100%-60%)] max-w-[calc(100%-20%)]">was founded out of love for aviation in 2025, but based on almost 30 years of experience obtained during the production of nearly 600 aircrafts.</div>
         </div>
       </div> */}
-      <ImageSec imageUrl={A3} title="Peridot Advanced Materials Pvt. Ltd" description="We go beyond conventional manufacturing — combining specialized expertise, advanced infrastructure, and process excellence to deliver components that balance strength, lightweight efficiency, and structural reliability. Every product is crafted to meet strict safety, performance, and aesthetic standards.
+      <ImageSec imageUrl={background2} title="Peridot Advanced Materials Pvt. Ltd" description="We go beyond conventional manufacturing — combining specialized expertise, advanced infrastructure, and process excellence to deliver components that balance strength, lightweight efficiency, and structural reliability. Every product is crafted to meet strict safety, performance, and aesthetic standards.
 " />
       {/* <Button text="Production Facilities" href="/ourCapabilities/production-of-moulds" /> */}
-      <ImageSec imageUrl={A5} title="" description="Our 56,852 sq ft integrated facility in North Bengaluru is equipped with state-of-the-art composite manufacturing technologies, making Peridot a complete one-stop solution for composite engineering and production.
+      <ImageSec imageUrl={background3} title="" description="Our 56,852 sq ft integrated facility in North Bengaluru is equipped with state-of-the-art composite manufacturing technologies, making Peridot a complete one-stop solution for composite engineering and production.
 From design and tooling to fabrication, curing, and finishing, our facility houses advanced infrastructure such as autoclaves, CNC machining systems, 3D scanning and printing, clean rooms, hydraulic presses, and robotic automation — enabling precision at every step.
 " />
       {/* <Button text="our capabilities" href="/ourCapabilities/canopy-production" /> */}
-        <ImageSec imageUrl={A5} title="" description="Peridot’s materials and components are built to withstand extreme operational environments, offering exceptional strength-to-weight ratios, fatigue resistance, and thermal stability. These qualities make our solutions ideal for aircraft structures, defence systems, UAVs, spacecraft, and specialized industrial applications." />
-        <ImageSec imageUrl={A5} title="" description="At Peridot, the “P” stands for Precision — a promise we deliver through innovation, craftsmanship, and a relentless pursuit of excellence. " />
+        <ImageSec imageUrl={background4} title="" description="Peridot's materials and components are built to withstand extreme operational environments, offering exceptional strength-to-weight ratios, fatigue resistance, and thermal stability. These qualities make our solutions ideal for aircraft structures, defence systems, UAVs, spacecraft, and specialized industrial applications." />
+        <ImageSec imageUrl={backgorund22} title="" description="At Peridot, the P stands for Precision — a promise we deliver through innovation, craftsmanship, and a relentless pursuit of excellence." />
 
         {/* Our Partners / Clients Section */}
         <section className="my-16 px-4 md:px-0">
@@ -68,7 +69,6 @@ From design and tooling to fabrication, curing, and finishing, our facility hous
             <p className="text-gray-700 mb-8">
               A selection of our esteemed partners is featured below.
             </p>
-            {/* Add partner/client logos here if available */}
           </div>
         </section>
    
