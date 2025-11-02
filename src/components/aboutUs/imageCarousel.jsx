@@ -17,6 +17,7 @@ const ImageCarousel = ({ imageList, description }) => {
               alt="Single Image"
               className="w-full h-full object-cover"
               loaderClassName="w-full h-full"
+              useSkeletonLoader={true}
             />
           </div>
         </div>
@@ -53,6 +54,7 @@ const ImageCarousel = ({ imageList, description }) => {
                   alt={`Slide ${index + 1}`}
                   className="w-full h-full object-cover"
                   loaderClassName="w-full h-full"
+                  useSkeletonLoader={true}
                 />
               </div>
             </div>
