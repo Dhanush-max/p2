@@ -4,7 +4,7 @@ import ImageSec from "../aboutUs/imageSec";
 import ImageCarousel from "../aboutUs/imageCarousel";
 import SeeAlsoList from "../services/seeAlsoList";
 
-const imageList = [testFacility, testFacility, testFacility]; // Add more images as needed
+const imageList = [testFacility]; // Single test facility image
 const description =
   "Our state-of-the-art test facility is designed to ensure the highest standards of quality and performance for all our products. We employ advanced testing methods to guarantee reliability and precision.";
 const listItems = [

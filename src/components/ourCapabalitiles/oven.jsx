@@ -7,11 +7,11 @@ import ImageSec from "../aboutUs/imageSec";
 import ImageCarousel from "../aboutUs/imageCarousel";
 import SeeAlsoList from "../services/seeAlsoList";
 
-const imageList = [oven, oven1, oven]; // Add more images as needed
+const imageList = [oven, oven1]; // Two unique oven images
 const description =
-  "Our oven facility is designed to deliver precise and controlled heating processes. With advanced technology, it ensures high-quality results for a variety of applications.";
+  "Engineered for consistent curing cycles, it enhances component quality and structural integrity- supporting aerospace, defence, and industrial-grade composite applications.";
 const listItems = [
-  { name: "Paint Shop", link: "/services/paint-shop" },
+  { name: "DRY PAINT BOOTH", link: "/services/paint-shop" },
   { name: "Canopy Production", link: "/services/canopy-production" },
   { name: "CNC Milling", link: "/services/cnc-milling" },
   { name: "Cutting Plotter", link: "/services/cutting-plotter" },
@@ -24,13 +24,13 @@ const Oven = () => {
     <div>
       <HeroImgSection
         img={oven1}
-        title="Oven"
-        details="Our oven facility ensures precise and controlled heating processes."
+        title="COMPOSITE CURING OVEN"
+        details="Ensuring uniformity and performance through precision-controlled curing environments."
       />
       <ImageSec
         imageUrl={oven}
-        title="State-of-the-art Oven"
-        description="Our oven facility is equipped with the latest technology to ensure precise and controlled heating processes."
+        title="COMPOSITE CURING OVEN"
+        description="Our 4 × 4 × 8 ft composite curing oven offers stable thermal performance for optimal material properties."
       />
       <ImageCarousel imageList={imageList} description={description} />
       <SeeAlsoList title="See also" items={listItems} />

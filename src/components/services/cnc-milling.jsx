@@ -1,3 +1,4 @@
+// File removed as per new service list
 import cnc from "../../assets/cnc.jpg";
 import HeroImgSection from "../heroImgSection";
 import ImageSec from "../aboutUs/imageSec";
@@ -15,7 +16,7 @@ const description =
   "Lorem ipsum dolor sit amet consectetur adipisicing elit.  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum eligendi quidem magni ratione corrupti deleniti quia assumenda consequuntur. Consectetur quidem sequi fugiat dolorem odio veritatis corrupti nulla! Blanditiis, magni quidem? ";
   const listItems = [
     { name: "Design office", link: "/services/design-office" },
-    { name: "Paint shop", link: "/services/paint-shop" },
+    { name: "DRY PAINT BOOTH", link: "/services/paint-shop" },
     { name: "Canopy production", link: "/services/canopy-production" },
     { name: "Cutting plotter", link: "/services/cutting-plotter" },
     { name: "Production of models", link: "/services/production-of-models" },

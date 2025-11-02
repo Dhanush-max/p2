@@ -5,11 +5,11 @@ import ImageSec from "../aboutUs/imageSec";
 import ImageCarousel from "../aboutUs/imageCarousel";
 import SeeAlsoList from "../services/seeAlsoList";
 
-const imageList = [cncCuttingPlotter, cncCuttingPlotter2, cncCuttingPlotter]; // Add more images as needed
+const imageList = [cncCuttingPlotter, cncCuttingPlotter2]; // Two unique CNC cutting plotter images
 const description =
-  "Our CNC cutting plotter is designed to deliver precision and efficiency in cutting operations. With advanced technology, it ensures high-quality results for a variety of applications.";
+  "Delivering clean edges and consistent quality, our CNC system enhances manufacturing efficiency for aerospace, automotive, and defence applications.";
 const listItems = [
-  { name: "Paint Shop", link: "/services/paint-shop" },
+  { name: "DRY PAINT BOOTH", link: "/services/paint-shop" },
   { name: "Canopy Production", link: "/services/canopy-production" },
   { name: "CNC Milling", link: "/services/cnc-milling" },
   { name: "Cutting Plotter", link: "/services/cutting-plotter" },
@@ -22,13 +22,13 @@ const CNCCuttingPlotter = () => {
     <div>
       <HeroImgSection
         img={cncCuttingPlotter}
-        title="CNC Cutting Plotter"
-        details="Our CNC cutting plotter provides precise and efficient cutting solutions."
+        title="CNC PREPREG CUTTING MACHINE"
+        details="Precision cutting that transforms design into accuracy."
       />
       <ImageSec
         imageUrl={cncCuttingPlotter2}
-        title="Advanced CNC Cutting Plotter"
-        description="Our CNC cutting plotter is equipped with the latest technology to ensure precise and efficient cutting."
+        title="Advanced CNC PREPREG CUTTING MACHINE "
+        description="Automated prepreg cutting ensures high-speed, waste-free processing of composite laminates."
       />
       <ImageCarousel imageList={imageList} description={description} />
       <SeeAlsoList title="See also" items={listItems} />

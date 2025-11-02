@@ -39,7 +39,7 @@ const Header = () => {
 
   return (
     <header className="bg-gray-50 w-full lg:ml-24 lg:w-[calc(100%-6rem)] float-none lg:float-right h-16 lg:h-20 fixed top-0 right-0 left-0 lg:left-auto z-50 shadow-sm">
-      <nav className="px-4 md:px-6 lg:container mx-auto flex justify-between items-center py-2 lg:py-4 h-full uppercase">
+  <nav className="px-4 md:px-6 lg:container mx-auto flex justify-between items-center py-2 lg:py-4 h-full">
         {/* Hamburger Icon for Mobile and Tablet */}
         <button
           id="menu-toggle"
@@ -63,7 +63,7 @@ const Header = () => {
                   onClick={() => showOverlay("ourCapabilities")}
                   className="text-gray-700 text-xl font-bold hover:text-gray-900 w-full py-2 px-4 rounded-md hover:bg-gray-50 transition-colors bg-inherit"
                 >
-                  Our Facilities
+                  our capabilities
                 </button>
               </li>
               <li className="w-full text-center transform transition-all hover:scale-105">
@@ -71,7 +71,7 @@ const Header = () => {
                   onClick={() => showOverlay("services")}
                   className="text-gray-700 text-xl font-bold hover:text-gray-900 w-full py-2 px-4 rounded-md hover:bg-gray-50 transition-colors bg-inherit"
                 >
-                  Services
+                  What We Do
                 </button>
               </li>
               <li className="w-full text-center transform transition-all hover:scale-105">
@@ -80,7 +80,7 @@ const Header = () => {
                   className="text-gray-700 text-xl font-bold hover:text-gray-900 block w-full py-2 px-4 rounded-md hover:bg-gray-50 transition-colors"
                   onClick={closeMobileMenu}
                 >
-                  About Us
+                  Who We Are
                 </Link>
               </li>
               <li className="w-full text-center transform transition-all hover:scale-105">
@@ -110,7 +110,7 @@ const Header = () => {
                 showOverlay("ourCapabilities");
               }}
             >
-              Our Facilities
+              our capabilities
             </Link>
           </li>
           {/* Services */}
@@ -123,7 +123,7 @@ const Header = () => {
                 showOverlay("services");
               }}
             >
-              Services
+              What We Do
             </a>
           </li>
           <li>
@@ -131,7 +131,7 @@ const Header = () => {
               to="/about"
               className="text-gray-700 hover:text-gray-900 font-extrabold underline-offset-10"
             >
-              About Us
+              Who We Are
             </Link>
           </li>
           {/* Contact */}
@@ -140,7 +140,7 @@ const Header = () => {
               to="/contact"
               className="text-gray-700 hover:text-gray-900 font-extrabold underline-offset-10"
             >
-              Contact
+              Contact Us
             </Link>
           </li>
         </ul>
@@ -166,158 +166,19 @@ const Header = () => {
                   {/* Menu - Full width on mobile/tablet, left side on desktop */}
                   <div className="col-span-1 flex flex-col items-center justify-center h-full space-y-5 bg-white py-16 lg:py-0">
                     <ul className="flex flex-col items-center space-y-3 py-5 lg:py-0 lg:space-y-2 overflow-y-auto max-h-[70vh] lg:max-h-none px-4">
-                    <li>
-                        <a
-                          href="/ourCapabilities/canopy-production"
-                          className="block text-gray-700 hover:text-gray-900 text-md font-semibold transition-all hover:pl-1"
-                          onClick={handleLinkClick}
-                        >
-                          Canopy Production
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="/ourCapabilities/autoclave"
-                          className="block text-gray-700 hover:text-gray-900 text-md font-semibold hover-effect"
-                          onClick={handleLinkClick}
-                        >
-                          Autoclave
-                        </a>
-                      </li>
-                      {/* <li>
-                        <a
-                          href="/ourCapabilities/test-facility"
-                          className="block text-gray-700 hover:text-gray-900 text-md font-semibold hover-effect"
-                        >
-                          Test Facility
-                        </a>
-                      </li> */}
-                      <li>
-                        <a
-                          href="/ourCapabilities/cnc-milling"
-                          className="block text-gray-700 hover:text-gray-900 text-md font-semibold hover-effect"
-                          onClick={handleLinkClick}
-                        >
-                          CNC Cutting
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="/ourCapabilities/production-of-moulds"
-                          className="block text-gray-700 hover:text-gray-900 text-md font-semibold hover-effect"
-                          onClick={handleLinkClick}
-                        >
-                          Production of Moulds
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="/ourCapabilities/design-office"
-                          className="block text-gray-700 hover:text-gray-900 text-md font-semibold hover-effect"
-                          onClick={handleLinkClick}
-                        >
-                          Design Office
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="/ourCapabilities/paint-shop"
-                          className="block text-gray-700 hover:text-gray-900 text-md font-semibold hover-effect"
-                          onClick={handleLinkClick}
-                        >
-                          Paint Shop
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="/ourCapabilities/oven"
-                          className="block text-gray-700 hover:text-gray-900 text-md font-semibold hover-effect"
-                          onClick={handleLinkClick}
-                        >
-                          Oven
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="/ourCapabilities/resin-kitchen"
-                          className="block text-gray-700 hover:text-gray-900 text-md font-semibold hover-effect"
-                          onClick={handleLinkClick}
-                        >
-                          Resin kitchen
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="/ourCapabilities/cold-storage"
-                          className="block text-gray-700 hover:text-gray-900 text-md font-semibold hover-effect"
-                          onClick={handleLinkClick}
-                        >
-                          Cold Storage
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="/ourCapabilities/laser-3d-scanner"
-                          className="block text-gray-700 hover:text-gray-900 text-md font-semibold hover-effect"
-                          onClick={handleLinkClick}
-                        >
-                          Laser 3D Scanner
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="/ourCapabilities/laser-cutting-modeling"
-                          className="block text-gray-700 hover:text-gray-900 text-md font-semibold hover-effect"
-                          onClick={handleLinkClick}
-                        >
-                          Laser Cutting & Modeling
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="/ourCapabilities/6axis-robotic-arm"
-                          className="block text-gray-700 hover:text-gray-900 text-md font-semibold hover-effect"
-                          onClick={handleLinkClick}
-                        >
-                          6-Axis Robotic Arm
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="/ourCapabilities/clean-room-facility"
-                          className="block text-gray-700 hover:text-gray-900 text-md font-semibold hover-effect"
-                          onClick={handleLinkClick}
-                        >
-                          Clean Room Facility
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="/ourCapabilities/weaving-machine"
-                          className="block text-gray-700 hover:text-gray-900 text-md font-semibold hover-effect"
-                          onClick={handleLinkClick}
-                        >
-                          Weaving Machine
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="/ourCapabilities/hydrolic-press"
-                          className="block text-gray-700 hover:text-gray-900 text-md font-semibold hover-effect"
-                          onClick={handleLinkClick}
-                        >
-                          Hydraulic Press
-                        </a>
-                      </li>
-                      <li>
-                        <a
-                          href="/ourCapabilities/epoxy-storage"
-                          className="block text-gray-700 hover:text-gray-900 text-md font-semibold hover-effect"
-                          onClick={handleLinkClick}
-                        >
-                          Epoxy Storage
-                        </a>
-                      </li>
+                      <li><a href="/ourCapabilities/autoclave" className="block text-gray-700 hover:text-gray-900 text-md font-semibold hover-effect" onClick={handleLinkClick}>Autoclaves</a></li>
+                      <li><a href="/ourCapabilities/composite-curing-oven" className="block text-gray-700 hover:text-gray-900 text-md font-semibold hover-effect" onClick={handleLinkClick}>Composite curing oven</a></li>
+                      <li><a href="/ourCapabilities/dry-paint-booth" className="block text-gray-700 hover:text-gray-900 text-md font-semibold hover-effect" onClick={handleLinkClick}>Dry paint booth</a></li>
+                      <li><a href="/ourCapabilities/clean-room-facility" className="block text-gray-700 hover:text-gray-900 text-md font-semibold hover-effect" onClick={handleLinkClick}>Clean room</a></li>
+                      <li><a href="/ourCapabilities/cold-storage" className="block text-gray-700 hover:text-gray-900 text-md font-semibold hover-effect" onClick={handleLinkClick}>Cold storage</a></li>
+                      <li><a href="/ourCapabilities/cnc-prepreg-cutting-machine" className="block text-gray-700 hover:text-gray-900 text-md font-semibold hover-effect" onClick={handleLinkClick}>CNC prepreg cutting machine</a></li>
+                      <li><a href="/ourCapabilities/6axis-robotic-arm" className="block text-gray-700 hover:text-gray-900 text-md font-semibold hover-effect" onClick={handleLinkClick}>6 axis CNC robotic arm</a></li>
+                      <li><a href="/ourCapabilities/ewc-router-3-axis" className="block text-gray-700 hover:text-gray-900 text-md font-semibold hover-effect" onClick={handleLinkClick}>3 axis CNC pattern and mould machine</a></li>
+                      <li><a href="/ourCapabilities/laser-cutting-machine" className="block text-gray-700 hover:text-gray-900 text-md font-semibold hover-effect" onClick={handleLinkClick}>Laser cutting machine</a></li>
+                      <li><a href="/ourCapabilities/carbonfibre-weaving-machine" className="block text-gray-700 hover:text-gray-900 text-md font-semibold hover-effect" onClick={handleLinkClick}>Carbonfibre weaving machine</a></li>
+                      <li><a href="/ourCapabilities/hydrolic-press" className="block text-gray-700 hover:text-gray-900 text-md font-semibold hover-effect" onClick={handleLinkClick}>650 tonne hydraulic press</a></li>
+                      <li><a href="/ourCapabilities/laser-3d-scanner" className="block text-gray-700 hover:text-gray-900 text-md font-semibold hover-effect" onClick={handleLinkClick}>3D scanner</a></li>
+                      <li><a href="/ourCapabilities/3d-printers" className="block text-gray-700 hover:text-gray-900 text-md font-semibold hover-effect" onClick={handleLinkClick}>3D printers</a></li>
                     </ul>
                   </div>
                   <div className="col-span-3"></div>
@@ -338,76 +199,26 @@ const Header = () => {
                   {/* Menu - Full width on mobile/tablet, left side on desktop */}
                   <div className="col-span-1 flex flex-col items-center justify-center h-full space-y-5 bg-white py-16 lg:py-0">
                     <ul className="flex flex-col items-center space-y-5 py-5 lg:py-0 overflow-y-auto max-h-[70vh] lg:max-h-none px-4">
-                      {/* <li>
-                        <a
-                          href="/services"
-                          className="text-gray-700 text-lg hover:text-gray-900 hover-effect"
-                        >
-                          Services
-                        </a>
-                      </li> */}
                       <li>
-                        <a
-                          href="/services/design-office"
-                          className="block text-gray-700 hover:text-gray-900 text-lg transition-all hover:pl-1"
-                          onClick={handleLinkClick}
-                        >
-                          Design office
-                        </a>
+                        <a href="/services/compression-moulding" className="block text-gray-700 hover:text-gray-900 text-lg hover-effect" onClick={handleLinkClick}>Compression moulding</a>
                       </li>
                       <li>
-                        <a
-                          href="/services/paint-shop"
-                          className="block text-gray-700 hover:text-gray-900 text-lg transition-all hover:pl-1"
-                          onClick={handleLinkClick}
-                        >
-                          Paint shop
-                        </a>
+                        <a href="/services/autoclave-curing" className="block text-gray-700 hover:text-gray-900 text-lg hover-effect" onClick={handleLinkClick}>Autoclave curing</a>
                       </li>
                       <li>
-                        <a
-                          href="/services/canopy-production"
-                          className="block text-gray-700 hover:text-gray-900 text-lg hover-effect"
-                          onClick={handleLinkClick}
-                        >
-                          Canopy production
-                        </a>
+                        <a href="/services/composite-mould-manufacturing" className="block text-gray-700 hover:text-gray-900 text-lg hover-effect" onClick={handleLinkClick}>Composite mould manufacturing</a>
                       </li>
                       <li>
-                        <a
-                          href="/services/cnc-milling"
-                          className="block text-gray-700 hover:text-gray-900 text-lg hover-effect"
-                          onClick={handleLinkClick}
-                        >
-                          CNC milling
-                        </a>
+                        <a href="/services/composite-honeycomb-bonding" className="block text-gray-700 hover:text-gray-900 text-lg hover-effect" onClick={handleLinkClick}>Composite honeycomb bonding</a>
                       </li>
                       <li>
-                        <a
-                          href="/services/cutting-plotter"
-                          className="block text-gray-700 hover:text-gray-900 text-lg hover-effect"
-                          onClick={handleLinkClick}
-                        >
-                          Cutting plotter
-                        </a>
+                        <a href="/services/resin-infusion" className="block text-gray-700 hover:text-gray-900 text-lg hover-effect" onClick={handleLinkClick}>Resin infusion</a>
                       </li>
                       <li>
-                        <a
-                          href="/services/production-of-models"
-                          className="block text-gray-700 hover:text-gray-900 text-lg hover-effect"
-                          onClick={handleLinkClick}
-                        >
-                          Production of models
-                        </a>
+                        <a href="/services/wet-layup-technique" className="block text-gray-700 hover:text-gray-900 text-lg hover-effect" onClick={handleLinkClick}>Wet layup technique</a>
                       </li>
                       <li>
-                        <a
-                          href="/services/production-of-moulds-and-tooling"
-                          className="block text-gray-700 hover:text-gray-900 text-lg hover-effect"
-                          onClick={handleLinkClick}
-                        >
-                          Production of moulds and tooling
-                        </a>
+                        <a href="/services/canopy-production" className="block text-gray-700 hover:text-gray-900 text-lg hover-effect" onClick={handleLinkClick}>Canopy production</a>
                       </li>
                     </ul>
                   </div>

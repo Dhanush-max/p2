@@ -10,7 +10,7 @@ import SeeAlsoList from "../services/seeAlsoList";
 const imageList = [paintShop, paintShop2, paintShop3];
 
 const description =
-  "Our fully equipped paint shop offers premium industrial painting services for aerospace components, automotive parts, and composite structures. We utilize high-performance coatings, temperature-controlled paint booths, and skilled technicians to deliver durable and precise finishes that meet the highest quality standards.";
+  "Delivering durable, high-quality finishes for aerospace, automotive, and engineering components—our booth guarantees both performance and visual excellence.";
 
 const listItems = [
   { name: "Design Office", link: "/services/design-office" },
@@ -26,13 +26,13 @@ const PaintShop = () => {
     <div>
       <HeroImgSection
         img={paintShop2}
-        title="Industrial Paint Shop"
-        details="High-precision paint booth for aerospace, automotive, and composite part finishing."
+        title="DRY PAINT BOOTH"
+        details="Achieving flawless surface finishes through controlled coating environments."
       />
       <ImageSec
         imageUrl={paintShop}
-        title="Advanced Industrial Painting Facility"
-        description="Our paint shop features modern spray technology and cleanroom standards to ensure uniform coating, corrosion resistance, and aerospace-grade surface finishes."
+        title="Dry Paint Booth"
+        description="Our industrial dry paint booth is designed for precision coating, ensuring uniform application and premium aesthetics."
       />
       <ImageCarousel imageList={imageList} description={description} />
       <SeeAlsoList title="Explore More Facilities" items={listItems} />

@@ -1,14 +1,14 @@
-import epoxyStorage from "../../assets/resin.jpg";
+import epoxyStorage from "../../assets/resin1.jpg";
 import HeroImgSection from "../heroImgSection";
 import ImageSec from "../aboutUs/imageSec";
 import ImageCarousel from "../aboutUs/imageCarousel";
 import SeeAlsoList from "../services/seeAlsoList";
 
-const imageList = [epoxyStorage, epoxyStorage, epoxyStorage]; // Add more images as needed
+const imageList = [epoxyStorage]; // Single epoxy storage image
 const description =
   "Our epoxy storage facility is designed to preserve epoxy materials at optimal conditions. With advanced storage systems, we ensure the quality and longevity of epoxy products.";
 const listItems = [
-  { name: "Paint Shop", link: "/services/paint-shop" },
+  { name: "DRY PAINT BOOTH", link: "/services/paint-shop" },
   { name: "Canopy Production", link: "/services/canopy-production" },
   { name: "CNC Milling", link: "/services/cnc-milling" },
   { name: "Cutting Plotter", link: "/services/cutting-plotter" },

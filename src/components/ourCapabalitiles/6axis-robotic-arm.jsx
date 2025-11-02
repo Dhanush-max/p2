@@ -1,24 +1,17 @@
-import roboticArm from "../../assets/6axis.jpg";
-import roboticArm1 from "../../assets/6axis2.jpg";
-import roboticArm2 from "../../assets/6axis3.jpg";
+import roboticArm1 from "../../assets/6axis-robotic-arm-1.jpg";
+import roboticArm2 from "../../assets/6axis-robotic-arm-2.jpg";
 
 import HeroImgSection from "../heroImgSection";
 import ImageSec from "../aboutUs/imageSec";
 import ImageCarousel from "../aboutUs/imageCarousel";
 import SeeAlsoList from "../services/seeAlsoList";
 
-const imageList = [roboticArm, roboticArm1, roboticArm2]; // Add more images as needed
-
 const description =
-  "Our 6-axis robotic arm is a state-of-the-art solution for smart manufacturing and industrial automation. Engineered for high precision and flexibility, it handles complex operations like welding, material handling, assembly, and inspection with ease—boosting productivity and consistency across production lines.";
-
+  "Designed for advanced automation, it enhances repeatability and reduces manual intervention—ensuring reliability across production cycles.";
 const listItems = [
-  { name: "Robotic Welding", link: "/services/robotic-welding" },
-  { name: "Material Handling", link: "/services/material-handling" },
-  { name: "Assembly Automation", link: "/services/assembly-automation" },
-  { name: "3D Printing", link: "/services/3d-printing" },
-  { name: "Pick and Place", link: "/services/pick-and-place" },
-  { name: "Quality Inspection", link: "/services/quality-inspection" },
+  { name: "AUTOCLAVES", link: "/ourCapabalitiles/autoclave" },
+  { name: "COMPOSITE CURING OVEN", link: "/ourCapabalitiles/composite-curing-oven" },
+  { name: "CLEAN ROOM", link: "/ourCapabalitiles/clean-room-facility" },
 ];
 
 const SixAxisRoboticArm = () => {
@@ -26,16 +19,16 @@ const SixAxisRoboticArm = () => {
     <div>
       <HeroImgSection
         img={roboticArm1}
-        title="6-Axis Robotic Arm"
-        details="Unlock next-level precision and efficiency in your production with our advanced 6-axis robotic arm technology."
+        title="6-AXIS CNC ROBOTIC ARM"
+        details="Redefining precision and flexibility in composite manufacturing."
       />
       <ImageSec
-        imageUrl={roboticArm}
-        title="High-Performance 6-Axis Robotic Arm"
-        description="Designed for modern manufacturing facilities, our 6-axis robotic arm delivers high-speed, multi-directional motion for applications like robotic welding, pick-and-place operations, and automated quality control."
+        imageUrl={roboticArm2}
+        title="6-AXIS CNC ROBOTIC ARM"
+        description="The 6-axis robotic arm allows complex machining, trimming, and drilling operations with micron-level accuracy."
       />
-      <ImageCarousel imageList={imageList} description={description} />
-      <SeeAlsoList title="Related Automation Solutions" items={listItems} />
+      <ImageCarousel imageList={[roboticArm2]} description={description} />
+      <SeeAlsoList title="Related Facilities" items={listItems} />
     </div>
   );
 };
