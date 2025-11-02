@@ -10,7 +10,7 @@ const Contact = () => {
      <HeroImgSection img={C1} title='Contact Us' details='Let’s Build Something Exceptional
 Reach out to Peridot for composite manufacturing solutions, partnerships, or technical support.
 Our team will connect with you to understand your needs and provide precise, reliable assistance
-' gradientColor="white" /> 
+' gradientColor="black" /> 
      <ContactForm />
      <ContactInfo />
     </div>

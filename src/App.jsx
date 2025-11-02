@@ -36,6 +36,7 @@ import DryPaintBooth from "./components/ourCapabalitiles/dry-paint-booth";
 import CncPrepregCuttingMachine from "./components/ourCapabalitiles/cnc-prepreg-cutting-machine";
 import LaserCuttingMachine from "./components/ourCapabalitiles/laser-cutting-machine";
 import CarbonfibreWeavingMachine from "./components/ourCapabalitiles/carbonfibre-weaving-machine";
+import ThreeAxisCncPatternMouldMachine from "./components/ourCapabalitiles/ewc-router-3-axis";
 import "./styles/animation.css";
 
 function App() {
@@ -107,6 +108,7 @@ function App() {
         <Route path="/ourCapabilities/cnc-prepreg-cutting-machine" element={<CncPrepregCuttingMachine />} />
         <Route path="/ourCapabilities/laser-cutting-machine" element={<LaserCuttingMachine />} />
         <Route path="/ourCapabilities/carbonfibre-weaving-machine" element={<CarbonfibreWeavingMachine />} />
+        <Route path="/ourCapabilities/ewc-router-3-axis" element={<ThreeAxisCncPatternMouldMachine />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>

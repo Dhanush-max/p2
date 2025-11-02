@@ -1,5 +1,4 @@
-import React from "react";
-import Av1 from "../../assets/Av1.mp4";
+import pamBackgroundVideo from "../../assets/pam-background-video.mov";
 
 const AboutVideo = () => {
   return (
@@ -37,7 +36,7 @@ const AboutVideo = () => {
                 See Video
             </div>
             <video id="video" className="w-full h-full object-cover z-30" autoPlay muted loop>
-                <source src={Av1} type="video/mp4" />
+                <source src={pamBackgroundVideo} type="video/mp4" />
                 Your browser does not support the video tag.
             </video>
         </div>
