@@ -1,5 +1,4 @@
 import React from "react";
-import ImageWithLoader from "./common/ImageWithLoader";
 
 const HeroImgSection = ({ img, title, details, gradientColor = "black" }) => {
   const svgColor = gradientColor === "black" ? "#fff" : "#000";
@@ -8,11 +7,10 @@ const HeroImgSection = ({ img, title, details, gradientColor = "black" }) => {
     <>
       <section className="h-screen relative">
         <div className="w-full h-screen absolute z-0">
-          <ImageWithLoader
-            src={img}
-            alt="Hero section background"
+          <img
             className="object-cover w-full h-full filter-brightness"
-            loaderClassName="w-full h-screen"
+            src={img}
+            alt="Unable to show the image"
           />
         </div>
         <div
