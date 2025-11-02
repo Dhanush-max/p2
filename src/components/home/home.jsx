@@ -85,7 +85,6 @@ const Home = () => {
                       alt={`thumb ${index}`}
                       className="w-full h-48 object-cover cursor-pointer transition duration-300 hover:brightness-110 px-4"
                       loaderClassName="w-full h-48"
-                      useSkeletonLoader={true}
                     />
                   </div>
                 </SwiperSlide>
@@ -113,7 +112,6 @@ const Home = () => {
                     alt={`image ${index}`}
                     className="w-full h-full object-fit transition duration-300 hover:brightness-110"
                     loaderClassName="w-full h-full"
-                    useSkeletonLoader={true}
                   />
                 </SwiperSlide>
               ))}

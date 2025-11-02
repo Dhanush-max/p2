@@ -15,7 +15,6 @@ const Slider = () => {
             alt="UAV Manufacturing"
             className="w-full h-auto"
             loaderClassName="w-full h-64"
-            useSkeletonLoader={true}
           />
           <div className="absolute w-40 bottom-0 right-0 bg-white bg-opacity-90 p-4 text-center">
             <h3 className="text-lg font-bold">UAV Production</h3>
@@ -33,7 +32,6 @@ const Slider = () => {
             alt="CNC Manufacturing"
             className="w-full h-auto"
             loaderClassName="w-full h-64"
-            useSkeletonLoader={true}
           />
           <div className="absolute w-40 bottom-0 right-0 bg-white bg-opacity-90 p-4 text-center">
             <h3 className="text-lg font-bold">CNC Precision</h3>
@@ -51,7 +49,6 @@ const Slider = () => {
             alt="Radome Manufacturing"
             className="w-full h-auto"
             loaderClassName="w-full h-64"
-            useSkeletonLoader={true}
           />
           <div className="absolute w-40 bottom-0 right-0 bg-white bg-opacity-90 p-4 text-center">
             <h3 className="text-lg font-bold">Radome Production</h3>
@@ -69,7 +66,6 @@ const Slider = () => {
             alt="Manufacturing Facility"
             className="w-full h-auto"
             loaderClassName="w-full h-64"
-            useSkeletonLoader={true}
           />
           <div className="absolute w-40 bottom-0 right-0 bg-white bg-opacity-90 p-4 text-center">
             <h3 className="text-lg font-bold">Facility Overview</h3>

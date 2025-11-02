@@ -6,7 +6,6 @@ const ImageWithLoader = ({
   alt, 
   className = "", 
   loaderClassName = "",
-  useSkeletonLoader = false,
   onLoad,
   onError,
   ...props 
@@ -40,7 +39,7 @@ const ImageWithLoader = ({
     <div className="relative">
       {isLoading && (
         <div className={`absolute inset-0 z-10 ${loaderClassName}`}>
-          <ImageLoader className={className} showSkeleton={useSkeletonLoader} />
+          <ImageLoader className={className} />
         </div>
       )}
       <img
