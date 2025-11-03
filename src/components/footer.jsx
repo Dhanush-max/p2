@@ -78,51 +78,91 @@ const Footer = () => {
         </div>
 
         {/* Links Section */}
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 py-8 text-gray-400">
-          {/* Capabilities */}
-          <div className="col-span-1 md:col-span-2">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 py-8 text-gray-400">
+          {/* Capabilities - Split into two columns */}
+          <div>
             <h3 className="text-lg font-semibold mb-4 border-b border-gray-700 pb-2">
-              our capabilities
+              Our Capabilities
             </h3>
-            <ul className="space-y-2">
-              <li><a href="/ourCapabilities/autoclave" className="transition duration-300 hover:text-white hover:text-[16px] text-gray-400">Autoclaves</a></li>
-              <li><a href="/ourCapabilities/composite-curing-oven" className="transition duration-300 hover:text-white hover:text-[16px] text-gray-400">Composite curing oven</a></li>
-              <li><a href="/ourCapabilities/dry-paint-booth" className="transition duration-300 hover:text-white hover:text-[16px] text-gray-400">Dry paint booth</a></li>
-              <li><a href="/ourCapabilities/clean-room-facility" className="transition duration-300 hover:text-white hover:text-[16px] text-gray-400">Clean room</a></li>
-              <li><a href="/ourCapabilities/cold-storage" className="transition duration-300 hover:text-white hover:text-[16px] text-gray-400">Cold storage</a></li>
-              <li><a href="/ourCapabilities/cnc-prepreg-cutting-machine" className="transition duration-300 hover:text-white hover:text-[16px] text-gray-400">CNC prepreg cutting machine</a></li>
-              <li><a href="/ourCapabilities/laser-cutting-machine" className="transition duration-300 hover:text-white hover:text-[16px] text-gray-400">Laser cutting machine</a></li>
-              <li><a href="/ourCapabilities/carbonfibre-weaving-machine" className="transition duration-300 hover:text-white hover:text-[16px] text-gray-400">Carbonfibre weaving machine</a></li>
-              <li><a href="/ourCapabilities/3d-printers" className="transition duration-300 hover:text-white hover:text-[16px] text-gray-400">3D printers</a></li>
-            </ul>
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-4">
+              {/* Manufacturing & Processing */}
+              <div>
+                <h4 className="text-sm font-medium text-gray-300 mb-2 uppercase tracking-wide">Manufacturing</h4>
+                <ul className="space-y-1 text-sm">
+                  <li><a href="/ourCapabilities/autoclave" className="transition duration-300 hover:text-white text-gray-400">Autoclaves</a></li>
+                  <li><a href="/ourCapabilities/composite-curing-oven" className="transition duration-300 hover:text-white text-gray-400">Composite curing oven</a></li>
+                  <li><a href="/ourCapabilities/oven" className="transition duration-300 hover:text-white text-gray-400">Oven</a></li>
+                  <li><a href="/ourCapabilities/hydrolic-press" className="transition duration-300 hover:text-white text-gray-400">Hydraulic press</a></li>
+                  <li><a href="/ourCapabilities/3d-printers" className="transition duration-300 hover:text-white text-gray-400">3D printers</a></li>
+                  <li><a href="/ourCapabilities/6axis-robotic-arm" className="transition duration-300 hover:text-white text-gray-400">6-axis robotic arm</a></li>
+                </ul>
+              </div>
+              
+              {/* Cutting & Precision */}
+              <div>
+                <h4 className="text-sm font-medium text-gray-300 mb-2 uppercase tracking-wide">Cutting & Precision</h4>
+                <ul className="space-y-1 text-sm">
+                  <li><a href="/ourCapabilities/laser-cutting-machine" className="transition duration-300 hover:text-white text-gray-400">Laser cutting machine</a></li>
+                  <li><a href="/ourCapabilities/cnc-prepreg-cutting-machine" className="transition duration-300 hover:text-white text-gray-400">CNC prepreg cutting</a></li>
+                  <li><a href="/ourCapabilities/laser-3d-scanner" className="transition duration-300 hover:text-white text-gray-400">Laser 3D scanner</a></li>
+                  <li><a href="/ourCapabilities/laser-cutting-modeling" className="transition duration-300 hover:text-white text-gray-400">Laser cutting modeling</a></li>
+                  <li><a href="/ourCapabilities/ewc-router-3-axis" className="transition duration-300 hover:text-white text-gray-400">EWC router 3-axis</a></li>
+                </ul>
+              </div>
+            </div>
+            
+            {/* Additional row for remaining capabilities */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 mt-4">
+              {/* Materials & Storage */}
+              <div>
+                <h4 className="text-sm font-medium text-gray-300 mb-2 uppercase tracking-wide">Materials & Storage</h4>
+                <ul className="space-y-1 text-sm">
+                  <li><a href="/ourCapabilities/resin-kitchen" className="transition duration-300 hover:text-white text-gray-400">Resin kitchen</a></li>
+                  <li><a href="/ourCapabilities/epoxy-storage" className="transition duration-300 hover:text-white text-gray-400">Epoxy storage</a></li>
+                  <li><a href="/ourCapabilities/cold-storage" className="transition duration-300 hover:text-white text-gray-400">Cold storage</a></li>
+                </ul>
+              </div>
+              
+              {/* Facilities & Quality */}
+              <div>
+                <h4 className="text-sm font-medium text-gray-300 mb-2 uppercase tracking-wide">Facilities & Quality</h4>
+                <ul className="space-y-1 text-sm">
+                  <li><a href="/ourCapabilities/clean-room-facility" className="transition duration-300 hover:text-white text-gray-400">Clean room facility</a></li>
+                  <li><a href="/ourCapabilities/dry-paint-booth" className="transition duration-300 hover:text-white text-gray-400">Dry paint booth</a></li>
+                  <li><a href="/ourCapabilities/test-facility" className="transition duration-300 hover:text-white text-gray-400">Test facility</a></li>
+                  <li><a href="/ourCapabilities/weaving-machine" className="transition duration-300 hover:text-white text-gray-400">Weaving machine</a></li>
+                  <li><a href="/ourCapabilities/carbonfibre-weaving-machine" className="transition duration-300 hover:text-white text-gray-400">Carbonfibre weaving</a></li>
+                </ul>
+              </div>
+            </div>
           </div>
 
           {/* Services */}
           <div>
             <h3 className="text-lg font-semibold mb-4 border-b border-gray-700 pb-2">
-              Services
+              What We Do
             </h3>
             <ul className="space-y-2">
               <li>
-                <a href="/services/compression-moulding" className="transition duration-300 hover:text-white hover:text-[16px] text-gray-400">COMPRESSION MOULDING</a>
+                <a href="/services/compression-moulding" className="transition duration-300 hover:text-white hover:text-[16px] text-gray-400">Compression Moulding</a>
               </li>
               <li>
-                <a href="/services/autoclave-curing" className="transition duration-300 hover:text-white hover:text-[16px] text-gray-400">AUTOCLAVE CURING</a>
+                <a href="/services/autoclave-curing" className="transition duration-300 hover:text-white hover:text-[16px] text-gray-400">Autoclave Curing</a>
               </li>
               <li>
-                <a href="/services/composite-mould-manufacturing" className="transition duration-300 hover:text-white hover:text-[16px] text-gray-400">COMPOSITE MOULD MANUFACTURING</a>
+                <a href="/services/composite-mould-manufacturing" className="transition duration-300 hover:text-white hover:text-[16px] text-gray-400">Composite Mould Manufacturing</a>
               </li>
               <li>
-                <a href="/services/composite-honeycomb-bonding" className="transition duration-300 hover:text-white hover:text-[16px] text-gray-400">COMPOSITE HONEYCOMB BONDING</a>
+                <a href="/services/composite-honeycomb-bonding" className="transition duration-300 hover:text-white hover:text-[16px] text-gray-400">Composite Honeycomb Bonding</a>
               </li>
               <li>
-                <a href="/services/resin-infusion" className="transition duration-300 hover:text-white hover:text-[16px] text-gray-400">RESIN INFUSION</a>
+                <a href="/services/resin-infusion" className="transition duration-300 hover:text-white hover:text-[16px] text-gray-400">Resin Infusion</a>
               </li>
               <li>
-                <a href="/services/wet-layup-technique" className="transition duration-300 hover:text-white hover:text-[16px] text-gray-400">WET LAYUP TECHNIQUE</a>
+                <a href="/services/wet-layup-technique" className="transition duration-300 hover:text-white hover:text-[16px] text-gray-400">Wet Layup Technique</a>
               </li>
               <li>
-                <a href="/services/canopy-production" className="transition duration-300 hover:text-white hover:text-[16px] text-gray-400">CANOPY PRODUCTION</a>
+                <a href="/services/canopy-production" className="transition duration-300 hover:text-white hover:text-[16px] text-gray-400">Canopy Production</a>
               </li>
             </ul>
           </div>
@@ -130,7 +170,7 @@ const Footer = () => {
           {/* Company */}
           <div>
             <h3 className="text-lg font-semibold mb-4 border-b border-gray-700 pb-2">
-              About Us
+              Who We Are
             </h3>
             <ul className="space-y-2">
               <li>
@@ -150,14 +190,14 @@ const Footer = () => {
           <p>
             PERIDOT © 2025 All Rights Reserved |{" "}
             <Link
-              to="/terms"
+              to="/"
               className="transition duration-300 hover:text-white hover:text-[16px] text-gray-400"
             >
               Terms and Conditions
             </Link>{" "}
             |{" "}
             <Link
-              to="/privacy-policy"
+              to="/"
               className="transition duration-300 hover:text-white hover:text-[16px] text-gray-400"
             >
               Privacy Policy
