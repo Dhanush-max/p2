@@ -37,82 +37,89 @@ import CncPrepregCuttingMachine from "./components/ourCapabalitiles/cnc-prepreg-
 import LaserCuttingMachine from "./components/ourCapabalitiles/laser-cutting-machine";
 import CarbonfibreWeavingMachine from "./components/ourCapabalitiles/carbonfibre-weaving-machine";
 import ThreeAxisCncPatternMouldMachine from "./components/ourCapabalitiles/ewc-router-3-axis";
+import PageLoader from "./components/PageLoader";
+import { usePageLoader } from "./hooks/usePageLoader";
 import "./styles/animation.css";
 
 function App() {
+  const { isLoading } = usePageLoader();
+
   return (
     <>
-      <Header />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/facilities" element={<Capabalitites />} />
-        <Route
-          path="/ourCapabilities/technologies"
-          element={<Technologies />}
-        />
-        <Route path="/ourCapabilities/equipment" element={<Equpiments />} />
-        <Route
-          path="/ourCapabilities/production-facilities"
-          element={<ProductionFacilities />}
-        />
-        <Route path="/services" element={<Services />} />
-        <Route path="/services/compression-moulding" element={<CompressionMoulding />} />
-        <Route path="/services/autoclave-curing" element={<AutoclaveCuring />} />
-        <Route path="/services/composite-mould-manufacturing" element={<CompositeMouldManufacturing />} />
-        <Route path="/services/composite-honeycomb-bonding" element={<CompositeHoneycombBonding />} />
-        <Route path="/services/resin-infusion" element={<ResinInfusion />} />
-        <Route path="/services/wet-layup-technique" element={<WetLayupTechnique />} />
-        <Route path="/services/canopy-production" element={<CanopyProduction />} />
-        <Route path="/ourCapabilities/autoclave" element={<Autoclave />} />
-        <Route
-          path="/ourCapabilities/test-facility"
-          element={<TestFacility />}
-        />
-        <Route path="/ourCapabilities/oven" element={<Oven />} />
-        <Route path="/ourCapabilities/resin-kitchen" element={<Resinkitchen />} />
-        <Route path="/ourCapabilities/cold-storage" element={<ColdStorage />} />
-        <Route
-          path="/ourCapabilities/laser-3d-scanner"
-          element={<Laser3DScanner />}
-        />
-        <Route
-          path="/ourCapabilities/laser-cutting-modeling"
-          element={<LaserCuttingModeling />}
-        />
-        <Route
-          path="/ourCapabilities/6axis-robotic-arm"
-          element={<SixAxisRoboticArm />}
-        />
-        <Route
-          path="/ourCapabilities/clean-room-facility"
-          element={<CleanRoomFacility />}
-        />
-        <Route
-          path="/ourCapabilities/weaving-machine"
-          element={<WeavingMachine />}
-        />
-        <Route
-          path="/ourCapabilities/hydrolic-press"
-          element={<HydrolicPress />}
-        />
-        <Route
-          path="/ourCapabilities/epoxy-storage"
-          element={<EpoxyStorage />}
-        />
-        <Route
-          path="/ourCapabilities/composite-curing-oven"
-          element={<CompositeCuringOven />}
-        />
-        <Route path="/ourCapabilities/3d-printers" element={<ThreeDPrinters />} />
-        <Route path="/ourCapabilities/dry-paint-booth" element={<DryPaintBooth />} />
-        <Route path="/ourCapabilities/cnc-prepreg-cutting-machine" element={<CncPrepregCuttingMachine />} />
-        <Route path="/ourCapabilities/laser-cutting-machine" element={<LaserCuttingMachine />} />
-        <Route path="/ourCapabilities/carbonfibre-weaving-machine" element={<CarbonfibreWeavingMachine />} />
-        <Route path="/ourCapabilities/ewc-router-3-axis" element={<ThreeAxisCncPatternMouldMachine />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes>
-      <Footer />
+      {isLoading && <PageLoader />}
+      <div className={`transition-opacity duration-500 ${isLoading ? 'opacity-0 pointer-events-none' : 'opacity-100'}`}>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/facilities" element={<Capabalitites />} />
+          <Route
+            path="/ourCapabilities/technologies"
+            element={<Technologies />}
+          />
+          <Route path="/ourCapabilities/equipment" element={<Equpiments />} />
+          <Route
+            path="/ourCapabilities/production-facilities"
+            element={<ProductionFacilities />}
+          />
+          <Route path="/services" element={<Services />} />
+          <Route path="/services/compression-moulding" element={<CompressionMoulding />} />
+          <Route path="/services/autoclave-curing" element={<AutoclaveCuring />} />
+          <Route path="/services/composite-mould-manufacturing" element={<CompositeMouldManufacturing />} />
+          <Route path="/services/composite-honeycomb-bonding" element={<CompositeHoneycombBonding />} />
+          <Route path="/services/resin-infusion" element={<ResinInfusion />} />
+          <Route path="/services/wet-layup-technique" element={<WetLayupTechnique />} />
+          <Route path="/services/canopy-production" element={<CanopyProduction />} />
+          <Route path="/ourCapabilities/autoclave" element={<Autoclave />} />
+          <Route
+            path="/ourCapabilities/test-facility"
+            element={<TestFacility />}
+          />
+          <Route path="/ourCapabilities/oven" element={<Oven />} />
+          <Route path="/ourCapabilities/resin-kitchen" element={<Resinkitchen />} />
+          <Route path="/ourCapabilities/cold-storage" element={<ColdStorage />} />
+          <Route
+            path="/ourCapabilities/laser-3d-scanner"
+            element={<Laser3DScanner />}
+          />
+          <Route
+            path="/ourCapabilities/laser-cutting-modeling"
+            element={<LaserCuttingModeling />}
+          />
+          <Route
+            path="/ourCapabilities/6axis-robotic-arm"
+            element={<SixAxisRoboticArm />}
+          />
+          <Route
+            path="/ourCapabilities/clean-room-facility"
+            element={<CleanRoomFacility />}
+          />
+          <Route
+            path="/ourCapabilities/weaving-machine"
+            element={<WeavingMachine />}
+          />
+          <Route
+            path="/ourCapabilities/hydrolic-press"
+            element={<HydrolicPress />}
+          />
+          <Route
+            path="/ourCapabilities/epoxy-storage"
+            element={<EpoxyStorage />}
+          />
+          <Route
+            path="/ourCapabilities/composite-curing-oven"
+            element={<CompositeCuringOven />}
+          />
+          <Route path="/ourCapabilities/3d-printers" element={<ThreeDPrinters />} />
+          <Route path="/ourCapabilities/dry-paint-booth" element={<DryPaintBooth />} />
+          <Route path="/ourCapabilities/cnc-prepreg-cutting-machine" element={<CncPrepregCuttingMachine />} />
+          <Route path="/ourCapabilities/laser-cutting-machine" element={<LaserCuttingMachine />} />
+          <Route path="/ourCapabilities/carbonfibre-weaving-machine" element={<CarbonfibreWeavingMachine />} />
+          <Route path="/ourCapabilities/ewc-router-3-axis" element={<ThreeAxisCncPatternMouldMachine />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
+        <Footer />
+      </div>
     </>
   );
 }

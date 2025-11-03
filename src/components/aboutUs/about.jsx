@@ -8,6 +8,7 @@ import background2 from "../../assets/background 2.png";
 import background3 from "../../assets/background 3.png";
 import background4 from "../../assets/background 4.JPG";
 import backgorund22 from "../../assets/backgorund 22.jpg";
+import governmentPartners from "../../assets/OUR GOVERNMENT PARTNERS - 1.png";
 
 const About = () => {
   const sectionRef = useRef(null);
@@ -69,6 +70,15 @@ From design and tooling to fabrication, curing, and finishing, our facility hous
             <p className="text-gray-700 mb-8">
               A selection of our esteemed partners is featured below.
             </p>
+            
+            {/* Government Partners Image */}
+            <div className="flex justify-center mb-8">
+              <img 
+                src={governmentPartners} 
+                alt="Our Government Partners" 
+                className="max-w-full h-auto rounded-lg shadow-md"
+              />
+            </div>
           </div>
         </section>
    
