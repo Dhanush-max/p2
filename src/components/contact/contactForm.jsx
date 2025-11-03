@@ -115,7 +115,7 @@ const ContactForm = () => {
       onSubmit={sendEmail}
       noValidate
       data-status="init"
-      className="sm:mx-24 p-6 bg-white"
+      className="sm:mx-24 p-6 py-12 bg-white"
     >
       <div className='fade-in space-y-6 mb-6'>
         {/* Subject Section */}
