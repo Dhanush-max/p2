@@ -110,7 +110,7 @@ const Header = () => {
                 showOverlay("ourCapabilities");
               }}
             >
-              our capabilities
+              Our Capabilities
             </Link>
           </li>
           {/* Services */}
