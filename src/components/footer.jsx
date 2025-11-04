@@ -78,64 +78,32 @@ const Footer = () => {
         </div>
 
         {/* Links Section */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 py-8 text-gray-400">
-          {/* Capabilities - Split into two columns */}
-          <div>
-            <h3 className="text-lg font-semibold mb-4 border-b border-gray-700 pb-2">
-              Our Capabilities
-            </h3>
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-4">
-              {/* Manufacturing & Processing */}
-              <div>
-                <h4 className="text-sm font-medium text-gray-300 mb-2 uppercase tracking-wide">Manufacturing</h4>
-                <ul className="space-y-1 text-sm">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 py-8 text-gray-400">
+            {/* Capabilities - Only links from header's Our Capabilities overlay */}
+            <div>
+              <h3 className="text-lg font-semibold mb-4 border-b border-gray-700 pb-2">
+                Our Capabilities
+              </h3>
+              <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-4">
+                <ul className="space-y-2">
                   <li><a href="/ourCapabilities/autoclave" className="transition duration-300 hover:text-white text-gray-400">Autoclaves</a></li>
                   <li><a href="/ourCapabilities/composite-curing-oven" className="transition duration-300 hover:text-white text-gray-400">Composite curing oven</a></li>
-                  <li><a href="/ourCapabilities/oven" className="transition duration-300 hover:text-white text-gray-400">Oven</a></li>
-                  <li><a href="/ourCapabilities/hydrolic-press" className="transition duration-300 hover:text-white text-gray-400">Hydraulic press</a></li>
-                  <li><a href="/ourCapabilities/3d-printers" className="transition duration-300 hover:text-white text-gray-400">3D printers</a></li>
-                  <li><a href="/ourCapabilities/6axis-robotic-arm" className="transition duration-300 hover:text-white text-gray-400">6-axis robotic arm</a></li>
-                </ul>
-              </div>
-              
-              {/* Cutting & Precision */}
-              <div>
-                <h4 className="text-sm font-medium text-gray-300 mb-2 uppercase tracking-wide">Cutting & Precision</h4>
-                <ul className="space-y-1 text-sm">
-                  <li><a href="/ourCapabilities/laser-cutting-machine" className="transition duration-300 hover:text-white text-gray-400">Laser cutting machine</a></li>
-                  <li><a href="/ourCapabilities/cnc-prepreg-cutting-machine" className="transition duration-300 hover:text-white text-gray-400">CNC prepreg cutting</a></li>
-                  <li><a href="/ourCapabilities/laser-3d-scanner" className="transition duration-300 hover:text-white text-gray-400">Laser 3D scanner</a></li>
-                  <li><a href="/ourCapabilities/laser-cutting-modeling" className="transition duration-300 hover:text-white text-gray-400">Laser cutting modeling</a></li>
-                  <li><a href="/ourCapabilities/ewc-router-3-axis" className="transition duration-300 hover:text-white text-gray-400">EWC router 3-axis</a></li>
-                </ul>
-              </div>
-            </div>
-            
-            {/* Additional row for remaining capabilities */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-4 mt-4">
-              {/* Materials & Storage */}
-              <div>
-                <h4 className="text-sm font-medium text-gray-300 mb-2 uppercase tracking-wide">Materials & Storage</h4>
-                <ul className="space-y-1 text-sm">
-                  <li><a href="/ourCapabilities/resin-kitchen" className="transition duration-300 hover:text-white text-gray-400">Resin kitchen</a></li>
-                  <li><a href="/ourCapabilities/epoxy-storage" className="transition duration-300 hover:text-white text-gray-400">Epoxy storage</a></li>
-                  <li><a href="/ourCapabilities/cold-storage" className="transition duration-300 hover:text-white text-gray-400">Cold storage</a></li>
-                </ul>
-              </div>
-              
-              {/* Facilities & Quality */}
-              <div>
-                <h4 className="text-sm font-medium text-gray-300 mb-2 uppercase tracking-wide">Facilities & Quality</h4>
-                <ul className="space-y-1 text-sm">
-                  <li><a href="/ourCapabilities/clean-room-facility" className="transition duration-300 hover:text-white text-gray-400">Clean room facility</a></li>
                   <li><a href="/ourCapabilities/dry-paint-booth" className="transition duration-300 hover:text-white text-gray-400">Dry paint booth</a></li>
-                  <li><a href="/ourCapabilities/test-facility" className="transition duration-300 hover:text-white text-gray-400">Test facility</a></li>
-                  <li><a href="/ourCapabilities/weaving-machine" className="transition duration-300 hover:text-white text-gray-400">Weaving machine</a></li>
-                  <li><a href="/ourCapabilities/carbonfibre-weaving-machine" className="transition duration-300 hover:text-white text-gray-400">Carbonfibre weaving</a></li>
+                  <li><a href="/ourCapabilities/clean-room-facility" className="transition duration-300 hover:text-white text-gray-400">Clean room</a></li>
+                  <li><a href="/ourCapabilities/cold-storage" className="transition duration-300 hover:text-white text-gray-400">Cold storage</a></li>
+                  <li><a href="/ourCapabilities/cnc-prepreg-cutting-machine" className="transition duration-300 hover:text-white text-gray-400">CNC prepreg cutting machine</a></li>
+                  <li><a href="/ourCapabilities/6axis-robotic-arm" className="transition duration-300 hover:text-white text-gray-400">6 axis CNC robotic arm</a></li>
+                </ul>
+                <ul className="space-y-2">
+                  <li><a href="/ourCapabilities/ewc-router-3-axis" className="transition duration-300 hover:text-white text-gray-400">3 axis CNC pattern and mould machine</a></li>
+                  <li><a href="/ourCapabilities/laser-cutting-machine" className="transition duration-300 hover:text-white text-gray-400">Laser cutting machine</a></li>
+                  <li><a href="/ourCapabilities/carbonfibre-weaving-machine" className="transition duration-300 hover:text-white text-gray-400">Carbonfibre weaving machine</a></li>
+                  <li><a href="/ourCapabilities/hydrolic-press" className="transition duration-300 hover:text-white text-gray-400">650 tonne hydraulic press</a></li>
+                  <li><a href="/ourCapabilities/laser-3d-scanner" className="transition duration-300 hover:text-white text-gray-400">3D scanner</a></li>
+                  <li><a href="/ourCapabilities/3d-printers" className="transition duration-300 hover:text-white text-gray-400">3D printers</a></li>
                 </ul>
               </div>
             </div>
-          </div>
 
           {/* Services */}
           <div>

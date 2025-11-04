@@ -124,12 +124,6 @@ const Home = () => {
                 <p className="text-lg mt-4 font-[500]">
                   {swiperImages[activeIndex].desc}
                 </p>
-                <a
-                  href="/ourCapabilities/technologies"
-                  className="text-base mt-2 font-[900] bg-black !px-0 inline-block text-center"
-                >
-                  more
-                </a>
               </div>
 
               {/* Custom Navigation Buttons */}

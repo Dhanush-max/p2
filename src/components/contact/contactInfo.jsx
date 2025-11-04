@@ -40,7 +40,7 @@ const ContactInfo = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div ref={el => elementsRef.current[0] = el} className="space-y-4 fade-in">
               <p className="text-lg">Phone:</p>
-              <p className="font-light text-xl">+91 96896 11616</p>
+              <p className="font-light text-xl">+91 9686911616</p>
             </div>
             <div ref={el => elementsRef.current[0] = el} className="space-y-4 fade-in-right">
               <p className="text-lg">Email:</p>
