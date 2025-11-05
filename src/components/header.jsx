@@ -167,18 +167,18 @@ const Header = () => {
                   <div className="col-span-1 flex flex-col items-center justify-center h-full space-y-5 bg-white py-16 lg:py-0">
                     <ul className="flex flex-col items-center space-y-3 py-5 lg:py-0 lg:space-y-2 overflow-y-auto max-h-[70vh] lg:max-h-none px-4">
                       <li><a href="/ourCapabilities/autoclave" className="block text-gray-700 hover:text-gray-900 text-md font-semibold hover-effect" onClick={handleLinkClick}>Autoclaves</a></li>
-                      <li><a href="/ourCapabilities/composite-curing-oven" className="block text-gray-700 hover:text-gray-900 text-md font-semibold hover-effect" onClick={handleLinkClick}>Composite curing oven</a></li>
-                      <li><a href="/ourCapabilities/dry-paint-booth" className="block text-gray-700 hover:text-gray-900 text-md font-semibold hover-effect" onClick={handleLinkClick}>Dry paint booth</a></li>
-                      <li><a href="/ourCapabilities/clean-room-facility" className="block text-gray-700 hover:text-gray-900 text-md font-semibold hover-effect" onClick={handleLinkClick}>Clean room</a></li>
-                      <li><a href="/ourCapabilities/cold-storage" className="block text-gray-700 hover:text-gray-900 text-md font-semibold hover-effect" onClick={handleLinkClick}>Cold storage</a></li>
-                      <li><a href="/ourCapabilities/cnc-prepreg-cutting-machine" className="block text-gray-700 hover:text-gray-900 text-md font-semibold hover-effect" onClick={handleLinkClick}>CNC prepreg cutting machine</a></li>
-                      <li><a href="/ourCapabilities/6axis-robotic-arm" className="block text-gray-700 hover:text-gray-900 text-md font-semibold hover-effect" onClick={handleLinkClick}>6 axis CNC robotic arm</a></li>
-                      <li><a href="/ourCapabilities/ewc-router-3-axis" className="block text-gray-700 hover:text-gray-900 text-md font-semibold hover-effect" onClick={handleLinkClick}>3 axis CNC pattern and mould machine</a></li>
-                      <li><a href="/ourCapabilities/laser-cutting-machine" className="block text-gray-700 hover:text-gray-900 text-md font-semibold hover-effect" onClick={handleLinkClick}>Laser cutting machine</a></li>
-                      <li><a href="/ourCapabilities/carbonfibre-weaving-machine" className="block text-gray-700 hover:text-gray-900 text-md font-semibold hover-effect" onClick={handleLinkClick}>Carbonfibre weaving machine</a></li>
-                      <li><a href="/ourCapabilities/hydrolic-press" className="block text-gray-700 hover:text-gray-900 text-md font-semibold hover-effect" onClick={handleLinkClick}>650 tonne hydraulic press</a></li>
-                      <li><a href="/ourCapabilities/laser-3d-scanner" className="block text-gray-700 hover:text-gray-900 text-md font-semibold hover-effect" onClick={handleLinkClick}>3D scanner</a></li>
-                      <li><a href="/ourCapabilities/3d-printers" className="block text-gray-700 hover:text-gray-900 text-md font-semibold hover-effect" onClick={handleLinkClick}>3D printers</a></li>
+                      <li><a href="/ourCapabilities/composite-curing-oven" className="block text-gray-700 hover:text-gray-900 text-md font-semibold hover-effect" onClick={handleLinkClick}>Composite Curing Oven</a></li>
+                      <li><a href="/ourCapabilities/dry-paint-booth" className="block text-gray-700 hover:text-gray-900 text-md font-semibold hover-effect" onClick={handleLinkClick}>Dry Paint Booth</a></li>
+                      <li><a href="/ourCapabilities/clean-room-facility" className="block text-gray-700 hover:text-gray-900 text-md font-semibold hover-effect" onClick={handleLinkClick}>Clean Room</a></li>
+                      <li><a href="/ourCapabilities/cold-storage" className="block text-gray-700 hover:text-gray-900 text-md font-semibold hover-effect" onClick={handleLinkClick}>Cold Storage</a></li>
+                      <li><a href="/ourCapabilities/cnc-prepreg-cutting-machine" className="block text-gray-700 hover:text-gray-900 text-md font-semibold hover-effect" onClick={handleLinkClick}>CNC Prepreg Cutting Machine</a></li>
+                      <li><a href="/ourCapabilities/6axis-robotic-arm" className="block text-gray-700 hover:text-gray-900 text-md font-semibold hover-effect" onClick={handleLinkClick}>6 Axis CNC Robotic Arm</a></li>
+                      <li><a href="/ourCapabilities/ewc-router-3-axis" className="block text-gray-700 hover:text-gray-900 text-md font-semibold hover-effect" onClick={handleLinkClick}>3 Axis CNC Pattern and Mould Machine</a></li>
+                      <li><a href="/ourCapabilities/laser-cutting-machine" className="block text-gray-700 hover:text-gray-900 text-md font-semibold hover-effect" onClick={handleLinkClick}>Laser Cutting Machine</a></li>
+                      <li><a href="/ourCapabilities/carbonfibre-weaving-machine" className="block text-gray-700 hover:text-gray-900 text-md font-semibold hover-effect" onClick={handleLinkClick}>Carbonfibre Weaving Machine</a></li>
+                      <li><a href="/ourCapabilities/hydrolic-press" className="block text-gray-700 hover:text-gray-900 text-md font-semibold hover-effect" onClick={handleLinkClick}>650 Tonne Hydraulic Press</a></li>
+                      <li><a href="/ourCapabilities/laser-3d-scanner" className="block text-gray-700 hover:text-gray-900 text-md font-semibold hover-effect" onClick={handleLinkClick}>3D Scanner</a></li>
+                      <li><a href="/ourCapabilities/3d-printers" className="block text-gray-700 hover:text-gray-900 text-md font-semibold hover-effect" onClick={handleLinkClick}>3D Printers</a></li>
                     </ul>
                   </div>
                   <div className="col-span-3"></div>
