@@ -28,7 +28,7 @@ const ThreeDPrinters = () => {
       <ImageSec
         imageUrl={printerImg2}
         title="3D SCANNER & 3D PRINTERS"
-        description="Our 3D printers (450 × 450 × 500 mm and 800 × 800 × 1000 mm) enable rapid prototyping and custom tooling."
+        description="Our 3D printers (450 × 450 × 500 mm and 800 × 800 × 1000 mm) enable rapid prototyping and custom tooling. 3D scanner compact size scanning up TO 5 MM – 4000 MM, with ±0.05 MM accuracy."
       />
       <ImageCarousel imageList={[printerImg2, printerImg3]} description={description} />
       <SeeAlsoList title="Related Facilities" items={listItems} />

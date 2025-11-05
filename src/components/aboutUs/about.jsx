@@ -39,8 +39,8 @@ const About = () => {
 
   return (
     <div className="mx-auto">
-      <HeroImgSection img={background1} title="About Us" details="At Peridot Advanced Materials Pvt. Ltd., precision is our defining principle.
-We are a leading innovator and manufacturer of high-performance composite materials — including carbon fibre, glass fibre, and hybrid composites — engineered to meet the most demanding requirements of aerospace, defence, and advanced industrial sectors.
+      <HeroImgSection img={background1} title="About Us" details="Peridot Advanced Materials Pvt. Ltd. is a leading Advanced Composite Manufacturing company specializing in carbon fibre, glass fibre, and hybrid composites for the aerospace, defence, and advanced industrial sectors.
+Founded in 2020 as Parallax Composites, a small proprietorship focused on precision composite fabrication, we have grown into Peridot Advanced Materials Pvt. Ltd., driven by innovation, quality, and the pursuit of engineering excellence.
 " />
       {/* <Count /> */}
       <AboutVideo />
@@ -50,15 +50,15 @@ We are a leading innovator and manufacturer of high-performance composite materi
           <div className="text-base text-black mt-6 lg:max-w-[calc(100%-60%)] max-w-[calc(100%-20%)]">was founded out of love for aviation in 2025, but based on almost 30 years of experience obtained during the production of nearly 600 aircrafts.</div>
         </div>
       </div> */}
-      <ImageSec imageUrl={background2} title="Peridot Advanced Materials Pvt. Ltd" description="We go beyond conventional manufacturing — combining specialized expertise, advanced infrastructure, and process excellence to deliver components that balance strength, lightweight efficiency, and structural reliability. Every product is crafted to meet strict safety, performance, and aesthetic standards.
-" />
+      <ImageSec imageUrl={background2} title="" description="At Peridot, precision is our defining principle. With years of experience serving the aerospace sector, we deliver high-performance composite components that combine lightweight efficiency, structural strength, and reliability.
+      Our AS9100 D-certified, 56,852 sq. ft. integrated facility in North Bengaluru is equipped with state-of-the-art composite manufacturing technologies, making us a complete one-stop solution for Advanced Composite Manufacturing, from design and tooling to lay-up, curing, machining, and finishing." />
       {/* <Button text="Production Facilities" href="/ourCapabilities/production-of-moulds" /> */}
-      <ImageSec imageUrl={background3} title="" description="Our 56,852 sq ft integrated facility in North Bengaluru is equipped with state-of-the-art composite manufacturing technologies, making Peridot a complete one-stop solution for composite engineering and production.
-From design and tooling to fabrication, curing, and finishing, our facility houses advanced infrastructure such as autoclaves, CNC machining systems, 3D scanning and printing, clean rooms, hydraulic presses, and robotic automation — enabling precision at every step.
+      <ImageSec imageUrl={background3} title="" description="We operate advanced systems including autoclaves, 6-axis CNC machining, 3D scanning and printing, clean rooms, hydraulic presses, and robotic automation, ensuring precision, repeatability, and aerospace-grade quality.
 " />
       {/* <Button text="our capabilities" href="/ourCapabilities/canopy-production" /> */}
-        <ImageSec imageUrl={background4} title="" description="Peridot's materials and components are built to withstand extreme operational environments, offering exceptional strength-to-weight ratios, fatigue resistance, and thermal stability. These qualities make our solutions ideal for aircraft structures, defence systems, UAVs, spacecraft, and specialized industrial applications." />
-        <ImageSec imageUrl={backgorund22} title="" description="At Peridot, the P stands for Precision — a promise we deliver through innovation, craftsmanship, and a relentless pursuit of excellence." />
+        <ImageSec imageUrl={background4} title="" description="Our materials and components are built to perform in extreme environments, offering outstanding strength-to-weight ratios, fatigue resistance, and thermal stability, ideal for aircraft structures, UAVs, defence platforms, spacecraft systems, and specialized industrial applications.
+" />
+        <ImageSec imageUrl={backgorund22} title="" description="At Peridot, the “P” stands for Precision: a promise we uphold through innovation, craftsmanship, and a relentless pursuit of excellence in Advanced Composite Manufacturing." />
 
         {/* Our Partners / Clients Section */}
         <section className="my-16 px-4 md:px-0">
@@ -68,7 +68,7 @@ From design and tooling to fabrication, curing, and finishing, our facility hous
               Our trusted relationships with industry leaders stand as proof of our consistent quality and engineering excellence. Each collaboration strengthens our mission to deliver advanced composite solutions that perform under the most demanding conditions.
             </p>
             <p className="text-gray-700 mb-8">
-              A selection of our esteemed partners is featured below.
+              A section of our esteemed partners is featured below.
             </p>
             
             {/* Government Partners Image */}

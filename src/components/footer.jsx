@@ -87,20 +87,20 @@ const Footer = () => {
               <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-4">
                 <ul className="space-y-2">
                   <li><a href="/ourCapabilities/autoclave" className="transition duration-300 hover:text-white text-gray-400">Autoclaves</a></li>
-                  <li><a href="/ourCapabilities/composite-curing-oven" className="transition duration-300 hover:text-white text-gray-400">Composite curing oven</a></li>
-                  <li><a href="/ourCapabilities/dry-paint-booth" className="transition duration-300 hover:text-white text-gray-400">Dry paint booth</a></li>
-                  <li><a href="/ourCapabilities/clean-room-facility" className="transition duration-300 hover:text-white text-gray-400">Clean room</a></li>
-                  <li><a href="/ourCapabilities/cold-storage" className="transition duration-300 hover:text-white text-gray-400">Cold storage</a></li>
-                  <li><a href="/ourCapabilities/cnc-prepreg-cutting-machine" className="transition duration-300 hover:text-white text-gray-400">CNC prepreg cutting machine</a></li>
-                  <li><a href="/ourCapabilities/6axis-robotic-arm" className="transition duration-300 hover:text-white text-gray-400">6 axis CNC robotic arm</a></li>
+                  <li><a href="/ourCapabilities/composite-curing-oven" className="transition duration-300 hover:text-white text-gray-400">Composite Curing Oven</a></li>
+                  <li><a href="/ourCapabilities/dry-paint-booth" className="transition duration-300 hover:text-white text-gray-400">Dry Paint Booth</a></li>
+                  <li><a href="/ourCapabilities/clean-room-facility" className="transition duration-300 hover:text-white text-gray-400">Clean Room</a></li>
+                  <li><a href="/ourCapabilities/cold-storage" className="transition duration-300 hover:text-white text-gray-400">Cold Storage</a></li>
+                  <li><a href="/ourCapabilities/cnc-prepreg-cutting-machine" className="transition duration-300 hover:text-white text-gray-400">CNC Prepreg Cutting Machine</a></li>
+                  <li><a href="/ourCapabilities/6axis-robotic-arm" className="transition duration-300 hover:text-white text-gray-400">6 Axis CNC Robotic Arm</a></li>
                 </ul>
                 <ul className="space-y-2">
-                  <li><a href="/ourCapabilities/ewc-router-3-axis" className="transition duration-300 hover:text-white text-gray-400">3 axis CNC pattern and mould machine</a></li>
-                  <li><a href="/ourCapabilities/laser-cutting-machine" className="transition duration-300 hover:text-white text-gray-400">Laser cutting machine</a></li>
-                  <li><a href="/ourCapabilities/carbonfibre-weaving-machine" className="transition duration-300 hover:text-white text-gray-400">Carbonfibre weaving machine</a></li>
-                  <li><a href="/ourCapabilities/hydrolic-press" className="transition duration-300 hover:text-white text-gray-400">650 tonne hydraulic press</a></li>
-                  <li><a href="/ourCapabilities/laser-3d-scanner" className="transition duration-300 hover:text-white text-gray-400">3D scanner</a></li>
-                  <li><a href="/ourCapabilities/3d-printers" className="transition duration-300 hover:text-white text-gray-400">3D printers</a></li>
+                  <li><a href="/ourCapabilities/ewc-router-3-axis" className="transition duration-300 hover:text-white text-gray-400">3 Axis CNC Pattern and Mould Machine</a></li>
+                  <li><a href="/ourCapabilities/laser-cutting-machine" className="transition duration-300 hover:text-white text-gray-400">Laser Cutting Machine</a></li>
+                  <li><a href="/ourCapabilities/carbonfibre-weaving-machine" className="transition duration-300 hover:text-white text-gray-400">Carbonfibre Weaving Machine</a></li>
+                  <li><a href="/ourCapabilities/hydrolic-press" className="transition duration-300 hover:text-white text-gray-400">650 Tonne Hydraulic Press</a></li>
+                  <li><a href="/ourCapabilities/laser-3d-scanner" className="transition duration-300 hover:text-white text-gray-400">3D Scanner</a></li>
+                  <li><a href="/ourCapabilities/3d-printers" className="transition duration-300 hover:text-white text-gray-400">3D Printers</a></li>
                 </ul>
               </div>
             </div>

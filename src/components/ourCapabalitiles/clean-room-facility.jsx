@@ -8,7 +8,7 @@ import ImageCarousel from "../aboutUs/imageCarousel";
 import SeeAlsoList from "../services/seeAlsoList";
 
 const description =
-  "Supported by an ante room (2–4 °C), it ensures optimal temperature and particulate control, enabling high-quality production for aerospace, defence, and medical-grade assemblies.";
+  "Supported by an Cold storage(-18°C), it ensures optimal temperature and particulate control, enabling high-quality production for aerospace, defence, and medical-grade assemblies.";
 const listItems = [
   { name: "AUTOCLAVES", link: "/ourCapabilities/autoclave" },
   { name: "COMPOSITE CURING OVEN", link: "/ourCapabilities/composite-curing-oven" },
