@@ -4,9 +4,9 @@
 export const imageMapping = {
   // Infrastructure Components
   autoclave: {
-    primary: "autoclave 1.jpg",
-    secondary: "autoclave 2.jpg", 
-    carousel: ["autoclave 1.jpg", "autoclave 2.jpg"]
+    primary: "autoclave-1.jpg",
+    secondary: "autoclave-2.jpg", 
+    carousel: ["autoclave-1.jpg", "autoclave-2.jpg"]
   },
   
   paintBooth: {
@@ -77,9 +77,9 @@ export const imageMapping = {
 
   // Manufacturing Process Components
   autoclaveCuring: {
-    primary: "autoclave curing 1.jpg",
-    secondary: "autoclave curing 2.jpg",
-    carousel: ["autoclave curing 1.jpg", "autoclave curing 2.jpg", "autoclave curing 3.jpg", "autoclave curing 4.jpg"]
+    primary: "autoclave-curing-1.jpg",
+    secondary: "autoclave-curing-2.jpg",
+    carousel: ["autoclave-curing-1.jpg", "autoclave-curing-2.jpg", "autoclave-curing-3.jpg", "autoclave-curing-4.jpg"]
   },
   
   canopyProduction: {

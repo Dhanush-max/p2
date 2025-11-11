@@ -3,7 +3,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import ScrollToTop from "./scrollToTop";
-import logo from "../assets/logo.png";
+import logo from "../assets/peridot_logo_2.png";
 
 const Footer = () => {
   return (
@@ -12,8 +12,7 @@ const Footer = () => {
         {/* Top Section */}
         <div className="flex justify-between items-center py-8 border-b border-gray-700">
           <Link to="/" className="flex items-center text-md lg:text-xl font-bold text-gray-800 mr-5">
-            <img src={logo} alt="Company Logo" className="h-8 lg:h-12 w-auto" />
-            <span className="text-white ">PERIDOT</span>
+            <img src={logo} alt="Company Logo" className="h-30 lg:h-60 w-auto" />
           </Link>
           <div>
             <p className="text-sm uppercase mb-2">Follow Us:</p>

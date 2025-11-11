@@ -1,5 +1,6 @@
-import printerImg1 from "../../assets/3d-printer-1.jpg";
+import printerImg1 from "../../assets/3d-printers-main.png";
 import printerImg2 from "../../assets/3d-printer-2.jpg";
+import printerImg11 from "../../assets/3d-printer-1.jpg";
 import printerImg3 from "../../assets/3d-printer-3.jpg";
 import HeroImgSection from "../heroImgSection";
 import ImageSec from "../aboutUs/imageSec";
@@ -26,7 +27,7 @@ const ThreeDPrinters = () => {
         details="From concept to component with precision and speed."
       />
       <ImageSec
-        imageUrl={printerImg2}
+        imageUrl={printerImg11}
         title="3D SCANNER & 3D PRINTERS"
         description="Our 3D printers (450 × 450 × 500 mm and 800 × 800 × 1000 mm) enable rapid prototyping and custom tooling. 3D scanner compact size scanning up TO 5 MM – 4000 MM, with ±0.05 MM accuracy."
       />
