@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import logo from "../assets/logo.png"; 
+import logo from "../assets/peridot_logo-1.png"; 
 const Header = () => {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [activeOverlay, setActiveOverlay] = useState(null);
@@ -146,8 +146,8 @@ const Header = () => {
         </ul>
 
         <Link to="/" className="flex items-center text-sm md:text-md lg:text-xl font-bold text-gray-800 lg:mr-5 ml-auto lg:ml-0">
-          <img src={logo} alt="Company Logo" className="h-7 md:h-10 lg:h-12 w-auto" />
-          <span className="text-black">PERIDOT</span>
+          <img src={logo} alt="Company Logo" className="w-40 h-auto" />
+          {/* <span className="text-black">PERIDOT</span> */}
         </Link>
       </nav>
 
