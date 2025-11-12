@@ -70,9 +70,9 @@ export const imageMapping = {
   },
   
   scanner3dPrint: {
-    primary: "3d-scanner.jpg",
+    primary: "laser-scanner.jpg",
     secondary: "laser-scanner-2.jpg",
-    carousel: ["3d-scanner.jpg", "laser-scanner-2.jpg", "3d-scanner-4.jpg", "scanner.JPG"]
+    carousel: ["laser-scanner.jpg", "laser-scanner-2.jpg", "laser-scanner-4.jpg", "scanner.JPG"]
   },
 
   // Manufacturing Process Components
